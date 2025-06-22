@@ -9,7 +9,7 @@ from transformers import AutoTokenizer
 
 # Change the following variables as needed
 MODEL_NAME = "Qwen/Qwen2.5-1.5B-Instruct"
-IP1 = "192.168.2.27"
+IP1 = "192.168.2.29"
 PORT1 = 8000
 
 @st.cache_resource
