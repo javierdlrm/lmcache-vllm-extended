@@ -1,11 +1,11 @@
 #!/bin/sh
 
 cd ..
-git clone git@github.com:LMCache/LMCache.git
+git clone https://github.com/LMCache/LMCache.git
 cd LMCache || return
 git checkout v0.1.4-alpha
 cd ..
-git clone git@github.com:LMCache/lmcache-server.git
+git clone https://github.com/LMCache/lmcache-server.git
 cd lmcache-server || return
 git checkout v0.1.1-alpha
 cd ..
