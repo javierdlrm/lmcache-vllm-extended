@@ -1,0 +1,40 @@
+Janus: A Unified Distributed Training Framework for Sparse Mixture-of-Experts Models  
+Authors: Juncai Liu, Jessie Hui Wang, Yimin Jiang
+
+Abstract  
+Janus introduces a data-centric paradigm for Mixture-of-Experts (MoE) model training, reducing costly All-to-All communication. Instead of moving data to fixed experts (expert-centric), Janus moves experts to static data, which reduces communication and improves training speed. Janus supports asynchronous, hierarchical communication and prefetching, achieving up to 2.06× speedup on 32-A100 clusters.
+
+1. Introduction  
+Sparsely activated MoE models are promising for scaling, but expensive All-to-All communication slows training. Janus proposes a data-centric model that moves experts instead of data, and provides efficient training with asynchronous fetch, topology-aware scheduling, and expert prefetching.
+
+2. Background  
+Transformers and MoEs scale poorly due to expert parallelism, requiring All-to-All communication. This causes bandwidth issues and inefficiency, especially on heterogeneous links like NVLinks and RDMA.
+
+3. Observation and Motivation  
+Analysis shows expert-centric communication is bandwidth-heavy, imbalanced, and sensitive to link heterogeneity. Janus proposes switching to a data-centric model where experts are fetched by workers.
+
+4. Overview of Janus  
+Janus selects expert-centric or data-centric per MoE block, based on communication gain metric \( R \). Its architecture includes intra- and inter-node schedulers, credit-based buffers, and a shared cache. Tasks are processed one expert at a time to allow overlapping of computation and communication.
+
+5. System Design  
+- 5.1 Fine-grained Scheduling: Enables asynchronous computation and reduces memory use.  
+- 5.2 Topology-aware Scheduling: Uses staggered pull priorities and PCIe-switch awareness to reduce congestion.  
+- 5.3 Prefetching: Uses idle bandwidth to pull experts early, speeding up MoE block execution.
+
+6. Implementation  
+Implemented in PyTorch as a plug-and-play module. Janus integrates with autograd via `StartFetchOp` and `FetchOp` to insert pulls and synchronization into computation graphs. It uses RDMA and sockets to perform pull-based communication.
+
+7. Evaluation  
+- Janus achieves 1.28–1.52× end-to-end speedup over Tutel across models.  
+- Data-centric scheduling contributes the most; topology-aware and prefetching yield incremental gains.  
+- Speedup is more pronounced with higher batch sizes and sequence lengths.  
+- On PR-MoE (mixed E blocks), Janus outperforms pure expert- or data-centric modes by using both adaptively.
+
+8. Related Work  
+Other MoE frameworks (e.g., Tutel, DeepSpeed, SE-MoE) use expert-centric paradigms. Janus is novel in enabling data-centric execution, integrating asynchronous and hierarchical scheduling.
+
+9. Discussion  
+Data-centric benefits increase with longer sequence lengths and large batch sizes. Janus is compatible with tensor parallelism and inference tasks, and future work includes broader LLM deployment support.
+
+10. Conclusion  
+Janus proposes a novel data-centric communication model for MoE training. With unified support for both paradigms and advanced scheduling mechanisms, it greatly improves training efficiency.

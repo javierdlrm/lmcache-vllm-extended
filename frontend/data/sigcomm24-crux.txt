@@ -1,0 +1,44 @@
+Crux: GPU-Efficient Communication Scheduling for Deep Learning Training  
+Authors: Jiamin Cao, Yu Guan, Kun Qian, Jiaqi Gao, Wencong Xiao, Jianbo Dong, Binzhang Fu, Dennis Cai, Ennan Zhai (Alibaba Cloud)
+
+Abstract  
+Crux is a communication scheduler that addresses inter-job communication contention in deep learning training (DLT) clusters, improving GPU utilization. By defining GPU intensity and tailoring scheduling accordingly, Crux increases GPU utilization up to 23% over state-of-the-art approaches.
+
+1. Introduction  
+Modern GPU clusters face GPU underutilization due to communication contention among co-executing DLT jobs. Crux introduces GPU intensity as a prioritization metric and shows that current schedulers don't adequately handle inter-job contention.
+
+2. Background and Motivation  
+Profiling a 2,000+ GPU production cluster shows that 36.3% of jobs face contention. Inter-job communication contention significantly affects GPU utilization. The paper argues that optimizing GPU utilization—not just JCT—is critical for cost and efficiency.
+
+3. Methodology and System Overview  
+Maximizing GPU utilization is modeled as a flow scheduling problem using GPU intensity (computation/communication ratio). The system overview includes GPU intensity-based path selection, priority assignment, and priority compression.
+
+4. Crux Design  
+- 4.1 Path Selection: Avoids congestion for high-intensity jobs.  
+- 4.2 Priority Assignment: Corrects GPU intensity based on job characteristics (e.g., iteration time, overlap).  
+- 4.3 Priority Compression: Uses DAG-based Max-K-Cut to map many jobs to limited NIC priority levels.  
+- 4.4 Validation: Simulations show Crux achieves over 97% optimal performance for each scheduling step.
+
+5. Implementation  
+Crux is implemented in 7K LOC and integrates with PyTorch, TensorFlow, and X-DeepLearning. Crux Daemon and Crux Transport modules handle job profiling, probing network paths, and enforcing decisions via RDMA APIs.
+
+6. Evaluation  
+- 6.1 Testbed: 96-GPU testbed shows up to 14.8% GPU utilization gain and 33% JCT reduction.  
+- 6.2 Trace Simulation: On a 2,000+ GPU cluster trace, Crux outperforms Sincronia, TACCL, and CASSINI by 4–23%.  
+- 6.3 Scheduler Compatibility: Crux boosts performance even when combined with HiveD or Muri.  
+- 6.4 GPU Intensity Visualization: Darker flow patterns correlate with higher GPU utilization under Crux.
+
+7. Discussions  
+- 7.1 Limitations: Crux simplifies complex overlap patterns; real-world variance may cause suboptimal prioritization.  
+- 7.2 Fairness: Higher priority jobs may slightly degrade others; fairness extensions possible.  
+- 7.3 Topology Adaptability: Crux’s design generalizes across Clos, double-sided, and potentially other topologies.
+
+8. Related Work  
+Crux differs from job-level schedulers and prior intra-job communication solutions. It also surpasses inter-job tools like CASSINI by using real-time GPU intensity metrics and adaptive scheduling.
+
+9. Conclusion  
+Crux introduces GPU intensity as a foundational metric for DLT communication scheduling. Through path selection, priority assignment, and priority compression, it significantly improves cluster GPU utilization.
+
+Appendices  
+- A: Proof that GPU intensity-based flow scheduling correlates with utilization.  
+- B: Theoretical grounding for DAG-based Max-K-Cut in priority compression.
