@@ -1,0 +1,4 @@
+What is APLOMB?
+How is the APLOMB system constructed?
+What are the main advantages of using network middleboxes?
+Can you discuss both the advantages and disadvantages of APLOMB in detail?

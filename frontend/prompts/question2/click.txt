@@ -1,0 +1,5 @@
+What is the primary architectural innovation introduced by the Click Modular Router, and how does it enable flexibility and extensibility in router design?
+How are packet processing functions organized within a Click router, and what role do elements and their connections play in defining router behavior?
+What is the significance of push and pull connections in Click, and how do they influence packet flow and scheduling within the router?
+How does Click achieve high performance on general-purpose hardware, and what are the measured throughput and overhead characteristics according to the evaluation section?
+In what ways can Click be extended to support advanced networking features such as Differentiated Services, queueing policies, and IP tunneling, and what does this suggest about its modularity?

@@ -1,0 +1,5 @@
+What are the main challenges in large language model (LLM) inference workloads that Llumnix aims to address, and how does request rescheduling help overcome these challenges?
+How does Llumnix implement near-zero-downtime live migration of requests, and what architectural features enable this capability?
+In what ways does Llumnix improve load balancing, memory fragmentation, and request prioritization compared to previous LLM serving systems like INFaaS++?
+What is the role of the "freeness" metric in Llumnix’s scheduling policy, and how does it guide dispatching, migration, and auto-scaling decisions?
+According to the evaluation, what are the key performance benefits of Llumnix in terms of latency, preemption loss reduction, and cost savings, and how does it scale to large clusters?

@@ -1,0 +1,5 @@
+What is PagedAttention in vLLM, and how does it improve KV cache management compared to traditional contiguous memory allocation for large language model serving?
+What are the main memory challenges in LLM serving identified by the authors, and how does vLLM address issues such as fragmentation and cache sharing?
+How does vLLM's KV Cache Manager draw inspiration from operating system virtual memory, and what are the benefits of separating logical and physical KV blocks?
+In what ways does vLLM support advanced decoding scenarios like parallel sampling, beam search, and shared prefix handling, and what memory optimizations are enabled by PagedAttention?
+According to the evaluation, how does vLLM’s throughput and memory efficiency compare to systems like FasterTransformer and Orca, and what are the trade-offs in terms of kernel overhead and block size selection?

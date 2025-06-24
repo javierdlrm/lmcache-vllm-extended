@@ -1,0 +1,5 @@
+What are the main limitations of existing KV cache eviction strategies like H2O and FlexGen for LLM inference, and how does InfiniGen address these challenges?
+How does InfiniGen use speculative prefetching and SVD-based matrix skewing to efficiently select and load only important KV cache entries from CPU to GPU?
+What role do outlier tokens and attention input similarities across layers play in InfiniGen’s dynamic KV cache management framework?
+According to the evaluation, how does InfiniGen perform in terms of accuracy and speed compared to full KV caching and other methods (e.g., FlexGen and quantization-based approaches) across different models and datasets?
+How does the choice of parameters such as the alpha threshold for attention scores and the partial weight ratio affect the tradeoff between latency and accuracy in InfiniGen?
