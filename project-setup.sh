@@ -11,6 +11,6 @@ git checkout v0.1.1-alpha
 cd ..
 PYTHONPATH="$(pwd)/LMCache:$(pwd)/lmcache-vllm-extended:$PYTHONPATH"
 export PYTHONPATH
-python3 -m venv venv
+python3.10 -m venv venv  # Python >=3.10 is required
 . venv/bin/activate
 pip install -r lmcache-vllm-extended/requirements.txt
