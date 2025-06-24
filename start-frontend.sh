@@ -2,4 +2,6 @@
 
 source ~/venv/bin/activate
 
-streamlit run frontend/frontend.py
+cd frontend
+
+streamlit run frontend.py
