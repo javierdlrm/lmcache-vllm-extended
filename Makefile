@@ -10,6 +10,8 @@ scp:
 scpfrontend:
 	@echo "copying frontend to VM: password is FsM9PT7oDCVD"
 	scp -J ik2221vt25g09@nslabgw.it.kth.se  -r "$(shell pwd)/frontend" ik2221vt25g09@192.168.2.27:/home/ik2221vt25g09/lmcache-vllm-extended
+	# scp -J ik2221vt25g09@nslabgw.it.kth.se  -r "$(shell pwd)/frontend/data" ik2221vt25g09@192.168.2.27:/home/ik2221vt25g09/lmcache-vllm-extended/frontend
+	# scp -J ik2221vt25g09@nslabgw.it.kth.se  -r "$(shell pwd)/frontend/prompts" ik2221vt25g09@192.168.2.27:/home/ik2221vt25g09/lmcache-vllm-extended/frontend
 
 scpdata:
 	@echo "copying frontend/data to VM: password is FsM9PT7oDCVD"

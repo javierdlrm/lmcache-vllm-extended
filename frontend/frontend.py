@@ -12,6 +12,7 @@ MODEL_NAME = "Qwen/Qwen2.5-1.5B-Instruct"
 IP1 = "192.168.2.27"
 PORT1 = 8000
 
+
 @st.cache_resource
 def get_tokenizer():
     global MODEL_NAME
@@ -39,28 +40,32 @@ def read_chunks(file_folder) -> Dict[str, str]:
 
     return ret
 
+
 chunks = read_chunks("data/")
 selected_chunks = st.multiselect(
     "Select the chunks into the context",
     list(chunks.keys()),
-    default = [],
-    placeholder = "Select in the drop-down menu")
+    default=[],
+    placeholder="Select in the drop-down menu",
+)
 contexts = [chunks[key] for key in selected_chunks]
 
 container = st.container(border=True)
 
 with st.sidebar:
     system_prompt = st.text_area(
-            "System prompt:",
-            "You are a helpful assistant. I will now give you a document and "
-            "please answer my question afterwards based on the content in document"
-        )
+        "System prompt:",
+        "You are a helpful assistant. I will now give you a document and "
+        "please answer my question afterwards based on the content in document",
+    )
 
-    session = chat_session.ChatSession(IP1,PORT1)
+    session = chat_session.ChatSession(IP1, PORT1)
     session.set_context([system_prompt] + contexts)
 
     num_tokens = tokenizer.encode(session.get_context())
-    container.header(f"The context given to LLM: ({len(num_tokens)} tokens)", divider = "grey")
+    container.header(
+        f"The context given to LLM: ({len(num_tokens)} tokens)", divider="grey"
+    )
     container.text(session.get_context())
 
     messages = st.container(height=300)
