@@ -40,6 +40,23 @@ def read_chunks(file_folder) -> Dict[str, str]:
 
     return ret
 
+@st.cache_data
+def read_prompts(file_folder) -> Dict[str, str]:
+    """
+    Read all the txt files in the folder and return the filenames
+    """
+    filenames = os.listdir(file_folder)
+    ret = {}
+    for filename in filenames:
+        if not filename.endswith("txt"):
+            continue
+        key = filename.removesuffix(".txt")
+        with open(os.path.join(file_folder, filename), "r") as fin:
+            value = fin.read().splitlines()
+        ret[key] = value
+
+    return ret
+
 
 chunks = read_chunks("data/")
 selected_chunks = st.multiselect(
@@ -49,6 +66,8 @@ selected_chunks = st.multiselect(
     placeholder="Select in the drop-down menu",
 )
 contexts = [chunks[key] for key in selected_chunks]
+
+prompts = read_prompts("prompts/question1")
 
 container = st.container(border=True)
 
@@ -75,3 +94,40 @@ with st.sidebar:
     if prompt := st.chat_input("Type the question here", key=1):
         messages.chat_message("user").write(prompt)
         messages.chat_message("assistant").write_stream(session.chat(prompt))
+
+    st.text("🚀 Request generator:")
+    num_requests = st.number_input(
+        "Select number of requests:",
+        min_value=0,
+        max_value=20,
+        value=0,
+        step=1,
+        key="num_requests",
+    )
+
+    if st.button("Start", key="send_multichat"):
+        print(f"Selected_chunks [{len(selected_chunks)}]: {selected_chunks}")
+
+        if num_requests > 0 and len(selected_chunks) > 0:
+            context_and_prompts = []
+            for key in selected_chunks:
+                session_context = [chunks[key]]
+                for prompt in prompts[key]:
+                    context_and_prompts.append((session_context, prompt))
+
+            # randomized_ctx_and_prompts = [
+            #     random.choice(context_and_prompts) for _ in range(num_requests)
+            # ]
+            randomized_ctx_and_prompts = context_and_prompts
+            # print(f"Randomized ctx and prompts [{len(randomized_ctx_and_prompts)}]")
+
+            for ctx_prompt in randomized_ctx_and_prompts:
+                session_context, prompt = ctx_prompt
+
+                session = chat_session.ChatSession(IP1, PORT1)
+                session.set_context([system_prompt] + session_context)
+
+                # chat = multichat.init_chat()
+                # chat.set_context([system_prompt] + session_context)
+                messages.chat_message("user").write(prompt)
+                messages.chat_message("assistant").write_stream(session.chat(prompt))
