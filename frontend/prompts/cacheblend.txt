@@ -1,0 +1,5 @@
+What key problem in Retrieval-Augmented Generation (RAG) settings does CacheBlend aim to solve, and how does it differ from existing cache reuse strategies?
+How does CacheBlend identify which tokens require selective recomputation, and what role do high-KV-deviation (HKVD) tokens play in this process?
+What are the main components of the CacheBlend system architecture, and how do they interact to optimize KV cache fusion and inference speed?
+In the evaluation section, how does CacheBlend's performance (in terms of time-to-first-token and throughput) compare to full KV recomputation and full KV reuse across different models and datasets?
+What are the current limitations of CacheBlend as discussed in the paper, particularly regarding its applicability to non-transformer architectures and integration with newer serving engines?

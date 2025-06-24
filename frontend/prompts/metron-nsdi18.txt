@@ -1,0 +1,5 @@
+What key techniques does Metron use to eliminate inter-core communication and achieve high throughput in NFV service chains?
+How does Metron’s master-slave architecture and use of NIC-based tagging contribute to its performance compared to previous systems like OpenBox and E2?
+In what ways does Metron’s control plane handle graph synthesis, placement, and dynamic scaling to optimize resource usage and minimize overhead?
+How does Metron ensure fast failover and efficient path updates in the event of routing changes or failures?
+According to the evaluation, how does Metron perform in terms of throughput, latency, and scalability when deployed at large scale or under dynamic workloads?

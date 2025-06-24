@@ -1,0 +1,5 @@
+What is the main difference between the expert-centric and data-centric paradigms for Mixture-of-Experts (MoE) model training, and how does Janus leverage this distinction to improve training efficiency?
+How does Janus determine whether to use expert-centric or data-centric communication for a given MoE block, and what is the role of the communication gain metric R in this decision?
+What are the key components of Janus’s system architecture, and how do features like fine-grained scheduling, topology-aware scheduling, and prefetching contribute to its performance gains?
+In the evaluation, how does Janus’s performance compare to other MoE frameworks such as Tutel, and under what conditions are its speedups most pronounced?
+How does Janus integrate with existing deep learning frameworks like PyTorch, and what mechanisms does it use to handle communication and synchronization during training?
