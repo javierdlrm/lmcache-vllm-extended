@@ -53,6 +53,10 @@ class ChatSession:
 
         start = time.perf_counter()
         end = None
+        print("----------------------------")
+        print("Messages:", self.messages)
+        print("----------------------------", end="\n\n")
+
         chat_completion = self.client.chat.completions.create(
             messages=self.messages,
             model=self.model,
