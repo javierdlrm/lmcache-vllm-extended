@@ -120,14 +120,17 @@ with st.sidebar:
             # ]
             randomized_ctx_and_prompts = context_and_prompts[:num_requests]
             # print(f"Randomized ctx and prompts [{len(randomized_ctx_and_prompts)}]")
-
-            for ctx_prompt in randomized_ctx_and_prompts:
+            
+            for i, ctx_prompt in enumerate(randomized_ctx_and_prompts):
                 session_context, prompt = ctx_prompt
 
+                # For each iteration, append session_context i times (first iteration: once, then keep increasing)
+                repeated_context = [system_prompt] + session_context * (i + 1)
+
                 session = chat_session.ChatSession(IP1, PORT1)
-                session.set_context([system_prompt] + session_context)
+                session.set_context(repeated_context)
 
                 # chat = multichat.init_chat()
                 # chat.set_context([system_prompt] + session_context)
-                messages.chat_message("user").write(prompt)
+                messages.chat_message("user").write(f"[Seq-length: {len(session.get_context())}] " + prompt)
                 messages.chat_message("assistant").write_stream(session.chat(prompt))
