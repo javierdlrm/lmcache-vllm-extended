@@ -52,10 +52,12 @@ class ChatSession:
     def chat(self, question):
         self.on_user_message(question)
 
+        get_seq_length = self.get_seq_length(self.messages)
+
         start = time.perf_counter()
         end = None
 
-        print("# Messages:", self.messages, end="\n\n")
+        print(f"# Messages [{len(self.messages)} characters]:", self.messages, end="\n\n")
 
         chat_completion = self.client.chat.completions.create(
             messages=self.messages,
@@ -77,7 +79,6 @@ class ChatSession:
 
         self.on_server_message("".join(server_message))
 
-        get_seq_length = self.get_seq_length(self.messages)
         latency = end - start
 
         yield f"\n\n(Response delay: {latency:.2f} seconds // sequence length: {get_seq_length} tokens)\n"
