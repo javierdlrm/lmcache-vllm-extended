@@ -25,6 +25,9 @@ portforward:
 	@echo "port forwarding to VM: password is FsM9PT7oDCVD"
 	ssh -J ik2221vt25g09@nslabgw.it.kth.se ik2221vt25g09@192.168.2.27 -L 8501:localhost:8501 -N
 
+getreports:
+	@echo "copying reports from VM: password is FsM9PT7oDCVD"
+	scp -J ik2221vt25g09@nslabgw.it.kth.se  -r ik2221vt25g09@192.168.2.27:/home/ik2221vt25g09/lmcache-vllm-extended/frontend/reports "$(shell pwd)/frontend" 
 
 
 # copy-logs:

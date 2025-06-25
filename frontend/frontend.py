@@ -81,8 +81,6 @@ with st.sidebar:
     session = chat_session.ChatSession(IP1, PORT1, tokenizer=tokenizer)
     session.set_context([system_prompt] + contexts)
 
-    print("New session created with context")
-
     num_tokens = tokenizer.encode(session.get_context())
     container.header(
         f"The context given to LLM: ({len(num_tokens)} tokens)", divider="grey"

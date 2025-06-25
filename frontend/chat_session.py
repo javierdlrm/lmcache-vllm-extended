@@ -8,7 +8,7 @@ import os
 
 
 class ChatSession:
-    def __init__(self, ip, port, context_separator = "###", tokenizer=None):
+    def __init__(self, ip, port, context_separator="###", tokenizer=None):
         openai_api_key = "EMPTY"
         openai_api_base = f"http://{ip}:{port}/v2"
 
@@ -27,13 +27,12 @@ class ChatSession:
         self.context_separator = context_separator
         self.tokenizer = tokenizer
 
-
     def set_context(self, context_strings):
         contexts = []
         for context in context_strings:
             contexts.append(context)
 
-        self.final_context =  self.context_separator.join(contexts) 
+        self.final_context = self.context_separator.join(contexts)
         self.on_user_message(self.final_context, display=False)
         self.on_server_message("Got it!", display=False)
 
@@ -51,7 +50,6 @@ class ChatSession:
         self.messages.append({"role": "assistant", "content": message})
 
     def chat(self, question):
-
         self.on_user_message(question)
 
         num_char, seq_length = self.get_num_char_and_seq_length(self.messages)
@@ -66,7 +64,7 @@ class ChatSession:
             model=self.model,
             temperature=0.5,
             stream=True,
-            stop = "\n",
+            stop="\n",
         )
 
         output_buffer = StringIO()
@@ -83,6 +81,7 @@ class ChatSession:
 
         latency = end - start
 
+        # save metrics to csv file
         self.record_response_metrics(seq_length, latency)
 
         yield f"\n\n(Response delay: {latency:.2f} seconds // {num_char} chars, {seq_length} tokens (seq len))\n"
@@ -91,11 +90,11 @@ class ChatSession:
         chat_str = self.tokenizer.apply_chat_template(messages, tokenize=False)
         token_ids = self.tokenizer.encode(chat_str)
         return len(chat_str), len(token_ids)
-    
+
     def record_response_metrics(self, seq_length, latency):
         csv_file = "reports/chat_metrics.csv"
         file_exists = os.path.isfile(csv_file)
-        with open(csv_file, mode='a', newline='') as file:
+        with open(csv_file, mode="a", newline="") as file:
             writer = csv.writer(file)
             if not file_exists:
                 writer.writerow(["seq_length", "latency"])
