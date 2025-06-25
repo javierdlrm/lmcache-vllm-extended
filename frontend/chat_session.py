@@ -3,7 +3,8 @@ import threading
 import sys
 from io import StringIO
 import time
-
+import csv
+import os
 
 
 class ChatSession:
@@ -50,6 +51,7 @@ class ChatSession:
         self.messages.append({"role": "assistant", "content": message})
 
     def chat(self, question):
+
         self.on_user_message(question)
 
         num_char, seq_length = self.get_num_char_and_seq_length(self.messages)
@@ -81,9 +83,20 @@ class ChatSession:
 
         latency = end - start
 
-        yield f"\n\n(Response delay: {latency:.2f} seconds // chat_str: {num_char} chars, seq len: {seq_length} tokens)\n"
+        self.record_response_metrics(seq_length, latency)
+
+        yield f"\n\n(Response delay: {latency:.2f} seconds // {num_char} chars, {seq_length} tokens (seq len))\n"
 
     def get_num_char_and_seq_length(self, messages):
         chat_str = self.tokenizer.apply_chat_template(messages, tokenize=False)
         token_ids = self.tokenizer.encode(chat_str)
         return len(chat_str), len(token_ids)
+    
+    def record_response_metrics(self, seq_length, latency):
+        csv_file = "reports/chat_metrics.csv"
+        file_exists = os.path.isfile(csv_file)
+        with open(csv_file, mode='a', newline='') as file:
+            writer = csv.writer(file)
+            if not file_exists:
+                writer.writerow(["seq_length", "latency"])
+            writer.writerow([seq_length, latency])
