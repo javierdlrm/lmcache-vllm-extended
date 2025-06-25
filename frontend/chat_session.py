@@ -92,7 +92,7 @@ class ChatSession:
         return len(chat_str), len(token_ids)
 
     def record_response_metrics(self, seq_length, latency):
-        csv_file = "reports/chat_metrics.csv"
+        csv_file = "reports/task1-question1.csv"
         file_exists = os.path.isfile(csv_file)
         with open(csv_file, mode="a", newline="") as file:
             writer = csv.writer(file)
