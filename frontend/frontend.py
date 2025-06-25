@@ -122,13 +122,12 @@ with st.sidebar:
             for i, ctx_prompt in enumerate(randomized_ctx_and_prompts):
                 session_context, prompt = ctx_prompt
 
-                # For each iteration, append session_context i times (first iteration: once, then keep increasing)
                 repeated_context = [system_prompt] + [". ".join(session_context * (i + 1))]
-                print("REPEATED CONTEXT length:", len(repeated_context))
-                session = chat_session.ChatSession(IP1, PORT1, tokenizer=tokenizer)
-                session.set_context(repeated_context)
-
-                # chat = multichat.init_chat()
-                # chat.set_context([system_prompt] + session_context)
-                messages.chat_message("user").write(f"[Seq-length: {len(session.get_context())}] " + prompt)
+                
+                # session = chat_session.ChatSession(IP1, PORT1, tokenizer=tokenizer)
+                # session.set_context(repeated_context)
+                messages.chat_message("user").write(prompt)
                 messages.chat_message("assistant").write_stream(session.chat(prompt))
+
+                # messages.chat_message("user").write(f"[Seq-length: {len(session.get_context())}] " + prompt)
+                # messages.chat_message("assistant").write_stream(session.chat(prompt))
