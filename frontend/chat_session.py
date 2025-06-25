@@ -7,7 +7,7 @@ import time
 
 
 class ChatSession:
-    def __init__(self, ip, port, context_separator = "###"):
+    def __init__(self, ip, port, context_separator = "###", tokenizer=None):
         openai_api_key = "EMPTY"
         openai_api_base = f"http://{ip}:{port}/v2"
 
@@ -24,6 +24,7 @@ class ChatSession:
 
         self.final_context = ""
         self.context_separator = context_separator
+        self.tokenizer = tokenizer
 
 
     def set_context(self, context_strings):
@@ -75,4 +76,13 @@ class ChatSession:
                 server_message.append(chunk_message)
 
         self.on_server_message("".join(server_message))
-        yield f"\n\n(Response delay: {end - start:.2f} seconds)"
+
+        get_seq_length = self.get_seq_length(self.messages)
+        latency = end - start
+
+        yield f"\n\n(Response delay: {latency:.2f} seconds // sequence length: {get_seq_length} tokens)\n"
+
+    def get_seq_length(self, messages):
+        chat_str = self.tokenizer.apply_chat_template(messages, tokenize=False)
+        token_ids = self.tokenizer.encode(chat_str)
+        return len(token_ids)

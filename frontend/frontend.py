@@ -78,7 +78,7 @@ with st.sidebar:
         "please answer my question afterwards based on the content in document",
     )
 
-    session = chat_session.ChatSession(IP1, PORT1)
+    session = chat_session.ChatSession(IP1, PORT1, tokenizer=tokenizer)
     session.set_context([system_prompt] + contexts)
 
     print("New session created with context")
@@ -127,7 +127,7 @@ with st.sidebar:
                 # For each iteration, append session_context i times (first iteration: once, then keep increasing)
                 repeated_context = [system_prompt] + session_context * (i + 1)
 
-                session = chat_session.ChatSession(IP1, PORT1)
+                session = chat_session.ChatSession(IP1, PORT1, tokenizer=tokenizer)
                 session.set_context(repeated_context)
 
                 # chat = multichat.init_chat()
