@@ -118,7 +118,7 @@ with st.sidebar:
             # randomized_ctx_and_prompts = [
             #     random.choice(context_and_prompts) for _ in range(num_requests)
             # ]
-            randomized_ctx_and_prompts = context_and_prompts
+            randomized_ctx_and_prompts = context_and_prompts[:num_requests]
             # print(f"Randomized ctx and prompts [{len(randomized_ctx_and_prompts)}]")
 
             for ctx_prompt in randomized_ctx_and_prompts:
