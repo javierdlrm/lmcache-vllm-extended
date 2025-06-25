@@ -123,8 +123,8 @@ with st.sidebar:
                 session_context, prompt = ctx_prompt
 
                 # For each iteration, append session_context i times (first iteration: once, then keep increasing)
-                repeated_context = [system_prompt] + session_context * (i + 1)
-
+                repeated_context = [system_prompt] + [". ".join(session_context * (i + 1))]
+                print("REPEATED CONTEXT length:", len(repeated_context))
                 session = chat_session.ChatSession(IP1, PORT1, tokenizer=tokenizer)
                 session.set_context(repeated_context)
 
