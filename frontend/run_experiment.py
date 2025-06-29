@@ -37,13 +37,16 @@ def read_prompts(file_folder):
 
 
 def main():
-    if len(sys.argv) != 4:
-        print("Usage: python run_experiment.py <task> <num_contexts> <num_requests>")
+    if len(sys.argv) != 5:
+        print(
+            "Usage: python run_experiment.py <task> <num_contexts> <num_requests> <randomize>"
+        )
         sys.exit(1)
 
     task = sys.argv[1]
     num_contexts = int(sys.argv[2])
     num_requests = int(sys.argv[3])
+    randomize = sys.argv[4].lower() == "true"
 
     # Read data
     chunks = read_chunks("data/")
@@ -56,7 +59,11 @@ def main():
         )
         sys.exit(1)
 
-    context_keys = random.sample(list(chunks.keys()), num_contexts)
+    all_keys = list(chunks.keys())
+    if randomize:
+        context_keys = random.sample(all_keys, num_contexts)
+    else:
+        context_keys = all_keys[:num_contexts]
 
     for key in context_keys:
         if key not in prompts:
@@ -72,7 +79,13 @@ def main():
         if context_key not in prompts:
             print(f"Context key '{context_key}' not found in prompts.")
             sys.exit(1)
-        selected_prompts = prompts[context_key][:num_requests]
+        prompt_list = prompts[context_key]
+        if randomize:
+            selected_prompts = random.sample(
+                prompt_list, min(num_requests, len(prompt_list))
+            )
+        else:
+            selected_prompts = prompt_list[:num_requests]
         session_context_prompts_dict[context_key] = {
             "session": chat_session.ChatSession(
                 IP1, PORT1, tokenizer=tokenizer, task=task
@@ -80,11 +93,6 @@ def main():
             "context": chunks[context_key],
             "prompts": selected_prompts,
         }
-
-    # # Prepare prompt-context tuples
-    # selected_prompts = prompts[context_key][:num_requests]
-    # session_context = [chunks[context_key]]
-    # # prompt_context_tuples = [(prompt, session_context) for prompt in selected_prompts]
 
     # Run requests
     generator = RequestGenerator(session_context_prompts_dict)
