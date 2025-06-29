@@ -7,11 +7,14 @@ class RequestGenerator:
 
     def start(self):
         """
-        For each (session, prompt, session_context) tuple, set the context and yield the streamed response.
+        For each (session, context, prompts) dict, set the context and yield the streamed response.
         """
-        for session, context, prompts in self.session_context_prompts_dict:
+        for entry in self.session_context_prompts_dict.values():
+            session = entry["session"]
+            context = entry["context"]
+            prompts = entry["prompts"]
             print("-> Next session ----------------------------------------")
-            session.set_context(context)
+            session.set_context([context])
             for prompt in prompts:
                 print("---> Next prompt -----------------------------------")
                 response_stream = session.chat(prompt)
