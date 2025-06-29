@@ -42,12 +42,12 @@ class ChatSession:
 
     def on_user_message(self, message, display=True):
         if display:
-            print("User message:", message)
+            print("👤 User message:", message, end="\n\n")
         self.messages.append({"role": "user", "content": message})
 
     def on_server_message(self, message, display=True):
         if display:
-            print("Server message:", message)
+            print("🤖 Server message:", message, end="\n\n")
         self.messages.append({"role": "assistant", "content": message})
 
     def chat(self, question):
@@ -58,7 +58,12 @@ class ChatSession:
         start = time.perf_counter()
         end = None
 
-        print(f"# Messages [{len(self.messages)} messages]:", self.messages, end="\n\n")
+        print("----------------------------------------------------------------------")
+        print(f"# Messages [{len(self.messages)} messages]:", self.messages)
+        print(
+            "----------------------------------------------------------------------",
+            end="\n\n",
+        )
 
         chat_completion = self.client.chat.completions.create(
             messages=self.messages,
@@ -85,7 +90,9 @@ class ChatSession:
         # save metrics to csv file
         self.record_response_metrics(seq_length, latency)
 
-        yield f"\n\n(Response delay: {latency:.2f} seconds // {num_char} chars, {seq_length} tokens (seq len))\n"
+        print(
+            f"\n\n(📝 Response delay: {latency:.2f} seconds // {num_char} chars, {seq_length} tokens (seq len))\n"
+        )
 
     def get_num_char_and_seq_length(self, messages):
         chat_str = self.tokenizer.apply_chat_template(messages, tokenize=False)
