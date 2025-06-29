@@ -6,4 +6,4 @@ cd frontend
 
 rm -rf reports/*
 
-python -m run_experiment.py "$@"
+python -m run_experiment "$@"
