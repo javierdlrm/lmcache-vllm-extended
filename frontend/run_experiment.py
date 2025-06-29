@@ -88,12 +88,8 @@ def main():
 
     # Run requests
     generator = RequestGenerator(session_context_prompts_dict)
-    current_prompt = None
-    for prompt, response_chunk in generator.start():
-        if current_prompt != prompt:
-            current_prompt = prompt
-            print(f"Prompt: {prompt}\n")
-        print(f"\rResponse chunk: {response_chunk}", end="", flush=True)
+    for _, _ in generator.start():
+        pass
 
 
 if __name__ == "__main__":
