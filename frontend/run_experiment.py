@@ -93,9 +93,7 @@ def main():
         if current_prompt != prompt:
             current_prompt = prompt
             print(f"Prompt: {prompt}\n")
-        output = f"Response chunk: {response_chunk}"
-        print("\r" + " " * 80, end="\r")
-        print(output, end="\r", flush=True)
+        print(f"\rResponse chunk: {response_chunk}", end="", flush=True)
 
 
 if __name__ == "__main__":
