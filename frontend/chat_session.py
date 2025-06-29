@@ -3,6 +3,18 @@ from io import StringIO
 import time
 import csv
 import os
+import logging
+import sys
+
+# Set up logging to both console and file
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s %(levelname)s: %(message)s",
+    handlers=[
+        logging.StreamHandler(sys.stdout),
+        logging.FileHandler("experiment.log", mode="a"),
+    ],
+)
 
 
 class ChatSession:
@@ -42,12 +54,12 @@ class ChatSession:
 
     def on_user_message(self, message, display=True):
         if display:
-            print("👤 User message:", message, end="\n\n")
+            logging.info("👤 User message:", message, end="\n\n")
         self.messages.append({"role": "user", "content": message})
 
     def on_server_message(self, message, display=True):
         if display:
-            print("🤖 Server message:", message, end="\n\n")
+            logging.info("🤖 Server message:", message, end="\n\n")
         self.messages.append({"role": "assistant", "content": message})
 
     def chat(self, question):
@@ -58,9 +70,9 @@ class ChatSession:
         start = time.perf_counter()
         end = None
 
-        print("----------------------------------------------------------------------")
-        print(f"# Messages [{len(self.messages)} messages]:", self.messages)
-        print(
+        logging.info("----------------------------------------------------------------------")
+        logging.info(f"# Messages [{len(self.messages)} messages]:", self.messages)
+        logging.info(
             "----------------------------------------------------------------------",
             end="\n\n",
         )
@@ -90,7 +102,7 @@ class ChatSession:
         # save metrics to csv file
         self.record_response_metrics(seq_length, latency)
 
-        print(
+        logging.info(
             f"\n\n(📝 Response delay: {latency:.2f} seconds // {num_char} chars, {seq_length} tokens (seq len))\n"
         )
 
