@@ -47,7 +47,7 @@ def main():
 
     # Read data
     chunks = read_chunks("data/")
-    prompts = read_prompts("prompts/question1")
+    prompts = read_prompts("prompts/")
 
     num_contexts = int(num_contexts)
     if num_contexts > len(chunks):
