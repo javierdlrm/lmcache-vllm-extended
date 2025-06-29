@@ -100,7 +100,7 @@ def plot_multiple_latency_vs_seq_length(task):
     plt.grid(True)
     plt.legend()
     plt.tight_layout()
-    output_path = "reports/multi_latency_vs_seq_length.png"
+    output_path = f"reports/{task}_multi_latency_vs_seq_length.png"
     plt.savefig(output_path)
     plt.close()
     print(f"Multi-line plot saved to {output_path}")
