@@ -15,6 +15,11 @@ MODEL_NAME = "Qwen/Qwen2.5-1.5B-Instruct"
 IP1 = "192.168.2.27"
 PORT1 = 8000
 
+SYSTEM_PROMPT = (
+    "System prompt: You are a helpful assistant. I will now give you a document"
+    "and please answer my question afterwards based on the content in document"
+)
+
 
 def parse_and_verify_args():
     if len(sys.argv) != 5:
@@ -89,7 +94,7 @@ def main():
     )
 
     # Run requests
-    generator = RequestGenerator(session_context_prompts_dict)
+    generator = RequestGenerator(SYSTEM_PROMPT, session_context_prompts_dict)
     for _, _ in generator.start():
         pass
 

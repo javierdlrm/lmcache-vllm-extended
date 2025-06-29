@@ -1,8 +1,9 @@
 class RequestGenerator:
-    def __init__(self, session_context_prompts_dict):
+    def __init__(self, system_prompt, session_context_prompts_dict):
         """
         :param session_context_prompts_dict: Dictionary with sessions, session contexts and prompts.
         """
+        self.system_prompt = system_prompt
         self.session_context_prompts_dict = session_context_prompts_dict
 
     def start(self):
@@ -14,7 +15,9 @@ class RequestGenerator:
             context = entry["context"]
             prompts = entry["prompts"]
 
-            session.set_context([context])
+            extended_context = [self.system_prompt] + [context]
+
+            session.set_context(extended_context)
             for prompt in prompts:
                 response_stream = session.chat(prompt)
                 for response_chunk in response_stream:
