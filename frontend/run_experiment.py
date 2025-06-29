@@ -89,7 +89,11 @@ def main():
     # Run requests
     generator = RequestGenerator(session_context_prompts_dict)
     for prompt, response_chunk in generator.start():
-        print(f"Prompt: {prompt}\nResponse chunk: {response_chunk}\n{'-'*40}")
+        print(
+            f"Prompt: {prompt}\nResponse chunk: {response_chunk}\n{'-'*40}",
+            end="\r",
+            flush=True,
+        )
 
 
 if __name__ == "__main__":

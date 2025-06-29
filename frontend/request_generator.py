@@ -13,13 +13,13 @@ class RequestGenerator:
             session = entry["session"]
             context = entry["context"]
             prompts = entry["prompts"]
-            print("-> Next session ----------------------------------------")
+            # print("-> Next session ----------------------------------------")
             session.set_context([context])
             for prompt in prompts:
-                print("---> Next prompt -----------------------------------")
+                # print("---> Next prompt -----------------------------------")
                 response_stream = session.chat(prompt)
                 for response_chunk in response_stream:
                     yield prompt, response_chunk
-            print(
-                "-> End of session ----------------------------------------", end="\n\n"
-            )
+            # print(
+            #     "-> End of session ----------------------------------------", end="\n\n"
+            # )
