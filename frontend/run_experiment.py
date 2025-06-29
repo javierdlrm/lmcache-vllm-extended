@@ -37,7 +37,7 @@ def read_prompts(file_folder):
 
 
 def main():
-    if len(sys.argv) != 5:
+    if len(sys.argv) != 4:
         print("Usage: python run_experiment.py <task> <num_contexts> <num_requests>")
         sys.exit(1)
 
@@ -73,7 +73,9 @@ def main():
             sys.exit(1)
         selected_prompts = prompts[context_key][:num_requests]
         session_context_prompts_dict[context_key] = {
-            "session": chat_session.ChatSession(IP1, PORT1, tokenizer=tokenizer, task=task),
+            "session": chat_session.ChatSession(
+                IP1, PORT1, tokenizer=tokenizer, task=task
+            ),
             "context": chunks[context_key],
             "prompts": selected_prompts,
         }
