@@ -58,9 +58,10 @@ def main():
 
     context_keys = random.sample(list(chunks.keys()), num_contexts)
 
-    if context_keys not in prompts:
-        print(f"Contexts keys '{context_keys}' not found in prompts.")
-        sys.exit(1)
+    for key in context_keys:
+        if key not in prompts:
+            print(f"Context key '{key}' not found in prompts.")
+            sys.exit(1)
 
     # Initialize tokenizer
     tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
