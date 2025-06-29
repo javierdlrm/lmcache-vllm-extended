@@ -4,7 +4,12 @@ import chat_session
 
 from transformers import AutoTokenizer
 from request_generator import RequestGenerator
-from utils import read_chunks, read_prompts, plot_latency_vs_seq_length
+from utils import (
+    read_chunks,
+    read_prompts,
+    plot_latency_vs_seq_length,
+    plot_multiple_latency_vs_seq_length,
+)
 
 MODEL_NAME = "Qwen/Qwen2.5-1.5B-Instruct"
 IP1 = "192.168.2.27"
@@ -90,6 +95,7 @@ def main():
 
     # Plot latency vs sequence length
     plot_latency_vs_seq_length(task)
+    plot_multiple_latency_vs_seq_length(task)
 
 
 if __name__ == "__main__":
