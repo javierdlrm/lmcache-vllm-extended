@@ -12,7 +12,7 @@ logging.basicConfig(
     format="%(asctime)s %(levelname)s: %(message)s",
     handlers=[
         logging.StreamHandler(sys.stdout),
-        logging.FileHandler("experiment.log", mode="a"),
+        logging.FileHandler("reports/output.log", mode="a"),
     ],
 )
 
@@ -70,7 +70,9 @@ class ChatSession:
         start = time.perf_counter()
         end = None
 
-        logging.info("----------------------------------------------------------------------")
+        logging.info(
+            "----------------------------------------------------------------------"
+        )
         logging.info(f"# Messages [{len(self.messages)} messages]:", self.messages)
         logging.info(
             "----------------------------------------------------------------------",
