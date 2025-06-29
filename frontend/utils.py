@@ -41,7 +41,7 @@ def plot_latency_vs_seq_length(task):
         reader = csv.DictReader(f)
         for row in reader:
             seq_lengths.append(int(row["seq_length"]))
-            latencies.append(float(row["latency"]))
+            latencies.append(float(row["latency"]) * 1000)  # milliseconds
 
     if not seq_lengths or not latencies:
         print("No data to plot.")
@@ -55,7 +55,7 @@ def plot_latency_vs_seq_length(task):
     plt.plot(sorted_seq_lengths, sorted_latencies, color="orange", label="Trend")
     plt.title(f"Latency vs Sequence Length for task: {task}")
     plt.xlabel("Sequence Length (tokens)")
-    plt.ylabel("Latency (seconds)")
+    plt.ylabel("Latency (milliseconds)")
     plt.grid(True)
     plt.legend()
     plt.tight_layout()
