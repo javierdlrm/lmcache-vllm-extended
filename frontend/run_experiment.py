@@ -88,8 +88,12 @@ def main():
 
     # Run requests
     generator = RequestGenerator(session_context_prompts_dict)
+    current_prompt = None
     for prompt, response_chunk in generator.start():
-        output = f"Prompt: {prompt}\nResponse chunk: {response_chunk}\n{'-'*40}"
+        if current_prompt != prompt:
+            current_prompt = prompt
+            print(f"Prompt: {prompt}\n")
+        output = f"Response chunk: {response_chunk}"
         print("\r" + " " * 80, end="\r")
         print(output, end="\r", flush=True)
 
