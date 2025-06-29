@@ -68,7 +68,7 @@ selected_chunks = st.multiselect(
 )
 contexts = [chunks[key] for key in selected_chunks]
 
-prompts = read_prompts("prompts/question1")
+prompts = read_prompts("prompts")
 
 container = st.container(border=True)
 

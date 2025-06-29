@@ -1,6 +1,4 @@
 from openai import OpenAI
-import threading
-import sys
 from io import StringIO
 import time
 import csv
@@ -8,7 +6,9 @@ import os
 
 
 class ChatSession:
-    def __init__(self, ip, port, context_separator="###", tokenizer=None):
+    def __init__(
+        self, ip, port, context_separator="###", tokenizer=None, task="thetask"
+    ):
         openai_api_key = "EMPTY"
         openai_api_base = f"http://{ip}:{port}/v2"
 
@@ -26,6 +26,7 @@ class ChatSession:
         self.final_context = ""
         self.context_separator = context_separator
         self.tokenizer = tokenizer
+        self.task = task
 
     def set_context(self, context_strings):
         contexts = []
@@ -92,7 +93,7 @@ class ChatSession:
         return len(chat_str), len(token_ids)
 
     def record_response_metrics(self, seq_length, latency):
-        csv_file = "reports/task1-question1.csv"
+        csv_file = f"reports/{self.task}.csv"
         file_exists = os.path.isfile(csv_file)
         with open(csv_file, mode="a", newline="") as file:
             writer = csv.writer(file)

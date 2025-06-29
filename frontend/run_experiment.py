@@ -73,7 +73,7 @@ def main():
             sys.exit(1)
         selected_prompts = prompts[context_key][:num_requests]
         session_context_prompts_dict[context_key] = {
-            "session": chat_session.ChatSession(IP1, PORT1, tokenizer=tokenizer),
+            "session": chat_session.ChatSession(IP1, PORT1, tokenizer=tokenizer, task=task),
             "context": chunks[context_key],
             "prompts": selected_prompts,
         }
