@@ -4,6 +4,8 @@ from transformers import AutoTokenizer
 from request_generator import RequestGenerator
 import chat_session
 import random
+import matplotlib.pyplot as plt
+import csv
 
 MODEL_NAME = "Qwen/Qwen2.5-1.5B-Instruct"
 IP1 = "192.168.2.27"
@@ -34,6 +36,37 @@ def read_prompts(file_folder):
             value = fin.read().splitlines()
         ret[key] = value
     return ret
+
+
+def plot_latency_vs_seq_length(task):
+    csv_file = f"reports/{task}.csv"
+    if not os.path.isfile(csv_file):
+        print(f"CSV file {csv_file} does not exist.")
+        return
+
+    seq_lengths = []
+    latencies = []
+    with open(csv_file, newline="") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            seq_lengths.append(int(row["seq_length"]))
+            latencies.append(float(row["latency"]))
+
+    if not seq_lengths or not latencies:
+        print("No data to plot.")
+        return
+
+    plt.figure(figsize=(8, 5))
+    plt.scatter(seq_lengths, latencies, color="blue", alpha=0.7)
+    plt.title(f"Latency vs Sequence Length for task: {task}")
+    plt.xlabel("Sequence Length (tokens)")
+    plt.ylabel("Latency (seconds)")
+    plt.grid(True)
+    plt.tight_layout()
+    output_path = f"reports/{task}_latency_vs_seq_length.png"
+    plt.savefig(output_path)
+    plt.close()
+    print(f"Plot saved to {output_path}")
 
 
 def main():
@@ -98,6 +131,9 @@ def main():
     generator = RequestGenerator(session_context_prompts_dict)
     for _, _ in generator.start():
         pass
+
+    # Plot latency vs sequence length
+    plot_latency_vs_seq_length(task)
 
 
 if __name__ == "__main__":
