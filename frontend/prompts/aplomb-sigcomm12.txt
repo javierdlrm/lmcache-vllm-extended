@@ -1,0 +1,20 @@
+What problem does APLOMB solve?
+How many enterprises were surveyed in the middlebox study?
+What ratio of network devices are middleboxes compared to routers/switches?
+What causes most middlebox failures?
+What three properties are lost when outsourcing middleboxes?
+Which redirection mechanism does APLOMB use?
+What technique reduces bandwidth overhead for location-dependent appliances?
+What are APLOMB's three architectural components?
+How does the APLOMB gateway handle traffic?
+What addressing models does APLOMB support?
+What is APLOMB's average latency penalty?
+How much bandwidth cost reduction does APLOMB+ achieve?
+What metrics show APLOMB's acceptable performance?
+How quickly does dynamic scaling respond to load changes?
+What percentage of middleboxes can be outsourced in large enterprises?
+What hybrid model does APLOMB follow?
+What are two primary concerns with APLOMB's approach?
+How does APLOMB handle encrypted traffic?
+What distinguishes APLOMB from ETTM?
+What is APLOMB's main benefit for enterprises?

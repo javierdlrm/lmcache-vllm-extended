@@ -1,4 +1,0 @@
-What is APLOMB? Define it in one sentence.
-What are the benefits of using middleboxes?
-How is APLOMB built?
-Highlight the pros and cons of APLOMB.

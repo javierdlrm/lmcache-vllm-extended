@@ -1,5 +1,0 @@
-How does CHEETAH achieve both uniform load distribution and per-connection-consistency (PCC) simultaneously, and why is this challenging for traditional load balancers?
-What are the main differences between stateless and stateful modes in CHEETAH, and how do they each handle cookie encoding to maintain PCC?
-How does CHEETAH embed server identifiers into packets, and what role do TCP timestamp fields play in this process?
-What load balancing strategies does CHEETAH support, and how does its performance compare to existing systems in terms of flow completion times and PCC violations?
-What are the key theoretical and practical considerations discussed in the appendices regarding cookie size scaling and deployment compatibility?

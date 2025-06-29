@@ -1,5 +1,0 @@
-What is the "RPC tax" in ML inference serving, and how does SplitRPC’s separation of control and data paths help mitigate this overhead?
-How does SplitRPC leverage different NIC capabilities (commodity NICs vs. SmartNICs) in its implementation, and what are the main differences between SplitRPC-pNIC and SplitRPC-sNIC?
-What are the roles of the orchestration methods O1 (CPU-based) and O2 (GPU-based) in SplitRPC, and under what circumstances is each method preferred?
-How does SplitRPC achieve zero-copy data transfers and efficient dynamic batching, and what impact do these features have on latency and throughput?
-According to the evaluation results, how does SplitRPC compare to existing RPC frameworks like gRPC-VMA and Lynx in terms of latency reduction and throughput improvement for ML inference workloads?

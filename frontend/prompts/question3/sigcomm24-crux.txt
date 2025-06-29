@@ -1,5 +1,0 @@
-What is GPU intensity in the context of Crux, and how does it inform the system’s approach to communication scheduling for deep learning training clusters?
-How does Crux’s path selection mechanism work to avoid network congestion for high-intensity jobs, and what makes it different from previous approaches?
-What is priority compression in Crux, and how does the DAG-based Max-K-Cut algorithm help map many jobs to a limited number of NIC priority levels?
-According to the evaluation, how does Crux perform compared to other schedulers like Sincronia, TACCL, and CASSINI in terms of GPU utilization and job completion time (JCT) in both testbed and large-scale trace simulations?
-What are the main limitations and fairness considerations discussed for Crux, and how might real-world variance or prioritization impact different jobs in a shared cluster?

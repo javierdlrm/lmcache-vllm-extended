@@ -1,0 +1,20 @@
+What two primary goals does CHEETAH simultaneously achieve in load balancing?
+How does CHEETAH ensure per-connection consistency (PCC) during server pool changes?
+What critical limitation do traditional stateless load balancers face regarding server changes?
+Why are stateful load balancers vulnerable to DDoS attacks?
+Where does CHEETAH embed server-mapping information within network packets?
+What mathematical operations does stateless CHEETAH use to derive cookies?
+How does stateful CHEETAH optimize its state table lookups?
+Which two platforms were used to implement CHEETAH?
+How does CHEETAH maintain backward compatibility with existing infrastructure?
+Name three load balancing strategies supported by CHEETAH.
+What performance metric improved by up to 3x in CHEETAH's evaluation?
+How does CHEETAH prevent PCC violations during server additions/removals?
+What technique hides the server count from clients?
+How does CHEETAH support multipath protocols?
+What existing load balancers are compared to CHEETAH in related work?
+How does CHEETAH's resilience compare to traditional systems?
+What theoretical proof relates cookie size to server count scaling?
+Which TCP field is repurposed for cookie embedding?
+What deployment compatibility strategies are discussed for TCP timestamps?
+What future enhancements are proposed for CHEETAH?

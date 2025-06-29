@@ -40,6 +40,7 @@ def read_chunks(file_folder) -> Dict[str, str]:
 
     return ret
 
+
 @st.cache_data
 def read_prompts(file_folder) -> Dict[str, str]:
     """
@@ -79,6 +80,7 @@ with st.sidebar:
     )
 
     session = chat_session.ChatSession(IP1, PORT1, tokenizer=tokenizer)
+    print("Created new session")
     session.set_context([system_prompt] + contexts)
 
     num_tokens = tokenizer.encode(session.get_context())
@@ -118,12 +120,14 @@ with st.sidebar:
             # ]
             randomized_ctx_and_prompts = context_and_prompts[:num_requests]
             # print(f"Randomized ctx and prompts [{len(randomized_ctx_and_prompts)}]")
-            
+
             for i, ctx_prompt in enumerate(randomized_ctx_and_prompts):
                 session_context, prompt = ctx_prompt
 
-                repeated_context = [system_prompt] + [". ".join(session_context * (i + 1))]
-                
+                repeated_context = [system_prompt] + [
+                    ". ".join(session_context * (i + 1))
+                ]
+
                 # session = chat_session.ChatSession(IP1, PORT1, tokenizer=tokenizer)
                 # session.set_context(repeated_context)
                 messages.chat_message("user").write(prompt)

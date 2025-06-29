@@ -1,0 +1,20 @@
+What problem does SplitRPC aim to solve in ML inference serving?
+How does SplitRPC reduce RPC overhead ("RPC tax")?
+What are the two distinct paths SplitRPC separates in RPC processing?
+Which hardware components handle control path operations in SplitRPC?
+What are the two orchestration methods compared in Section 3?
+Why is O1 (CPU-based orchestration) superior for complex ML models?
+What are the five implementation styles presented in Section 4?
+How does SplitRPC handle incoming network packets?
+What memory management technique does SplitRPC use for dynamic batching?
+What are the two versions of SplitRPC implemented?
+Which existing systems were compared against SplitRPC in evaluation?
+What latency reduction did SplitRPC achieve with commodity NICs?
+How much throughput improvement did dynamic batching provide?
+What is the role of the inference monitor in SplitRPC?
+How does SplitRPC handle tensor data placement in memory?
+What are the key APIs provided by SplitRPC for data access?
+Why is GPU-based orchestration (O2) less effective for complex workloads?
+What hardware platforms besides SmartNICs could benefit from SplitRPC's design?
+How did SplitRPC perform under real workload traces?
+Which funding sources supported this research?

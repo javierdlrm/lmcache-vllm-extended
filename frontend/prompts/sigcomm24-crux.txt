@@ -1,0 +1,20 @@
+What is the primary goal of Crux in deep learning training clusters?
+Which metric does Crux introduce to prioritize communication scheduling?
+What percentage of jobs faced communication contention in the profiled production cluster?
+How does Crux model the problem of maximizing GPU utilization?
+What are the three core components of Crux's design?
+How does Crux's path selection mechanism benefit high-GPU-intensity jobs?
+What factors does Crux consider when assigning communication priorities to jobs?
+Which algorithm does Crux use for priority compression?
+What near-optimal performance level does Crux achieve in scheduling-step simulations?
+How many lines of code comprise Crux's implementation?
+Which deep learning frameworks does Crux integrate with?
+What GPU utilization gain and JCT reduction were observed in the 96-GPU testbed?
+By what percentage does Crux outperform Sincronia, TACCL, and CASSINI in trace simulations?
+Which existing schedulers (besides communication-focused ones) is Crux compatible with?
+What visual indicator correlates with higher GPU utilization in Crux's flow patterns?
+What limitation does Crux face regarding overlap patterns in real-world scenarios?
+How might fairness concerns in Crux's priority system be addressed?
+Which network topologies can Crux's design generalize to?
+How does Crux differ fundamentally from job-level schedulers like HiveD?
+What theoretical concept grounds Crux's priority compression in Appendix B?

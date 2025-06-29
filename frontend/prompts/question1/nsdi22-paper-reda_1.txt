@@ -1,5 +1,0 @@
-How does the RedN framework demonstrate the Turing completeness of RDMA, and what are the key RDMA verbs and constructs leveraged to achieve this?
-In what ways does RedN improve latency, throughput, and performance isolation compared to traditional one-sided and two-sided RDMA systems, especially under contention?
-What mechanisms does RedN use to implement conditional logic and loops directly on commodity RNICs, and how does "doorbell ordering" contribute to dynamic control flow?
-How does RedN integrate with real-world applications like Memcached, and what performance benefits are observed when offloading operations to RNICs?
-What limitations and future directions are discussed for RedN, particularly regarding client scalability and potential enhancements in future RNIC designs?

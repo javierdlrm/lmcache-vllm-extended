@@ -1,0 +1,20 @@
+What is the core innovation proposed by Sarathi-Serve to address the throughput-latency tradeoff in LLM inference?
+How does "chunked-prefills" work in Sarathi-Serve?
+What is "stall-free batching" and how does it prevent generation stalls?
+What are the three main performance metrics used to evaluate LLM inference systems?
+Why do decode batches suffer from low arithmetic intensity?
+How does prioritizing prefill requests cause generation stalls?
+What role does the "token budget" parameter play in Sarathi-Serve?
+Which existing system was Sarathi-Serve built upon?
+What models were used for evaluation in the paper?
+Which datasets were used for benchmarking Sarathi-Serve?
+How much higher throughput does Sarathi-Serve achieve compared to vLLM under strict SLOs?
+How does Sarathi-Serve reduce pipeline bubbles in pipeline parallelism?
+What were the key findings from the ablation study regarding hybrid-batching and chunked-prefills?
+How does Sarathi-Serve differ from disaggregation-based systems like SplitWise?
+What hardware limitations do disaggregation-based systems require that Sarathi-Serve avoids?
+What are the two primary scheduling strategies used in existing LLM inference systems?
+Why is prefill phase considered compute-bound while decode is memory-bound?
+How does Sarathi-Serve achieve fine-grained control over throughput-latency tradeoffs?
+What telemetry mechanisms were added in Sarathi-Serve's implementation?
+Where can the source code for Sarathi-Serve be accessed?

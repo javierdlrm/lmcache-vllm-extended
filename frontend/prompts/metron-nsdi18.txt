@@ -1,0 +1,20 @@
+What hardware resources does Metron utilize to run stateful service chains?
+How does Metron eliminate inter-core communication?
+What performance throughput does Metron achieve on a single server?
+What challenge in NFV does Metron address according to the introduction?
+How does Metron's data plane architecture handle packet dispatching?
+What role do programmable switches and NICs play in Metron's architecture?
+How does Metron implement traffic steering using NIC-based tags?
+What is the function of the master agent in Metron's data plane?
+How does graph synthesis via SNF contribute to Metron's control plane?
+What strategy does Metron use for dynamic scaling of NFs?
+How does Metron handle routing and failover in case of failures?
+What throughput does Metron achieve for Deep Packet Inspection (DPI)?
+How does Metron's performance compare to OpenBox and E2 in latency and throughput?
+How does Metron adapt to workload changes during dynamic scaling?
+What is the timescale for rule installation in Metron's deployment?
+Which prior systems does Metron build upon according to the related work section?
+What hardware/software combination enables Metron's efficient deployment?
+What key advantage does Metron's hardware offloading provide?
+What conclusion does the paper draw about commodity servers and NFV efficiency?
+Which organizations funded the research?

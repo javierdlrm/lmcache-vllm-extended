@@ -1,0 +1,20 @@
+What novel attention mechanism does vLLM introduce for KV cache management?
+What two memory fragmentation types occur in traditional LLM serving systems?
+How does PagedAttention's block size affect GPU utilization and fragmentation?
+What OS concept inspired the design of vLLM's KV cache manager?
+How does vLLM handle sequences with shared prefixes during decoding?
+What throughput improvement does vLLM achieve over FasterTransformer and Orca?
+What scheduling algorithm does vLLM implement for request processing?
+How does vLLM support distributed execution across multiple GPUs?
+What are the two recovery mechanisms for preempted requests in vLLM?
+Which programming frameworks were used to implement vLLM?
+What is the key advantage of PagedAttention for beam search decoding?
+How does vLLM handle memory allocation for variable-length sequences?
+What trade-off exists between kernel latency and memory savings in vLLM?
+Which LLM architectures does vLLM explicitly support?
+How does vLLM implement copy-on-write for KV cache blocks?
+What memory savings percentage does vLLM achieve in beam search scenarios?
+Why is contiguous memory allocation problematic for dynamic KV caches?
+How does vLLM's block table function similarly to OS page tables?
+What are the three primary memory challenges in LLM serving identified?
+For which workload type is PagedAttention less suitable according to the discussion?

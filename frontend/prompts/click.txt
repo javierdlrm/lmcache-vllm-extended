@@ -1,0 +1,20 @@
+What architectural approach does Click use for building modular routers?
+How do explicit queue elements enhance control in Click's design?
+What performance benchmark (packets per second) is achieved by Click?
+What two connection types facilitate packet flow between elements?
+How does flow-based router context assist elements?
+What configuration method is used to define Click routers?
+How many elements comprise a standard IP router path in Click?
+What metadata mechanism carries information across processing elements?
+Which scheduling algorithms does Click support?
+What dropping policy does Click implement using queue length thresholds?
+What advanced queueing technique provides fairness in bandwidth allocation?
+Which networking standards does Click support beyond basic IP routing?
+How does Click handle Ethernet switching?
+What kernel-level optimization enables high I/O performance?
+How is user interaction with Click routers facilitated?
+What programming language are Click elements implemented in?
+What is the measured overhead for modularity in a 16-element path?
+How do custom elements improve performance compared to generic ones?
+Which prior systems are compared with Click in the related work?
+What are three examples of elements listed in the appendix glossary?
