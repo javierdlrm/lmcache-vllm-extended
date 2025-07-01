@@ -15,7 +15,8 @@ class RequestGenerator:
             context = entry["context"]
             prompts = entry["prompts"]
 
-            extended_context = [self.system_prompt] + [context]
+            # extended_context = [self.system_prompt] + [context]
+            extended_context = [context]
 
             session.set_context(extended_context)
             for prompt in prompts:
