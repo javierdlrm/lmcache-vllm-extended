@@ -95,7 +95,7 @@ def main():
 
     # Run requests
     generator = RequestGenerator(SYSTEM_PROMPT, session_context_prompts_dict)
-    for _, _ in generator.start():
+    for _, _ in generator.start(randomize=randomize):
         pass
 
     # Plot latency vs sequence length
