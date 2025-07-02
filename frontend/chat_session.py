@@ -107,3 +107,14 @@ class ChatSession:
             if not file_exists:
                 writer.writerow(["seq_length", "latency"])
             writer.writerow([seq_length, latency])
+
+    def build_chat_completion_request(self, question):
+        self.on_user_message(question)
+
+        return {
+            "messages": self.messages,
+            "model": self.model,
+            "temperature": 0.5,
+            "stream": False,
+            "stop": "\n",
+        }

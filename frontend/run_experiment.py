@@ -94,7 +94,9 @@ def main():
     )
 
     # Run requests
-    generator = RequestGenerator(SYSTEM_PROMPT, session_context_prompts_dict)
+    generator = RequestGenerator(
+        SYSTEM_PROMPT, session_context_prompts_dict, ip=IP1, port=PORT1
+    )
     for _, _ in generator.start(randomize=randomize):
         pass
 
