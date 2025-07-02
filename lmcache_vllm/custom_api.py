@@ -43,9 +43,14 @@ async def create_batch_chat_completion(
         start = time.perf_counter()
         end = None
 
-        generator = await base_api.create_chat_completion(request.request, raw_request)
-        for _ in generator:  # consume the generator
-            pass
+        # Call the streaming response and collect the full output
+        streaming_response = await base_api.create_chat_completion(
+            request.request, raw_request
+        )
+        # The StreamingResponse has a .body_iterator which is an async generator
+        full_output = b""
+        async for chunk in streaming_response.body_iterator:
+            full_output += chunk
 
         end = time.perf_counter()
         latency = end - start
