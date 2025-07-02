@@ -114,10 +114,12 @@ class ChatSession:
         _, seq_length = self.get_num_char_and_seq_length(self.messages)
 
         return {
-            "messages": self.messages,
-            "model": self.model,
-            "temperature": 0.5,
-            "stream": False,
-            "stop": "\n",
+            "request": {
+                "messages": self.messages,
+                "model": self.model,
+                "temperature": 0.5,
+                "stream": False,
+                "stop": "\n",
+            },
             "seq_length": seq_length,
         }

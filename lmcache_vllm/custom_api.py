@@ -24,13 +24,18 @@ async def create_chat_completion(request: ChatCompletionRequest, raw_request: Re
     return await base_api.create_chat_completion(request, raw_request)
 
 
-class BatchChatCompletionRequest(BaseModel):
-    requests: List[ChatCompletionRequest]
+class ExtendedChatCompletionRequest(BaseModel):
+    request: ChatCompletionRequest
+    seq_length: int
+
+
+class BatchExtendedChatCompletionRequest(BaseModel):
+    requests: List[ExtendedChatCompletionRequest]
 
 
 @extended_router.post("/batch/chat/completions")
 async def create_batch_chat_completion(
-    batch_request: BatchChatCompletionRequest, raw_request: Request
+    batch_request: BatchExtendedChatCompletionRequest, raw_request: Request
 ):
     print("v2 batch completion is called")
     responses = []
@@ -38,7 +43,7 @@ async def create_batch_chat_completion(
         start = time.perf_counter()
         end = None
 
-        _ = await base_api.create_chat_completion(request, raw_request)
+        _ = await base_api.create_chat_completion(request.request, raw_request)
 
         end = time.perf_counter()
         latency = end - start
