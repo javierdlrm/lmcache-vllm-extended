@@ -1,0 +1,76 @@
+# Running task 2: Batch requests
+👤 User message: What configuration method is used to define Click routers?
+
+👤 User message: What memory management technique does SplitRPC use for dynamic batching?
+
+👤 User message: In what way does NannyML facilitate the correlation between data drift and model performance?
+
+👤 User message: What theoretical proof relates cookie size to server count scaling?
+
+👤 User message: How does PAPE handle calibration of probability estimates for performance estimation?
+
+👤 User message: Which cloud services are leveraged in the serverless backend architecture?
+
+👤 User message: What effect is associated with the idea that listening to certain music may enhance spatial-temporal reasoning?
+
+👤 User message: What are the key differences in memory usage among the evaluated tools?
+
+👤 User message: Which architectural pattern is central to enabling adaptation in self-adaptive systems as discussed in the paper?
+
+👤 User message: How does PAPE estimate confusion-matrix-based metrics like F1 on unlabeled data?
+
+👤 User message: What is the role of the inference monitor in SplitRPC?
+
+👤 User message: What is the significance of shared events in the parallel composition of machines in Event-B?
+
+👤 User message: Name one emotional benefit of music described in the summary.
+
+👤 User message: What security features are commonly offered by digital banks?
+
+👤 User message: What two connection types facilitate packet flow between elements?
+
+👤 User message: How many elements comprise a standard IP router path in Click?
+
+👤 User message: Which baseline performance estimation methods were compared against PAPE in the experiments?
+
+👤 User message: What does the report say about the legacy of Leonardo da Vinci?
+
+👤 User message: How does Evidently AI handle drift detection when only predicted values are available?
+
+👤 User message: What is the central theme of Leonardo’s artistic achievements, according to the report?
+
+👤 User message: What is one challenge that remains for digital banking, according to the report?
+
+👤 User message: What performance metric improved by up to 3x in CHEETAH's evaluation?
+
+👤 User message: Which two authors are cited in the reference about music and neural substrates?
+
+👤 User message: What statistical test does the proposed framework use to detect data distribution shifts?
+
+👤 User message: What future improvements do the authors suggest for the framework?
+
+👤 User message: How does SplitRPC handle tensor data placement in memory?
+
+👤 User message: How does CHEETAH ensure per-connection consistency (PCC) during server pool changes?
+
+👤 User message: What tools do digital banks provide to help users set and achieve financial goals?
+
+👤 User message: What years did Leonardo da Vinci live between?
+
+👤 User message: In what way does the stringing operator connect components from different patterns?
+
+----------------------------------------------------------------------
+# Batch size: [30]:
+----------------------------------------------------------------------
+
+
+
+(📝 Response delay: 20.23 seconds
+
+----------------------------------------------------------------------
+/////// -> RESPONSE!!!!!
+[{'seq_length': 662, 'latency': 1.3690625578165054}, {'seq_length': 769, 'latency': 1.1064772065728903}, {'seq_length': 885, 'latency': 2.1804422419518232}, {'seq_length': 650, 'latency': 1.3374627940356731}, {'seq_length': 888, 'latency': 0.488988408818841}, {'seq_length': 682, 'latency': 0.6488172532990575}, {'seq_length': 509, 'latency': 1.8466704795137048}, {'seq_length': 903, 'latency': 0.07809137366712093}, {'seq_length': 739, 'latency': 1.6039426317438483}, {'seq_length': 911, 'latency': 0.499210799112916}, {'seq_length': 786, 'latency': 1.2724911971017718}, {'seq_length': 761, 'latency': 1.4830832993611693}, {'seq_length': 525, 'latency': 0.13715585600584745}, {'seq_length': 470, 'latency': 0.40477527119219303}, {'seq_length': 677, 'latency': 0.3906095242127776}, {'seq_length': 694, 'latency': 0.15849567763507366}, {'seq_length': 930, 'latency': 0.2855780590325594}, {'seq_length': 504, 'latency': 0.5002222238108516}, {'seq_length': 924, 'latency': 0.0770816458389163}, {'seq_length': 525, 'latency': 0.3640338918194175}, {'seq_length': 490, 'latency': 0.10393607337027788}, {'seq_length': 672, 'latency': 0.3212962094694376}, {'seq_length': 545, 'latency': 0.25129528250545263}, {'seq_length': 701, 'latency': 0.31282925698906183}, {'seq_length': 717, 'latency': 0.08622727636247873}, {'seq_length': 802, 'latency': 0.33562468737363815}, {'seq_length': 696, 'latency': 0.26421651896089315}, {'seq_length': 510, 'latency': 0.16843500174582005}, {'seq_length': 539, 'latency': 0.34786601830273867}, {'seq_length': 780, 'latency': 1.799220360815525}]
+----------------------------------------------------------------------
+Plot saved to reports/task2_question2_10_3_latency_vs_seq_length.png
+Multi-line plot saved to reports/task2_question2_10_3_multi_latency_vs_seq_length.png
+Plot saved to reports/task2_question2_10_3_latency_vs_req_id.png

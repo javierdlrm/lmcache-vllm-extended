@@ -108,7 +108,7 @@ def main():
 
     elif task.startswith("task2"):
         print("# Running task 2: Batch requests")
-        generator.start_batch(randomize=randomize, sort_before_forwarding=False)
+        generator.start_batch(randomize=randomize, sort_before_forwarding=True)
 
     # Plotting results
     plot_latency_vs_seq_length(task)
