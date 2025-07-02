@@ -50,7 +50,10 @@ async def create_batch_chat_completion(
         # The StreamingResponse has a .body_iterator which is an async generator
         full_output = b""
         async for chunk in streaming_response.body_iterator:
-            full_output += chunk
+            if isinstance(chunk, str):
+                full_output += chunk.encode("utf-8")
+            else:
+                full_output += chunk
 
         end = time.perf_counter()
         latency = end - start
