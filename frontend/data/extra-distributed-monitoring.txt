@@ -1,0 +1,36 @@
+Summary: Distributed Monitoring for Data Distribution Shifts in Edge-ML Fraud Detection
+Motivation & Problem Statement
+The proliferation of mobile payment services has led to increased financial fraud risks, prompting widespread adoption of machine learning (ML) for fraud detection. Recently, edge ML—deploying models directly on user devices—has gained traction due to its low latency, privacy benefits, and ability to personalize models for individual users. However, a major challenge remains: monitoring data distribution shifts in such distributed, resource-constrained environments. If the data distribution changes (e.g., due to evolving user behavior), ML models can quickly become ineffective, yet existing solutions for shift detection are designed for centralized/cloud settings and are impractical for edge deployments.
+
+Proposed Solution
+The authors introduce a novel open-source framework for continuous monitoring of data distribution shifts in edge ML systems, specifically targeting fraud detection use cases. The framework’s key innovation is an efficient, distributed implementation of the Kolmogorov-Smirnov (KS) test—a widely used statistical test for comparing distributions—across a network of edge devices.
+
+Core Components
+Edge Client: Each device maintains a compact summary of its local data distribution using the t-digest data structure, which efficiently approximates cumulative distribution functions (CDFs) with low memory overhead.
+
+Backend Server: Periodically, clients send their t-digest summaries to a cloud backend. The server merges these summaries to reconstruct a global view of the data distribution and applies the KS test to compare the current data against the original training distribution.
+
+Serverless Architecture: The backend leverages AWS services (SQS, Lambda, Redis) for scalable, event-driven processing.
+
+Evaluation
+The framework was evaluated on both real-world and synthetic financial transaction datasets, focusing on four aspects:
+
+Accuracy of Distributed KS Calculation: The t-digest-based KS statistic (T-Digest-KS) closely approximates the "optimal" KS statistic computed with full data access, with median errors below 0.004, even in scenarios with significant distribution shifts.
+
+False Positive/Negative Rates: The low error rates in T-Digest-KS minimize both false alarms and missed detections of distribution shifts.
+
+Runtime Overhead: The approach is efficient, with linear scaling in server runtime and lower client-side overhead compared to naive batch streaming, thanks to reduced data transmission and efficient t-digest operations.
+
+Scalability: The system supports large-scale deployments with millions of transactions and thousands of devices.
+
+Limitations & Future Work
+While effective for general distribution shift detection, the framework may miss subtle changes in rare-event (fraud) patterns due to class imbalance. The authors suggest future work in:
+
+Integrating additional monitoring techniques (e.g., model output monitoring, sliding windows)
+
+Enhancing privacy guarantees for client data
+
+Adapting the framework for more nuanced fraud-specific shifts
+
+Conclusion
+This work presents a practical, accurate, and scalable solution for monitoring data distribution shifts in edge ML deployments, addressing a critical gap for real-world fraud detection systems. The open-source framework lays the foundation for robust edge ML operations and highlights promising directions for further research in distributed, privacy-preserving monitoring.

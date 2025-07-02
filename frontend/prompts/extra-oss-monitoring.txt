@@ -1,0 +1,20 @@
+What is the main challenge addressed by the paper regarding machine learning systems?
+What is the purpose of the D3Bench microbenchmark introduced in the study?
+Which three open-source drift detection libraries are evaluated in the paper?
+List the four main types of data drift discussed in the paper.
+What are the two real-world use cases (UC1 and UC2) used for benchmarking in the study?
+What kind of data and drift does UC1 (Occupancy Detection) focus on?
+What variables are analyzed in UC2 (Energy Consumption Prediction)?
+Which tool is noted for its broad suite of univariate drift detection methods and strong reporting features?
+Which drift detection tool is highlighted for pinpointing the exact timing of drifts and linking them to model accuracy?
+Which tool supports tabular, image, time series, and text data, but is slower and less user-friendly?
+What are the main functional and non-functional evaluation criteria used in D3Bench?
+How does Evidently AI handle drift detection when only predicted values are available?
+In what way does NannyML facilitate the correlation between data drift and model performance?
+Which tool is recommended for scenarios requiring support for image data?
+How do the tools compare in terms of runtime performance on large datasets?
+What are the key differences in memory usage among the evaluated tools?
+What three-step workflow do the authors recommend for robust drift management?
+Which statistical tests are commonly used by Evidently AI for drift detection?
+What limitations are noted for Alibi-Detect in terms of reporting and guidance?
+What future research directions are suggested by the authors regarding drift detection methods?

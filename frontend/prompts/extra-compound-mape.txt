@@ -1,0 +1,20 @@
+What is the main motivation for using decentralized control in self-adaptive systems according to the paper?
+Which architectural pattern is central to enabling adaptation in self-adaptive systems as discussed in the paper?
+What are the two main steps in the proposed approach for composing compound MAPE patterns?
+Name and briefly describe the two merging operators introduced for pattern composition.
+In what way does the stringing operator connect components from different patterns?
+What is the function of the overlapping operator in the context of MAPE pattern composition?
+How does the approach ensure the correctness of the composition process?
+What formal method is used to specify both the structure and behavior of compound MAPE patterns?
+How are structural features of compound patterns represented in Event-B?
+How are behavioral features of compound patterns specified in Event-B?
+What is the significance of shared events in the parallel composition of machines in Event-B?
+What real-world system is used as a case study to illustrate the proposed approach?
+Which two MAPE patterns are composed in the forest fire detection system example?
+What are the main roles of the master/slave and coordinated control patterns in the case study?
+How does the hybrid pattern address the single point of failure issue in the forest fire detection system?
+What new events are introduced in the hybrid compound pattern after composition?
+How does the overlapping operator affect the internal structure of composite elements?
+What are some limitations of previous works on MAPE pattern composition as identified in the paper?
+How does the formal approach presented differ from previous semi-formal or UML-based approaches?
+What future work do the authors propose regarding the verification of compound MAPE patterns?

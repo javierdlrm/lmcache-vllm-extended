@@ -1,0 +1,89 @@
+Problem Context and Motivation
+
+Machine learning models often experience performance degradation after deployment due to covariate shift—changes in the distribution of input data over time. In production environments, true labels are frequently unavailable or significantly delayed, making it difficult to assess whether a model continues to perform as expected. Existing proxy methods, such as drift detection, typically only monitor changes in input data and do not directly quantify the impact of these shifts on model performance. As a result, organizations risk undetected model failures and potential financial losses.
+
+Main Contribution: The PAPE Algorithm
+
+The authors propose Probabilistic Adaptive Performance Estimation (PAPE), a novel, model- and data-type-agnostic algorithm for estimating the performance of classification models on unlabeled data under covariate shift. PAPE:
+
+Requires only model predictions and probability estimates, not access to the model internals or assumptions about the nature of the shift.
+
+Learns directly from data, adapting to shifts without user intervention.
+
+Estimates a wide range of performance metrics (e.g., accuracy, AUROC, F1) and is theoretically grounded.
+
+Algorithm Overview
+
+PAPE operates in the following steps:
+
+Density Ratio Estimation: It estimates the ratio between the probability densities of the production and reference (labeled) data using a classifier to distinguish between them. This ratio is used to reweight the reference data to resemble the production distribution.
+
+Weighted Calibration: A regressor is trained on the reference data, using the estimated density ratios as weights, to calibrate the model’s probability scores.
+
+Performance Metric Estimation: The calibrated probabilities are used to compute the expected value of the desired performance metric on the production data, without requiring true labels.
+
+The core theoretical guarantee is that, under the assumption that the conditional label distribution given the input remains stable (
+p
+(
+y
+∣
+x
+)
+r
+e
+f
+=
+p
+(
+y
+∣
+x
+)
+p
+r
+o
+d
+p(y∣x) 
+ref
+ =p(y∣x) 
+prod
+ ), the PAPE estimate converges to the true performance as calibration improves and coverage is sufficient.
+
+Evaluation and Results
+
+The authors evaluated PAPE on 959 model-dataset pairs derived from US Census data (Folktables), covering five classification tasks and five popular model types (e.g., logistic regression, neural networks, tree ensembles). They compared PAPE against several existing methods, including:
+
+Importance Weighting (IW)
+
+Confidence-Based Performance Estimation (CBPE)
+
+Average Threshold Confidence (ATC)
+
+Difference of Confidence (DoC)
+
+Reverse Testing (RT-mod)
+
+Test Set Performance Baseline
+
+Performance was assessed using scaled error metrics (MASTE, RMSSTE) to account for varying performance stability across cases. PAPE consistently achieved the lowest estimation errors across all metrics (accuracy, AUROC, F1), outperforming all baselines. For example, PAPE’s MASTE for accuracy was 0.97, compared to 1.62 for the test set baseline and 1.04 for IW. The advantage was most pronounced in cases with significant performance changes.
+
+Limitations and Future Work
+
+Assumption of Stable Conditional Label Distribution: PAPE relies on 
+p
+(
+y
+∣
+x
+)
+p(y∣x) being unchanged between reference and production data. If the production data contains regions not covered by the reference set, estimation quality degrades.
+
+Calibration Quality: The method’s accuracy depends on the quality of the probability calibration, which can be challenging on finite samples.
+
+Extension to Other Data Types: While PAPE is data-type agnostic in principle, density ratio estimation may require adaptation for non-tabular data.
+
+The authors plan to extend their work by quantifying estimation uncertainties, improving calibration (e.g., via cross-validation and Bayesian approaches), and expanding evaluation to more diverse datasets.
+
+Conclusion
+
+PAPE provides a practical, accurate, and theoretically justified approach for estimating model performance under covariate shift without labels, addressing a critical gap in real-world machine learning monitoring. It enables organizations to detect and quantify performance degradation in production, supporting timely interventions and risk mitigation

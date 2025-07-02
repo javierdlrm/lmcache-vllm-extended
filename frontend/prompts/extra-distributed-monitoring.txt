@@ -1,0 +1,20 @@
+What recent technological trend has increased the risk of financial fraud, motivating the research in this paper?
+What is edge ML, and why is it particularly suitable for fraud detection in mobile payments?
+What main challenge does the paper address regarding edge ML systems?
+What statistical test does the proposed framework use to detect data distribution shifts?
+How does the t-digest data structure contribute to the framework’s efficiency?
+What is the role of the backend server in the proposed monitoring framework?
+Which cloud services are leveraged in the serverless backend architecture?
+How does the framework aggregate data from multiple edge devices to perform distribution shift detection?
+What types of datasets were used to evaluate the framework?
+What is the T-Digest-KS statistic, and how does it compare to the Optimal-KS statistic?
+What is the typical median error observed between T-Digest-KS and Optimal-KS in the experiments?
+How does the framework minimize false positives and false negatives in shift detection?
+What is the impact of the framework on client-side runtime and resource usage?
+How does the server runtime scale with the aggregation size in the proposed solution?
+What are some limitations of the framework, especially in the context of fraud detection?
+Why might the system miss subtle changes in rare-event (fraud) patterns?
+What future improvements do the authors suggest for the framework?
+How does the framework ensure privacy when aggregating data from edge devices?
+What practical benefits does the open-source nature of the framework provide for the research community?
+In what ways does this work lay the foundation for robust edge ML operations in real-world deployments?

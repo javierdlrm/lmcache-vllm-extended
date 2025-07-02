@@ -1,0 +1,47 @@
+The paper "Formalizing Compound MAPE Patterns for Decentralized Control in Self-adaptive Systems" by Hachicha et al. addresses the challenge of engineering decentralized self-adaptive systems by proposing a formal approach to compose multiple MAPE (Monitor, Analyze, Plan, Execute) control loop patterns. The motivation stems from the limitations of centralized adaptation logic—such as single points of failure and scalability issues—in large and dynamic systems, making decentralized and hybrid control patterns essential.
+
+Background and Motivation
+
+Self-adaptive systems autonomously adjust their behavior in response to changes in their environment or internal state. The MAPE loop is a widely adopted architectural pattern for enabling such adaptation. However, real-world systems often require more than a single MAPE loop, necessitating the use of compound patterns that combine multiple adaptation strategies (e.g., master/slave, coordinated control). Prior work identified various MAPE patterns with different decentralization degrees, but did not provide a formal mechanism for their composition.
+
+Pattern Composition Approach
+
+The authors introduce a two-step composition approach:
+
+Description: Compound MAPE patterns are described as sets of unit patterns linked via merging operators.
+
+Concretization: Merging operators are applied to form the compound pattern.
+
+Two merging operators are defined:
+
+Stringing operator: Connects components from different patterns (either of the same or compatible types), resulting in new communication links.
+
+Overlapping operator: Merges components of the same type from different patterns into a single component, preserving their interfaces and connections.
+
+These operators enable flexible composition, allowing designers to tailor adaptation architectures to complex requirements by combining the strengths of different patterns.
+
+Formalization with Event-B
+
+To ensure the correctness and rigor of the composition process, the approach is formalized using the Event-B method:
+
+Structural features (components, connections) are specified using contexts in Event-B, which extend the contexts of the constituent patterns and formalize the effects of merging operators.
+
+Behavioral features (adaptation logic, event synchronization) are specified using machines, with parallel composition of sub-machines representing the behavior of the compound pattern. Shared events synchronize the operation of merged components, ensuring consistent adaptation logic.
+
+Case Study: Forest Fire Detection System
+
+The approach is illustrated with a forest fire detection system based on wireless sensor networks. Here, a hybrid MAPE pattern is constructed by composing the master/slave and coordinated control patterns:
+
+The master/slave pattern handles hierarchical adaptation (e.g., cluster heads and base stations).
+
+The coordinated control pattern enables peer-to-peer adaptation among sensor nodes.
+
+The composition leverages overlapping and stringing operators to merge and connect components, achieving both robustness (avoiding single points of failure) and efficient coordination.
+
+Related Work and Contributions
+
+While previous works have cataloged MAPE patterns or proposed semi-formal composition approaches (e.g., using UML), this paper is novel in providing a formal, Event-B-based method for specifying and verifying compound MAPE patterns. This allows for precise reasoning about both structure and behavior, facilitating the design of correct and robust self-adaptive systems.
+
+Conclusion and Outlook
+
+The paper demonstrates that formal composition of MAPE patterns is feasible and beneficial for decentralized self-adaptive systems. By using Event-B, both the structure and the dynamic behavior of compound adaptation architectures can be rigorously specified and analyzed. Future work aims to extend this formalization to verify properties such as safety and liveness for complex compound patterns

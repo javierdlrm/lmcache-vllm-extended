@@ -1,0 +1,20 @@
+What is the main problem addressed by the PAPE algorithm in the context of machine learning model deployment?
+Why is it challenging to assess model performance in production environments according to the paper?
+What does the acronym PAPE stand for?
+What are the key required inputs for the PAPE algorithm?
+Which main assumption about the data distributions does PAPE rely on for accurate performance estimation?
+How does PAPE estimate the density ratio between reference and production data?
+What type of performance metrics can PAPE estimate on unlabeled data?
+Which machine learning models were used in the evaluation of PAPE?
+What datasets were used to create the evaluation cases for testing PAPE and other methods?
+What is the main difference between PAPE and Confidence-Based Performance Estimation (CBPE)?
+How does PAPE handle calibration of probability estimates for performance estimation?
+What is the purpose of using scaled error metrics like MASTE and RMSSTE in the evaluation?
+Which baseline performance estimation methods were compared against PAPE in the experiments?
+According to the results, how did PAPE perform relative to other methods in terms of estimation error?
+What limitations of PAPE are discussed in the paper regarding coverage of the reference distribution?
+How does PAPE perform when the production data contains regions not covered by the reference data?
+What is the impact of sample size on the accuracy of performance estimation methods like PAPE?
+What future improvements do the authors propose for the PAPE methodology?
+How does PAPE estimate confusion-matrix-based metrics like F1 on unlabeled data?
+What is the theoretical guarantee provided by PAPE regarding the convergence of its performance estimates?
