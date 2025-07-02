@@ -33,9 +33,7 @@ async def create_batch_chat_completion(
 ):
     print("v2 batch completion is called")
     responses = []
-    for req in batch_request.requests:
-        # Call the base_api for each request
-        print("////// -> Forwarding request:", req)
-        resp = await base_api.create_chat_completion(req, raw_request)
-        responses.append(resp)
+    for request in batch_request.requests:
+        response = await base_api.create_chat_completion(request, raw_request)
+        responses.append(response)
     return responses

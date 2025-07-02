@@ -89,17 +89,18 @@ class RequestGenerator:
         # headers = {"Authorization": f"Bearer {self.client.api_key}"}
         response = requests.post(url, json=batch_payload)
 
-        latency = end - start
-
         end = time.perf_counter()
+        latency = end - start
 
         print(f"\n\n(📝 Response delay: {latency:.2f} seconds\n")
 
         response.raise_for_status()
         response_json = response.json()
 
-        print("RESPONSE!!!!!")
+        print("----------------------------------------------------------------------")
+        print("/////// -> RESPONSE!!!!!")
         print(response_json)
+        print("----------------------------------------------------------------------")
 
         # save metrics to csv file
         # self.record_response_metrics(seq_length, latency)
