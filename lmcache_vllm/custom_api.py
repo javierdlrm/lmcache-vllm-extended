@@ -27,10 +27,12 @@ async def create_chat_completion(request: ChatCompletionRequest, raw_request: Re
 class ExtendedChatCompletionRequest(BaseModel):
     request: ChatCompletionRequest
     seq_length: int
+    context_key: str
 
 
 class BatchExtendedChatCompletionRequest(BaseModel):
     requests: List[ExtendedChatCompletionRequest]
+    sort_before_forwarding: bool
 
 
 @extended_router.post("/batch/chat/completions")
@@ -39,6 +41,10 @@ async def create_batch_chat_completion(
 ):
     print("v2 batch completion is called")
     responses = []
+
+    if batch_request.sort_before_forwarding:
+        batch_request.requests.sort(key=lambda x: x.context_key)
+
     for request in batch_request.requests:
         start = time.perf_counter()
         end = None

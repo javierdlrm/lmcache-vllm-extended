@@ -27,9 +27,10 @@ class RequestGenerator:
             session = entry["session"]
             context = entry["context"]
             prompts = entry["prompts"]
+            context_key = entry["context_key"]
 
             extended_context = [context]
-            session.set_context(extended_context)
+            session.set_context(extended_context, context_key=context_key)
 
             for prompt in prompts:
                 session_prompt_tuples.append((session, prompt))
@@ -44,7 +45,7 @@ class RequestGenerator:
             for response_chunk in response_stream:
                 yield prompt, response_chunk
 
-    def start_batch(self, randomize=True):
+    def start_batch(self, randomize=True, sort_before_forwarding=True):
         # All session and prompts combinations
         session_prompt_tuples = []
 
@@ -52,9 +53,10 @@ class RequestGenerator:
             session = entry["session"]
             context = entry["context"]
             prompts = entry["prompts"]
+            context_key = entry["context_key"]
 
             extended_context = [context]
-            session.set_context(extended_context)
+            session.set_context(extended_context, context_key=context_key)
 
             for prompt in prompts:
                 session_prompt_tuples.append((session, prompt))
@@ -69,9 +71,11 @@ class RequestGenerator:
             request = session.build_chat_completion_request(prompt)
             request_batch.append(request)
 
-        return self._send_batch(request_batch)
+        return self._send_batch(
+            request_batch, sort_before_forwarding=sort_before_forwarding
+        )
 
-    def _send_batch(self, request_batch):
+    def _send_batch(self, request_batch, sort_before_forwarding=True):
         print("----------------------------------------------------------------------")
         print(f"# Batch size: [{len(request_batch)}]:")
         print(
@@ -85,6 +89,7 @@ class RequestGenerator:
         # Prepare the batch request payload
         batch_payload = {
             "requests": request_batch,
+            "sort_before_forwarding": sort_before_forwarding,
         }
 
         url = f"http://{self.ip}:{self.port}/v2" + "/batch/chat/completions"

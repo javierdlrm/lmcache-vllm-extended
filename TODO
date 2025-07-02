@@ -1,2 +1,5 @@
-update setup.py and requirements.txt
-unit tests
+IT's OK. Use the figures with measurements from the scheduler.
+
+Now sort the requests first, and then re-run the experiments.
+Latencies should be lower for similar requests.
+

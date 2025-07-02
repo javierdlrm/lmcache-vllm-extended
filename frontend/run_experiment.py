@@ -72,6 +72,7 @@ def get_session_context_prompts_dict(
             ),
             "context": chunks[context_key],
             "prompts": selected_prompts,
+            "context_key": context_key,
         }
     return session_context_prompts_dict
 
@@ -105,13 +106,9 @@ def main():
         for _, _ in generator.start(randomize=randomize):
             pass
 
-        # # Plotting results
-        # plot_latency_vs_seq_length(task)
-        # plot_multiple_latency_vs_seq_length(task)
-        # plot_latency_vs_req_id(task)
     elif task.startswith("task2"):
         print("# Running task 2: Batch requests")
-        generator.start_batch(randomize=randomize)
+        generator.start_batch(randomize=randomize, sort_before_forwarding=True)
 
     # Plotting results
     plot_latency_vs_seq_length(task)

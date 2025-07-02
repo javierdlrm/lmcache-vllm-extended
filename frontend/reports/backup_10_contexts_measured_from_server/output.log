@@ -1,0 +1,76 @@
+# Running task 2: Batch requests
+👤 User message: What hardware platforms besides SmartNICs could benefit from SplitRPC's design?
+
+👤 User message: How does the formal approach presented differ from previous semi-formal or UML-based approaches?
+
+👤 User message: How does SplitRPC reduce RPC overhead ("RPC tax")?
+
+👤 User message: Which two professions, besides painting, is Leonardo da Vinci noted for in the report?
+
+👤 User message: How does CHEETAH ensure per-connection consistency (PCC) during server pool changes?
+
+👤 User message: What is one way music can help with emotional regulation?
+
+👤 User message: Name two technological advancements that have driven the adoption of digital banking.
+
+👤 User message: How does engaging with music foster social bonds?
+
+👤 User message: What is one cognitive benefit of music mentioned in the report?
+
+👤 User message: How many elements comprise a standard IP router path in Click?
+
+👤 User message: Name one core mechanism of epigenetic regulation.
+
+👤 User message: What does the report identify as the driving forces behind Leonardo’s art?
+
+👤 User message: In what way does NannyML facilitate the correlation between data drift and model performance?
+
+👤 User message: Give an example of an environmental factor that can influence the epigenome.
+
+👤 User message: What is the name of Leonardo’s most famous painting mentioned in the report?
+
+👤 User message: How does CHEETAH prevent PCC violations during server additions/removals?
+
+👤 User message: How does the framework ensure privacy when aggregating data from edge devices?
+
+👤 User message: What dropping policy does Click implement using queue length thresholds?
+
+👤 User message: What new events are introduced in the hybrid compound pattern after composition?
+
+👤 User message: In what ways does this work lay the foundation for robust edge ML operations in real-world deployments?
+
+👤 User message: What security features are commonly offered by digital banks?
+
+👤 User message: Which TCP field is repurposed for cookie embedding?
+
+👤 User message: What types of datasets were used to evaluate the framework?
+
+👤 User message: How does epigenetics offer new strategies for disease treatment and prevention?
+
+👤 User message: What two connection types facilitate packet flow between elements?
+
+👤 User message: What is the main challenge addressed by the paper regarding machine learning systems?
+
+👤 User message: What are some limitations of previous works on MAPE pattern composition as identified in the paper?
+
+👤 User message: Which drift detection tool is highlighted for pinpointing the exact timing of drifts and linking them to model accuracy?
+
+👤 User message: What problem does SplitRPC aim to solve in ML inference serving?
+
+👤 User message: How does digital banking contribute to financial literacy?
+
+----------------------------------------------------------------------
+# Batch size: [30]:
+----------------------------------------------------------------------
+
+
+
+(📝 Response delay: 19.13 seconds
+
+----------------------------------------------------------------------
+/////// -> RESPONSE!!!!!
+[{'seq_length': 772, 'latency': 1.3823875719681382}, {'seq_length': 738, 'latency': 0.41688199806958437}, {'seq_length': 789, 'latency': 0.24893906991928816}, {'seq_length': 508, 'latency': 0.9699101634323597}, {'seq_length': 658, 'latency': 0.41513925045728683}, {'seq_length': 501, 'latency': 0.4414800647646189}, {'seq_length': 473, 'latency': 1.1931182583793998}, {'seq_length': 515, 'latency': 0.41010887641459703}, {'seq_length': 532, 'latency': 0.6471155099570751}, {'seq_length': 664, 'latency': 2.0629845121875405}, {'seq_length': 579, 'latency': 1.1735262032598257}, {'seq_length': 527, 'latency': 0.15608694776892662}, {'seq_length': 885, 'latency': 1.8377418760210276}, {'seq_length': 599, 'latency': 1.8877160232514143}, {'seq_length': 547, 'latency': 0.11466517671942711}, {'seq_length': 679, 'latency': 0.7719748420640826}, {'seq_length': 683, 'latency': 0.49138147849589586}, {'seq_length': 680, 'latency': 0.2697250945493579}, {'seq_length': 756, 'latency': 0.1858587209135294}, {'seq_length': 707, 'latency': 0.2987451609224081}, {'seq_length': 488, 'latency': 0.247393355704844}, {'seq_length': 695, 'latency': 0.2326008090749383}, {'seq_length': 723, 'latency': 0.7161962734535336}, {'seq_length': 618, 'latency': 0.7423905786126852}, {'seq_length': 695, 'latency': 0.12884831614792347}, {'seq_length': 904, 'latency': 0.5126897329464555}, {'seq_length': 779, 'latency': 0.09324278682470322}, {'seq_length': 931, 'latency': 0.5876319343224168}, {'seq_length': 807, 'latency': 0.10339693631976843}, {'seq_length': 502, 'latency': 0.37722847051918507}]
+----------------------------------------------------------------------
+Plot saved to reports/task2_question1_10_3_latency_vs_seq_length.png
+Multi-line plot saved to reports/task2_question1_10_3_multi_latency_vs_seq_length.png
+Plot saved to reports/task2_question1_10_3_latency_vs_req_id.png

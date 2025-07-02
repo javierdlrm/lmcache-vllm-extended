@@ -29,11 +29,12 @@ class ChatSession:
         self.tokenizer = tokenizer
         self.task = task
 
-    def set_context(self, context_strings):
+    def set_context(self, context_strings, context_key=None):
         contexts = []
         for context in context_strings:
             contexts.append(context)
 
+        self.context_key = context_key
         self.final_context = self.context_separator.join(contexts)
         self.on_user_message(self.final_context, display=False)
         self.on_server_message("Got it!", display=False)
@@ -114,4 +115,5 @@ class ChatSession:
                 "stop": "\n",
             },
             "seq_length": seq_length,
+            "context_key": self.context_key,
         }
