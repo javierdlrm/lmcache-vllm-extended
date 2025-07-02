@@ -93,16 +93,22 @@ def main():
         task, tokenizer, chunks, prompts, context_keys, num_requests, randomize
     )
 
-    # Run requests
+    # Initialize request generator
     generator = RequestGenerator(
         SYSTEM_PROMPT, session_context_prompts_dict, ip=IP1, port=PORT1
     )
-    for _, _ in generator.start(randomize=randomize):
-        pass
 
-    # Plot latency vs sequence length
-    plot_latency_vs_seq_length(task)
-    plot_multiple_latency_vs_seq_length(task)
+    if task.startswith("task1"):
+        print("# Running task 1: Sequential requests")
+        for _, _ in generator.start(randomize=randomize):
+            pass
+
+        # Plot latency vs sequence length
+        plot_latency_vs_seq_length(task)
+        plot_multiple_latency_vs_seq_length(task)
+    elif task.startswith("task2"):
+        print("# Running task 2: Batch requests")
+        generator.start_batch(randomize=randomize)
 
 
 if __name__ == "__main__":
