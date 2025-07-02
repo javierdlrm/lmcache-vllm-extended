@@ -66,6 +66,45 @@ def plot_latency_vs_seq_length(task):
     print(f"Plot saved to {output_path}")
 
 
+def plot_latency_vs_req_id(task):
+    csv_file = f"reports/{task}.csv"
+    if not os.path.isfile(csv_file):
+        print(f"CSV file {csv_file} does not exist.")
+        return
+
+    req_ids = []
+    latencies = []
+    with open(csv_file, newline="") as f:
+        reader = csv.DictReader(f)
+        req_id = 1
+        for row in reader:
+            req_ids.append(req_id)
+            req_id += 1
+            latencies.append(float(row["latency"]) * 1000)  # milliseconds
+
+    if not req_ids or not latencies:
+        print("No data to plot.")
+        return
+
+    plt.figure(figsize=(8, 5))
+    plt.scatter(req_ids, latencies, color="blue", alpha=0.7, label="Samples")
+    # Sort by sequence length for a meaningful line
+    # sorted_pairs = sorted(zip(seq_lengths, latencies))
+    sorted_pairs = sorted(zip(req_ids, latencies))
+    sorted_seq_lengths, sorted_latencies = zip(*sorted_pairs)
+    plt.plot(sorted_seq_lengths, sorted_latencies, color="orange", label="Trend")
+    plt.title(f"Latency vs Request ID for task: {task}")
+    plt.xlabel("Request ID")
+    plt.ylabel("Latency (milliseconds)")
+    plt.grid(True)
+    plt.legend()
+    plt.tight_layout()
+    output_path = f"reports/{task}_latency_vs_req_id.png"
+    plt.savefig(output_path)
+    plt.close()
+    print(f"Plot saved to {output_path}")
+
+
 def plot_multiple_latency_vs_seq_length(task):
     plt.figure(figsize=(10, 6))
 
@@ -104,3 +143,15 @@ def plot_multiple_latency_vs_seq_length(task):
     plt.savefig(output_path)
     plt.close()
     print(f"Multi-line plot saved to {output_path}")
+
+
+def record_response_metrics(
+    task, xvalue, yvalue, xlabel="seq_length", ylabel="latency"
+):
+    csv_file = f"reports/{task}.csv"
+    file_exists = os.path.isfile(csv_file)
+    with open(csv_file, mode="a", newline="") as file:
+        writer = csv.writer(file)
+        if not file_exists:
+            writer.writerow([xlabel, ylabel])
+        writer.writerow([xvalue, yvalue])

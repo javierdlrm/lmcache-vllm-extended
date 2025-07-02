@@ -3,6 +3,7 @@ from io import StringIO
 import time
 import csv
 import os
+from utils import record_response_metrics
 
 
 class ChatSession:
@@ -88,7 +89,7 @@ class ChatSession:
         latency = end - start
 
         # save metrics to csv file
-        self.record_response_metrics(seq_length, latency)
+        record_response_metrics(self.task, seq_length, latency)
 
         print(
             f"\n\n(📝 Response delay: {latency:.2f} seconds // {num_char} chars, {seq_length} tokens (seq len))\n"
@@ -98,15 +99,6 @@ class ChatSession:
         chat_str = self.tokenizer.apply_chat_template(messages, tokenize=False)
         token_ids = self.tokenizer.encode(chat_str)
         return len(chat_str), len(token_ids)
-
-    def record_response_metrics(self, seq_length, latency):
-        csv_file = f"reports/{self.task}.csv"
-        file_exists = os.path.isfile(csv_file)
-        with open(csv_file, mode="a", newline="") as file:
-            writer = csv.writer(file)
-            if not file_exists:
-                writer.writerow(["seq_length", "latency"])
-            writer.writerow([seq_length, latency])
 
     def build_chat_completion_request(self, question):
         self.on_user_message(question)

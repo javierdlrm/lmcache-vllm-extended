@@ -9,6 +9,7 @@ from utils import (
     read_prompts,
     plot_latency_vs_seq_length,
     plot_multiple_latency_vs_seq_length,
+    plot_latency_vs_req_id,
 )
 
 MODEL_NAME = "Qwen/Qwen2.5-1.5B-Instruct"
@@ -95,20 +96,27 @@ def main():
 
     # Initialize request generator
     generator = RequestGenerator(
-        SYSTEM_PROMPT, session_context_prompts_dict, ip=IP1, port=PORT1
+        SYSTEM_PROMPT, session_context_prompts_dict, ip=IP1, port=PORT1, task=task
     )
 
+    # Run task
     if task.startswith("task1"):
         print("# Running task 1: Sequential requests")
         for _, _ in generator.start(randomize=randomize):
             pass
 
-        # Plot latency vs sequence length
-        plot_latency_vs_seq_length(task)
-        plot_multiple_latency_vs_seq_length(task)
+        # # Plotting results
+        # plot_latency_vs_seq_length(task)
+        # plot_multiple_latency_vs_seq_length(task)
+        # plot_latency_vs_req_id(task)
     elif task.startswith("task2"):
         print("# Running task 2: Batch requests")
         generator.start_batch(randomize=randomize)
+
+    # Plotting results
+    plot_latency_vs_seq_length(task)
+    plot_multiple_latency_vs_seq_length(task)
+    plot_latency_vs_req_id(task)
 
 
 if __name__ == "__main__":

@@ -1,10 +1,11 @@
 import random
 import time
 import requests
+from utils import record_response_metrics
 
 
 class RequestGenerator:
-    def __init__(self, system_prompt, session_context_prompts_dict, ip, port):
+    def __init__(self, system_prompt, session_context_prompts_dict, ip, port, task):
         """
         :param session_context_prompts_dict: Dictionary with sessions, session contexts and prompts.
         """
@@ -12,6 +13,7 @@ class RequestGenerator:
         self.session_context_prompts_dict = session_context_prompts_dict
         self.ip = ip
         self.port = port
+        self.task = task
 
     def start(self, randomize=True):
         """
@@ -103,6 +105,9 @@ class RequestGenerator:
         print("----------------------------------------------------------------------")
 
         # save metrics to csv file
-        # self.record_response_metrics(seq_length, latency)
+        for metrics in response_json:
+            seq_length = metrics["seq_length"]
+            latency = metrics["latency"]
+            record_response_metrics(self.task, seq_length, latency)
 
         return response_json
