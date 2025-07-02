@@ -1,0 +1,76 @@
+# Running task 2: Batch requests
+👤 User message: What is the impact of sample size on the accuracy of performance estimation methods like PAPE?
+
+👤 User message: What are the two recovery mechanisms for preempted requests in vLLM?
+
+👤 User message: What are some limitations of the framework, especially in the context of fraud detection?
+
+👤 User message: What metadata mechanism carries information across processing elements?
+
+👤 User message: What do the apostles’ varied reactions in The Last Supper convey?
+
+👤 User message: How does SplitRPC reduce RPC overhead ("RPC tax")?
+
+👤 User message: How does PAPE perform when the production data contains regions not covered by the reference data?
+
+👤 User message: How does the report describe Leonardo’s curiosity?
+
+👤 User message: How quickly does dynamic scaling respond to load changes?
+
+👤 User message: How does DNA methylation typically affect gene expression?
+
+👤 User message: Which brain imaging technique is cited as useful for studying music’s effect on the brain?
+
+👤 User message: What is epigenetic transgenerational inheritance?
+
+👤 User message: Which brain region processes sound when listening to music?
+
+👤 User message: What role does real-time data play in digital banking?
+
+👤 User message: Why is GPU-based orchestration (O2) less effective for complex workloads?
+
+👤 User message: How does engaging with music foster social bonds?
+
+👤 User message: What recent technological trend has increased the risk of financial fraud, motivating the research in this paper?
+
+👤 User message: How have consumer expectations influenced the growth of digital banking?
+
+👤 User message: Name one core mechanism of epigenetic regulation.
+
+👤 User message: How much bandwidth cost reduction does APLOMB+ achieve?
+
+👤 User message: How does vLLM handle sequences with shared prefixes during decoding?
+
+👤 User message: Which redirection mechanism does APLOMB use?
+
+👤 User message: What configuration method is used to define Click routers?
+
+👤 User message: How does digital banking contribute to financial literacy?
+
+👤 User message: Which famous sketch by Leonardo illustrates the harmony between art and science?
+
+👤 User message: What two memory fragmentation types occur in traditional LLM serving systems?
+
+👤 User message: What is the purpose of using scaled error metrics like MASTE and RMSSTE in the evaluation?
+
+👤 User message: What dropping policy does Click implement using queue length thresholds?
+
+👤 User message: How did SplitRPC perform under real workload traces?
+
+👤 User message: What statistical test does the proposed framework use to detect data distribution shifts?
+
+----------------------------------------------------------------------
+# Batch size: [30]:
+----------------------------------------------------------------------
+
+
+
+(📝 Response delay: 37.52 seconds
+
+----------------------------------------------------------------------
+/////// -> RESPONSE!!!!!
+[{'seq_length': 769, 'latency': 1.351762612350285}, {'seq_length': 791, 'latency': 0.7810325399041176}, {'seq_length': 806, 'latency': 0.6416637171059847}, {'seq_length': 689, 'latency': 1.7083379346877337}, {'seq_length': 706, 'latency': 0.5761829381808639}, {'seq_length': 720, 'latency': 1.5098238363862038}, {'seq_length': 661, 'latency': 1.3148480439558625}, {'seq_length': 676, 'latency': 1.0832595098763704}, {'seq_length': 692, 'latency': 1.084126491099596}, {'seq_length': 579, 'latency': 2.611280378885567}, {'seq_length': 594, 'latency': 0.26706454530358315}, {'seq_length': 609, 'latency': 2.467035732232034}, {'seq_length': 685, 'latency': 0.6746630053967237}, {'seq_length': 709, 'latency': 1.5060789044946432}, {'seq_length': 728, 'latency': 0.46724631916731596}, {'seq_length': 893, 'latency': 1.0208383183926344}, {'seq_length': 916, 'latency': 1.056711208075285}, {'seq_length': 940, 'latency': 1.265783610753715}, {'seq_length': 471, 'latency': 1.5118016507476568}, {'seq_length': 487, 'latency': 0.22294684033840895}, {'seq_length': 501, 'latency': 1.4390905937179923}, {'seq_length': 506, 'latency': 1.7923346925526857}, {'seq_length': 520, 'latency': 1.1757433721795678}, {'seq_length': 538, 'latency': 1.2062325477600098}, {'seq_length': 507, 'latency': 1.451021426357329}, {'seq_length': 522, 'latency': 1.9540619365870953}, {'seq_length': 536, 'latency': 1.8499410105869174}, {'seq_length': 828, 'latency': 0.4625528147444129}, {'seq_length': 846, 'latency': 1.6779570477083325}, {'seq_length': 864, 'latency': 1.3783519314602017}]
+----------------------------------------------------------------------
+Plot saved to reports/task2_question2_10_3_latency_vs_seq_length.png
+Multi-line plot saved to reports/task2_question2_10_3_multi_latency_vs_seq_length.png
+Plot saved to reports/task2_question2_10_3_latency_vs_req_id.png
