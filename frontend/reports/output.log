@@ -1,0 +1,76 @@
+# Running task 2: Batch requests
+👤 User message: What is the definition of epigenetics?
+
+👤 User message: In what way does the stringing operator connect components from different patterns?
+
+👤 User message: Which network topologies can Crux's design generalize to?
+
+👤 User message: What is the typical median error observed between T-Digest-KS and Optimal-KS in the experiments?
+
+👤 User message: What recent technological trend has increased the risk of financial fraud, motivating the research in this paper?
+
+👤 User message: What future work do the authors propose regarding the verification of compound MAPE patterns?
+
+👤 User message: How might fairness concerns in Crux's priority system be addressed?
+
+👤 User message: What technique reduces bandwidth overhead for location-dependent appliances?
+
+👤 User message: What metadata mechanism carries information across processing elements?
+
+👤 User message: What is one way music can help with emotional regulation?
+
+👤 User message: What role do programmable switches and NICs play in Metron's architecture?
+
+👤 User message: What real-world system is used as a case study to illustrate the proposed approach?
+
+👤 User message: What three properties are lost when outsourcing middleboxes?
+
+👤 User message: Can epigenetic modifications be maintained through cell divisions?
+
+👤 User message: What is the name of Leonardo’s most famous painting mentioned in the report?
+
+👤 User message: What technique hides the server count from clients?
+
+👤 User message: What conclusion does the paper draw about commodity servers and NFV efficiency?
+
+👤 User message: How does the report describe Leonardo’s curiosity?
+
+👤 User message: How does music therapy benefit patients with Alzheimer’s disease?
+
+👤 User message: What deployment compatibility strategies are discussed for TCP timestamps?
+
+👤 User message: Which technique did Leonardo use in the Mona Lisa to create depth and realism?
+
+👤 User message: How does Metron's data plane architecture handle packet dispatching?
+
+👤 User message: Which scheduling algorithms does Click support?
+
+👤 User message: What causes most middlebox failures?
+
+👤 User message: How does epigenetics offer new strategies for disease treatment and prevention?
+
+👤 User message: What types of datasets were used to evaluate the framework?
+
+👤 User message: How does CHEETAH's resilience compare to traditional systems?
+
+👤 User message: Name one physiological effect of listening to calming music mentioned in the report.
+
+👤 User message: How does flow-based router context assist elements?
+
+👤 User message: What factors does Crux consider when assigning communication priorities to jobs?
+
+----------------------------------------------------------------------
+# Batch size: [30]:
+----------------------------------------------------------------------
+
+
+
+(📝 Response delay: 23.49 seconds
+
+----------------------------------------------------------------------
+/////// -> RESPONSE!!!!!
+[{'seq_length': 578, 'latency': 2.5572853134945035}, {'seq_length': 734, 'latency': 0.8521972894668579}, {'seq_length': 809, 'latency': 1.4302165601402521}, {'seq_length': 691, 'latency': 0.3977934680879116}, {'seq_length': 715, 'latency': 1.4530542166903615}, {'seq_length': 755, 'latency': 0.691689190454781}, {'seq_length': 827, 'latency': 0.8233552062883973}, {'seq_length': 689, 'latency': 0.4697655215859413}, {'seq_length': 661, 'latency': 0.7620284026488662}, {'seq_length': 501, 'latency': 0.6903970446437597}, {'seq_length': 628, 'latency': 1.1376610100269318}, {'seq_length': 776, 'latency': 0.783495225943625}, {'seq_length': 704, 'latency': 0.34804247599095106}, {'seq_length': 594, 'latency': 0.18100729025900364}, {'seq_length': 506, 'latency': 0.8591434443369508}, {'seq_length': 648, 'latency': 0.9808380268514156}, {'seq_length': 647, 'latency': 0.39520580880343914}, {'seq_length': 520, 'latency': 1.5442482735961676}, {'seq_length': 517, 'latency': 1.6669287597760558}, {'seq_length': 663, 'latency': 0.16681973077356815}, {'seq_length': 540, 'latency': 0.10575298219919205}, {'seq_length': 665, 'latency': 0.34778131265193224}, {'seq_length': 673, 'latency': 0.05933949910104275}, {'seq_length': 716, 'latency': 0.9129914352670312}, {'seq_length': 613, 'latency': 0.10560499504208565}, {'seq_length': 731, 'latency': 0.36929421965032816}, {'seq_length': 680, 'latency': 0.12640017550438643}, {'seq_length': 536, 'latency': 1.6361345127224922}, {'seq_length': 687, 'latency': 0.09142256714403629}, {'seq_length': 845, 'latency': 1.534027012065053}]
+----------------------------------------------------------------------
+Plot saved to reports/task2_question1_10_2_latency_vs_seq_length.png
+Multi-line plot saved to reports/task2_question1_10_2_multi_latency_vs_seq_length.png
+Plot saved to reports/task2_question1_10_2_latency_vs_req_id.png
