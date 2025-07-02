@@ -43,7 +43,9 @@ async def create_batch_chat_completion(
         start = time.perf_counter()
         end = None
 
-        _ = await base_api.create_chat_completion(request.request, raw_request)
+        generator = await base_api.create_chat_completion(request.request, raw_request)
+        for _ in generator:  # consume the generator
+            pass
 
         end = time.perf_counter()
         latency = end - start

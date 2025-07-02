@@ -1,0 +1,76 @@
+# Running task 2: Batch requests
+👤 User message: What two connection types facilitate packet flow between elements?
+
+👤 User message: Which TCP field is repurposed for cookie embedding?
+
+👤 User message: How does vLLM implement copy-on-write for KV cache blocks?
+
+👤 User message: What hardware resources does Metron utilize to run stateful service chains?
+
+👤 User message: How does vLLM handle memory allocation for variable-length sequences?
+
+👤 User message: How does PagedAttention's block size affect GPU utilization and fragmentation?
+
+👤 User message: What limitations are noted for Alibi-Detect in terms of reporting and guidance?
+
+👤 User message: Why are stateful load balancers vulnerable to DDoS attacks?
+
+👤 User message: What architectural approach does Click use for building modular routers?
+
+👤 User message: What role does real-time data play in digital banking?
+
+👤 User message: Which deep learning frameworks does Crux integrate with?
+
+👤 User message: How much bandwidth cost reduction does APLOMB+ achieve?
+
+👤 User message: Which architectural pattern is central to enabling adaptation in self-adaptive systems as discussed in the paper?
+
+👤 User message: How does Metron's performance compare to OpenBox and E2 in latency and throughput?
+
+👤 User message: What formal method is used to specify both the structure and behavior of compound MAPE patterns?
+
+👤 User message: What are two primary concerns with APLOMB's approach?
+
+👤 User message: What is the typical median error observed between T-Digest-KS and Optimal-KS in the experiments?
+
+👤 User message: What future research directions are suggested by the authors regarding drift detection methods?
+
+👤 User message: How do digital banks use AI to benefit users?
+
+👤 User message: What is APLOMB's average latency penalty?
+
+👤 User message: Name one reference cited in the report.
+
+👤 User message: What performance metric improved by up to 3x in CHEETAH's evaluation?
+
+👤 User message: What percentage of jobs faced communication contention in the profiled production cluster?
+
+👤 User message: What main challenge does the paper address regarding edge ML systems?
+
+👤 User message: What performance throughput does Metron achieve on a single server?
+
+👤 User message: What is the primary goal of Crux in deep learning training clusters?
+
+👤 User message: In what ways does this work lay the foundation for robust edge ML operations in real-world deployments?
+
+👤 User message: How many elements comprise a standard IP router path in Click?
+
+👤 User message: What new events are introduced in the hybrid compound pattern after composition?
+
+👤 User message: Which drift detection tool is highlighted for pinpointing the exact timing of drifts and linking them to model accuracy?
+
+----------------------------------------------------------------------
+# Batch size: [30]:
+----------------------------------------------------------------------
+
+
+
+(📝 Response delay: 21.68 seconds
+
+----------------------------------------------------------------------
+/////// -> RESPONSE!!!!!
+[{'seq_length': 662, 'latency': 1.0916464012116194}, {'seq_length': 650, 'latency': 1.1810519890859723}, {'seq_length': 827, 'latency': 1.4580861451104283}, {'seq_length': 626, 'latency': 0.5115252053365111}, {'seq_length': 845, 'latency': 0.31716486904770136}, {'seq_length': 864, 'latency': 0.3111172281205654}, {'seq_length': 884, 'latency': 0.5141241969540715}, {'seq_length': 669, 'latency': 0.054649192839860916}, {'seq_length': 678, 'latency': 0.08486093766987324}, {'seq_length': 471, 'latency': 1.0645598024129868}, {'seq_length': 807, 'latency': 0.500904499553144}, {'seq_length': 691, 'latency': 1.0868771616369486}, {'seq_length': 739, 'latency': 0.8073105318471789}, {'seq_length': 649, 'latency': 0.855094681493938}, {'seq_length': 762, 'latency': 0.8529995549470186}, {'seq_length': 708, 'latency': 0.18821468483656645}, {'seq_length': 691, 'latency': 1.6874358132481575}, {'seq_length': 903, 'latency': 0.4850804163143039}, {'seq_length': 486, 'latency': 0.42744080256670713}, {'seq_length': 723, 'latency': 0.19091105926781893}, {'seq_length': 499, 'latency': 0.09718592744320631}, {'seq_length': 691, 'latency': 0.8283472284674644}, {'seq_length': 826, 'latency': 1.7315269159153104}, {'seq_length': 708, 'latency': 1.0681450683623552}, {'seq_length': 666, 'latency': 0.07344297599047422}, {'seq_length': 845, 'latency': 1.8477854104712605}, {'seq_length': 732, 'latency': 0.7378426808863878}, {'seq_length': 695, 'latency': 1.4278951473534107}, {'seq_length': 780, 'latency': 0.08006163313984871}, {'seq_length': 930, 'latency': 0.10832310561090708}]
+----------------------------------------------------------------------
+Plot saved to reports/task2_question1_10_2_latency_vs_seq_length.png
+Multi-line plot saved to reports/task2_question1_10_2_multi_latency_vs_seq_length.png
+Plot saved to reports/task2_question1_10_2_latency_vs_req_id.png

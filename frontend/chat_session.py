@@ -110,7 +110,7 @@ class ChatSession:
                 "messages": self.messages,
                 "model": self.model,
                 "temperature": 0.5,
-                "stream": False,
+                "stream": True,
                 "stop": "\n",
             },
             "seq_length": seq_length,
