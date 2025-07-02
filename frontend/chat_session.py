@@ -111,10 +111,13 @@ class ChatSession:
     def build_chat_completion_request(self, question):
         self.on_user_message(question)
 
+        _, seq_length = self.get_num_char_and_seq_length(self.messages)
+
         return {
             "messages": self.messages,
             "model": self.model,
             "temperature": 0.5,
             "stream": False,
             "stop": "\n",
+            "seq_length": seq_length,
         }

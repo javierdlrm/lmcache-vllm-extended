@@ -3,6 +3,7 @@ from vllm.entrypoints.openai.protocol import *
 from fastapi import APIRouter, Request
 from pydantic import BaseModel
 from typing import List
+import time
 
 # You should use the following file to implement all APIs you may require in the project.
 # Note that the two important ones are already implemented here simply by calling the default v1 implementation in VLLM.
@@ -34,6 +35,15 @@ async def create_batch_chat_completion(
     print("v2 batch completion is called")
     responses = []
     for request in batch_request.requests:
-        response = await base_api.create_chat_completion(request, raw_request)
-        responses.append(response)
+        start = time.perf_counter()
+        end = None
+
+        _ = await base_api.create_chat_completion(request, raw_request)
+
+        end = time.perf_counter()
+        latency = end - start
+
+        responses.append({"seq_length": request.seq_length, "latency": latency})
+        # responses.append(response)
+
     return responses
