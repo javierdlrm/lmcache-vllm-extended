@@ -110,7 +110,7 @@ def main():
         print("# Running task 2: Batch requests")
         generator.start_batch(randomize=randomize, sort_before_forwarding=True)
 
-    # Plotting results
+    # Generate plots of the results
     plot_latency_vs_seq_length(task)
     plot_multiple_latency_vs_seq_length(task)
     plot_latency_vs_req_id(task)

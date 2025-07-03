@@ -102,7 +102,7 @@ class ChatSession:
         return len(chat_str), len(token_ids)
 
     def build_chat_completion_request(self, question):
-        self.on_user_message(question)
+        self.on_user_message(question, display=False)
 
         _, seq_length = self.get_num_char_and_seq_length(self.messages)
 

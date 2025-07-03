@@ -53,6 +53,7 @@ async def create_batch_chat_completion(
             request.request, raw_request
         )
 
+        # Consume the streaming response to ensure the whole request is processed
         async for _ in streaming_response.body_iterator:
             pass
 
@@ -60,6 +61,5 @@ async def create_batch_chat_completion(
         latency = end - start
 
         responses.append({"seq_length": request.seq_length, "latency": latency})
-        # responses.append(response)
 
     return responses

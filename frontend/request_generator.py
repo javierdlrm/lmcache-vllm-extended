@@ -5,10 +5,8 @@ from utils import record_response_metrics
 
 
 class RequestGenerator:
+
     def __init__(self, system_prompt, session_context_prompts_dict, ip, port, task):
-        """
-        :param session_context_prompts_dict: Dictionary with sessions, session contexts and prompts.
-        """
         self.system_prompt = system_prompt
         self.session_context_prompts_dict = session_context_prompts_dict
         self.ip = ip
@@ -16,10 +14,6 @@ class RequestGenerator:
         self.task = task
 
     def start(self, randomize=True):
-        """
-        For each (session, context, prompts) dict, set the context and yield the streamed response.
-        """
-
         # All session and prompts combinations
         session_prompt_tuples = []
 
@@ -93,7 +87,6 @@ class RequestGenerator:
         }
 
         url = f"http://{self.ip}:{self.port}/v2" + "/batch/chat/completions"
-        # headers = {"Authorization": f"Bearer {self.client.api_key}"}
         response = requests.post(url, json=batch_payload)
 
         end = time.perf_counter()
@@ -105,7 +98,7 @@ class RequestGenerator:
         response_json = response.json()
 
         print("----------------------------------------------------------------------")
-        print("/////// -> RESPONSE!!!!!")
+        print("# Response:")
         print(response_json)
         print("----------------------------------------------------------------------")
 
