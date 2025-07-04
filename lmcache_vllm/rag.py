@@ -39,7 +39,9 @@ class RAG:
         )
         question_np = question_embedding.cpu().numpy().reshape(1, -1).astype(np.float32)
         distances, ids = self.faiss_index.search(question_np, top_k)
-        context_key = self.context_keys[ids[0][0]]
+        print("//// Distances: ", distances)
+        print("//// IDs: ", ids)
+        context_key = self.context_keys[ids[0]]
         context = self.contexts[context_key]
         return context_key, context
 
