@@ -120,6 +120,7 @@ def main():
 
     elif task.startswith("task3"):
         print("# Running task 3: Batch requests with RAG")
+        generator.index_contexts_for_rag()  # index the contexts in vectordb first
         generator.start_batch(
             randomize=randomize, sort_before_forwarding=True, use_rag=True
         )

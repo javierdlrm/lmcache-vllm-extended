@@ -10,20 +10,23 @@ class RAG:
         self.tokenizer = tokenizer
         self.device = device
         self.embedding_dim = embedding_dim
-        self.faiss_index = faiss.IndexFlatL2(embedding_dim)  # new faiss index
+        self.faiss_index = faiss.IndexFlatL2(embedding_dim)  # create faiss index
         self.context_keys = []
         self.contexts = {}
 
     def index(self, context_key, context):
+        print("/// [RAG] indexing context: " + context_key)
         embeddings = self._get_llm_embeddings(context)
-        print("/// -> Embedding dimension: ", len(embeddings))
+        print("/// -> [index] Embedding dimension: ", len(embeddings))
         embeddings_np = embeddings.cpu().numpy().astype(np.float32)
         self.faiss_index.add(embeddings_np)
         self.context_keys.append(context_key)
         self.contexts[context_key] = context
 
     def search(self, question, top_k=5):
+        print("/// [RAG] searching for question: " + question)
         question_embedding = self._get_llm_embeddings(question)
+        print("/// -> [search] embedding dimension: ", len(question_embedding))
         question_np = question_embedding.cpu().numpy().astype(np.float32)
         distances, ids = self.faiss_index.search(question_np, top_k)
         context_key = self.context_keys[ids[0][0]]

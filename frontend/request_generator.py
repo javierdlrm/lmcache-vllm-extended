@@ -135,3 +135,20 @@ class RequestGenerator:
             record_response_metrics(self.task, values, header=header)
 
         return response_json
+
+    def index_contexts_for_rag(self):
+        url = f"http://{self.ip}:{self.port}/v2/rag/index"
+
+        for entry in self.session_context_prompts_dict.values():
+            context_key = entry["context_key"]
+            context = entry["context"]
+            payload = {
+                "context_key": context_key,
+                "context": context,
+            }
+            try:
+                response = requests.post(url, json=payload)
+                response.raise_for_status()
+                print(f"Indexed context '{context_key}': {response.json()}")
+            except Exception as e:
+                print(f"Failed to index context '{context_key}': {e}")

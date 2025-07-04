@@ -24,6 +24,11 @@ async def create_chat_completion(request: ChatCompletionRequest, raw_request: Re
     return await base_api.create_chat_completion(request, raw_request)
 
 
+#######################################################################################
+# Request batch
+#######################################################################################
+
+
 class ExtendedChatCompletionRequest(BaseModel):
     request: ChatCompletionRequest
     seq_length: int
@@ -108,3 +113,25 @@ async def create_batch_chat_completion(
         responses.append(metrics)
 
     return responses
+
+
+#######################################################################################
+# RAG-specific
+#######################################################################################
+
+
+class RAGIndexRequest(BaseModel):
+    context_key: str
+    context: str
+
+
+@extended_router.post("/rag/index")
+async def rag_index(request: RAGIndexRequest):
+    try:
+        extended_router.rag_instance.index(request.context_key, request.context)
+        return {
+            "status": "success",
+            "message": f"Context '{request.context_key}' indexed.",
+        }
+    except Exception as e:
+        return {"status": "error", "message": str(e)}
