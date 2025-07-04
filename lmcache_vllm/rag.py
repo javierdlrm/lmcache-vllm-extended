@@ -34,6 +34,24 @@ class RAG:
         return context_key, context
 
     def _get_llm_embeddings(self, text):
+        # Tokenize the text chunk
+        inputs = self.tokenizer(
+            text, return_tensors="pt", truncation=True, padding=True
+        )
+
+        # Generate embeddings using the model
+        with torch.no_grad():
+            outputs = self.model(**inputs)
+
+        # Extract the last hidden state (token-level embeddings)
+        last_hidden_state = outputs.last_hidden_state
+
+        # Pool the token embeddings to get a single vector (mean pooling)
+        embeddings = last_hidden_state.mean(dim=1).squeeze()
+
+        return embeddings
+
+    def _get_llm_embeddings_2(self, text):
         # Tokenize input text
         inputs = self.tokenizer(text, return_tensors="pt").to(self.device)
         with torch.no_grad():
