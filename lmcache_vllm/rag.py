@@ -43,5 +43,5 @@ class RAG:
             hidden_states = outputs.hidden_states
             last_hidden_state = hidden_states[-1]
             # Mean pooling for sentence-level embedding
-            embeddings = last_hidden_state.mean(dim=1)
+            embeddings = last_hidden_state.mean(dim=1).squeeze()
         return embeddings
