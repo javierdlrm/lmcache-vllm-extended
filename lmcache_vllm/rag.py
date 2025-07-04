@@ -17,7 +17,12 @@ class RAG:
     def index(self, context_key, context):
         print("/// [RAG] indexing context: " + context_key)
         embeddings = self._get_llm_embeddings(context)
-        print("/// -> [index] Embedding dimension: ", len(embeddings))
+        print(
+            "/// -> [index] Embedding dimension: ",
+            len(embeddings),
+            " and shape: ",
+            embeddings.shape,
+        )
         embeddings_np = embeddings.cpu().numpy().astype(np.float32)
         self.faiss_index.add(embeddings_np)
         self.context_keys.append(context_key)
@@ -26,7 +31,12 @@ class RAG:
     def search(self, question, top_k=5):
         print("/// [RAG] searching for question: " + question)
         question_embedding = self._get_llm_embeddings(question)
-        print("/// -> [search] embedding dimension: ", len(question_embedding))
+        print(
+            "/// -> [search] embedding dimension: ",
+            len(question_embedding),
+            " and shape: ",
+            question_embedding.shape,
+        )
         question_np = question_embedding.cpu().numpy().astype(np.float32)
         distances, ids = self.faiss_index.search(question_np, top_k)
         context_key = self.context_keys[ids[0][0]]
@@ -48,6 +58,10 @@ class RAG:
         # Pool the token embeddings to get a single vector (mean pooling)
         embeddings = last_hidden_state.mean(dim=1).squeeze()
 
+        print(f"Last hidden state shape: {outputs.last_hidden_state.shape}")
+        print(f"Model config hidden size: {self.model.config.hidden_size}")
+        print(f"Embeddings length: {len(embeddings)}")
+        print(f"Embeddings shape: {embeddings.shape}")
         return embeddings
 
     def _get_llm_embeddings_2(self, text):
@@ -60,5 +74,5 @@ class RAG:
             hidden_states = outputs.hidden_states
             last_hidden_state = hidden_states[-1]
             # Mean pooling for sentence-level embedding
-            embeddings = last_hidden_state.mean(dim=1).squeeze()
+            embeddings = last_hidden_state.mean(dim=1)
         return embeddings
