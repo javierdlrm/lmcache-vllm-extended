@@ -48,9 +48,6 @@ class RAG:
         # Pool the token embeddings to get a single vector (mean pooling)
         embeddings = last_hidden_state.mean(dim=1).squeeze()
 
-        print(f"Last hidden state shape: {outputs.last_hidden_state.shape}")
-        print(f"Model config hidden size: {self.model.config.hidden_size}")
-        print(f"Embeddings length: {len(embeddings)}")
         return embeddings
 
     def _get_llm_embeddings_2(self, text):

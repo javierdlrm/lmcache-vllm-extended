@@ -637,7 +637,7 @@ def InitLMCacheEnvironment() -> None:
         model = AutoModel.from_pretrained(model_name)
 
         rag_instance = RAG(
-            model=model, tokenizer=tokenizer, device="cpu", embedding_dim=2048
+            model=model, tokenizer=tokenizer, device="cpu", embedding_dim=1024
         )
         extended_router.rag_instance = rag_instance
 
