@@ -1,9 +1,7 @@
 from openai import OpenAI
 from io import StringIO
 import time
-import csv
-import os
-from utils import record_response_metrics
+from utils import record_response_metrics, get_num_char_and_seq_length
 
 
 class ChatSession:
@@ -29,12 +27,14 @@ class ChatSession:
         self.tokenizer = tokenizer
         self.task = task
 
-    def set_context(self, context_strings, context_key=None):
+    def set_context_key(self, context_key):
+        self.context_key = context_key
+
+    def set_context(self, context_strings):
         contexts = []
         for context in context_strings:
             contexts.append(context)
 
-        self.context_key = context_key
         self.final_context = self.context_separator.join(contexts)
         self.on_user_message(self.final_context, display=False)
         self.on_server_message("Got it!", display=False)
@@ -55,7 +55,9 @@ class ChatSession:
     def chat(self, question):
         self.on_user_message(question)
 
-        num_char, seq_length = self.get_num_char_and_seq_length(self.messages)
+        num_char, seq_length = get_num_char_and_seq_length(
+            self.tokenizer, self.messages
+        )
 
         start = time.perf_counter()
         end = None
@@ -90,21 +92,16 @@ class ChatSession:
         latency = end - start
 
         # save metrics to csv file
-        record_response_metrics(self.task, seq_length, latency)
+        record_response_metrics(self.task, [seq_length, latency])
 
         print(
             f"\n\n(📝 Response delay: {latency:.2f} seconds // {num_char} chars, {seq_length} tokens (seq len))\n"
         )
 
-    def get_num_char_and_seq_length(self, messages):
-        chat_str = self.tokenizer.apply_chat_template(messages, tokenize=False)
-        token_ids = self.tokenizer.encode(chat_str)
-        return len(chat_str), len(token_ids)
-
     def build_chat_completion_request(self, question):
         self.on_user_message(question, display=False)
 
-        _, seq_length = self.get_num_char_and_seq_length(self.messages)
+        _, seq_length = get_num_char_and_seq_length(self.tokenizer, self.messages)
 
         return {
             "request": {

@@ -28,11 +28,14 @@ class ExtendedChatCompletionRequest(BaseModel):
     request: ChatCompletionRequest
     seq_length: int
     context_key: str
+    backup_context_key: str = None
+    rag_latency: float = None
 
 
 class BatchExtendedChatCompletionRequest(BaseModel):
     requests: List[ExtendedChatCompletionRequest]
     sort_before_forwarding: bool
+    use_rag: bool = False  # Whether to use RAG for context retrieval
 
 
 @extended_router.post("/batch/chat/completions")
@@ -41,10 +44,44 @@ async def create_batch_chat_completion(
 ):
     print("v2 batch completion is called")
     responses = []
+    rag_accuracy = None
 
     if batch_request.sort_before_forwarding:
+        # Sort batched requests by context_key if specified
+        if batch_request.use_rag:
+            rag_accuracy = 0.0
+
+            # If using RAG, retrieve context for each request before sorting
+            for request in batch_request.requests:
+                start = time.perf_counter()
+                end = None
+
+                question = request.request.messages[-1]["content"]
+                context_key, context = extended_router.rag_instance.search(
+                    question=question, top_k=1
+                )
+                # Add the context to the last user message
+                request.request.messages[-1] = {
+                    "role": "user",
+                    "content": f"User prompt: {question}. "
+                    + "\nPlease, answer given the following context: "
+                    + context,
+                }
+
+                end = time.perf_counter()
+                latency = end - start
+
+                request.backup_context_key = request.context_key
+                request.context_key = context_key
+                request.rag_latency = latency
+
+                rag_accuracy += 1 if context_key == request.context_key else 0
+            rag_accuracy /= len(batch_request.requests)
+
+        # Sort requests by context_key
         batch_request.requests.sort(key=lambda x: x.context_key)
 
+    # Process each request in the batch
     for request in batch_request.requests:
         start = time.perf_counter()
         end = None
@@ -60,6 +97,14 @@ async def create_batch_chat_completion(
         end = time.perf_counter()
         latency = end - start
 
-        responses.append({"seq_length": request.seq_length, "latency": latency})
+        metrics = {"seq_length": request.seq_length, "latency": latency}
+        if batch_request.use_rag:
+            metrics["messages"] = (
+                request.request.messages
+            )  # include rag context + question to compute seq_length at the client
+            metrics["rag_accuracy"] = rag_accuracy
+            metrics["rag_latency"] = request.rag_latency
+
+        responses.append(metrics)
 
     return responses

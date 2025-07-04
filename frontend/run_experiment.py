@@ -10,6 +10,7 @@ from utils import (
     plot_latency_vs_seq_length,
     plot_multiple_latency_vs_seq_length,
     plot_latency_vs_req_id,
+    plot_rag_latency_vs_req_id,
 )
 
 MODEL_NAME = "Qwen/Qwen2.5-1.5B-Instruct"
@@ -97,7 +98,12 @@ def main():
 
     # Initialize request generator
     generator = RequestGenerator(
-        SYSTEM_PROMPT, session_context_prompts_dict, ip=IP1, port=PORT1, task=task
+        SYSTEM_PROMPT,
+        session_context_prompts_dict,
+        ip=IP1,
+        port=PORT1,
+        task=task,
+        tokenizer=tokenizer,
     )
 
     # Run task
@@ -108,7 +114,16 @@ def main():
 
     elif task.startswith("task2"):
         print("# Running task 2: Batch requests")
-        generator.start_batch(randomize=randomize, sort_before_forwarding=True)
+        generator.start_batch(
+            randomize=randomize, sort_before_forwarding=True, use_rag=False
+        )
+
+    elif task.startswith("task3"):
+        print("# Running task 3: Batch requests with RAG")
+        generator.start_batch(
+            randomize=randomize, sort_before_forwarding=True, use_rag=True
+        )
+        plot_rag_latency_vs_req_id(task)
 
     # Generate plots of the results
     plot_latency_vs_seq_length(task)

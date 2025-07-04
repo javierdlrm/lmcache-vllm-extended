@@ -1,0 +1,7 @@
+Figure 1. Unsorted Req IDS with two lines: latencies per request, latencies per request + rag search.
+- Add RAG accuracy somewhere in the Figure.
+Figure 2. Sorted Req IDS with two lines: latencies per request, latencies per request + rag search.
+- Add RAG accuracy somewhere in the Figure.
+
+
+- RAG for sequential requests? nah?
