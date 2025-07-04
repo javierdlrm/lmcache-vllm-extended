@@ -617,7 +617,7 @@ def InitLMCacheEnvironment() -> None:
         _new_normalize_prompt_text_to_input
     )
 
-    from custom_api import extended_router, init_rag
+    from custom_api import extended_router
 
     print(type(router))
 
@@ -629,6 +629,9 @@ def InitLMCacheEnvironment() -> None:
         from rag import RAG
         from transformers import AutoTokenizer, AutoModel
 
+        print("---------------------------------------------------------")
+        print("Loading tokenizer...")
+        print("---------------------------------------------------------")
         model_name = "Qwen/Qwen1.5-0.5B"
         tokenizer = AutoTokenizer.from_pretrained(model_name)
         model = AutoModel.from_pretrained(model_name)
