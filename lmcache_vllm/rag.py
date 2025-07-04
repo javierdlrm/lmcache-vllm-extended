@@ -1,5 +1,4 @@
 import torch
-from transformers import AutoModelForCausalLM, AutoTokenizer
 import faiss
 import numpy as np
 
@@ -17,6 +16,7 @@ class RAG:
 
     def index(self, context_key, context):
         embeddings = self._get_llm_embeddings(context)
+        print("/// -> Embedding dimension: ", len(embeddings))
         embeddings_np = embeddings.cpu().numpy().astype(np.float32)
         self.faiss_index.add(embeddings_np)
         self.context_keys.append(context_key)
