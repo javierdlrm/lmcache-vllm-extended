@@ -154,7 +154,7 @@ def plot_multiple_latency_vs_seq_length(task):
 
     task_prefix = task[:15]
     pattern = f"reports/{task_prefix}_*.csv"
-    csv_paths = glob.glob(pattern)
+    csv_paths = [p for p in glob.glob(pattern) if not p.endswith("_rag.csv")]
     if not csv_paths:
         print(f"No CSV files found for pattern: {pattern}")
         return
