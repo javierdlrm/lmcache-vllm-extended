@@ -137,7 +137,9 @@ class RequestGenerator:
                 header_rag.append("prompt")
                 values_rag.append(request["request"]["messages"][0]["content"])
 
-                record_response_metrics(self.task, values, header=header, suffix="_rag")
+                record_response_metrics(
+                    self.task, values_rag, header=header_rag, suffix="_rag"
+                )
 
         return response_json
 
