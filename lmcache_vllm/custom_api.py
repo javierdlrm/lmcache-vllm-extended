@@ -33,7 +33,6 @@ class ExtendedChatCompletionRequest(BaseModel):
     request: ChatCompletionRequest
     seq_length: int
     context_key: str
-    backup_context_key: str = None
     rag_latency: float = None
 
 
@@ -61,6 +60,9 @@ async def create_batch_chat_completion(
                 start = time.perf_counter()
                 end = None
 
+                print("\n\n//// Pre-RAG request.messages: ", request.request.messages)
+                print("//// \n\n")
+
                 question = request.request.messages[-1]["content"]
                 context_key, context = extended_router.rag_instance.search(
                     question=question, top_k=1
@@ -73,12 +75,19 @@ async def create_batch_chat_completion(
                     + context,
                 }
 
+                print("\n\n//// Post-RAG request.messages: ", request.request.messages)
+                print("//// \n\n")
+
                 end = time.perf_counter()
                 latency = end - start
 
+                print(
+                    f"\n\n//// Matched context key: {request.context_key == context_key}. Expected('{request.context_key}'), Obtained('{context_key}')"
+                )
+                print("//// \n\n")
+
                 rag_accuracy += 1 if context_key == request.context_key else 0
 
-                request.backup_context_key = request.context_key
                 request.context_key = context_key
                 request.rag_latency = latency
 

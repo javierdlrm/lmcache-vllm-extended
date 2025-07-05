@@ -42,9 +42,7 @@ class RequestGenerator:
             for response_chunk in response_stream:
                 yield prompt, response_chunk
 
-    def start_batch(
-        self, randomize=True, sort_before_forwarding=True, use_rag=False, tokenizer=None
-    ):
+    def start_batch(self, randomize=True, sort_before_forwarding=True, use_rag=False):
         # All session and prompts combinations
         session_prompt_tuples = []
 
@@ -88,7 +86,6 @@ class RequestGenerator:
         start = time.perf_counter()
         end = None
 
-        # Prepare the batch request payload
         batch_payload = {
             "requests": request_batch,
             "sort_before_forwarding": sort_before_forwarding,
@@ -106,15 +103,16 @@ class RequestGenerator:
         response.raise_for_status()
         response_json = response.json()
 
-        print("----------------------------------------------------------------------")
+        print("\n\n--------------------------------------------------------------")
         print("# Response:")
         print(response_json)
-        print("----------------------------------------------------------------------")
+        print("--------------------------------------------------------------\n\n")
 
         # save metrics to csv file
         for metrics in response_json:
             header, values = [], []
             if use_rag:
+                print("!!! ////// Recompute seq length with: ", metrics["messages"])
                 _, seq_length = get_num_char_and_seq_length(
                     self.tokenizer, metrics["messages"]
                 )
@@ -139,6 +137,11 @@ class RequestGenerator:
     def index_contexts_for_rag(self):
         url = f"http://{self.ip}:{self.port}/v2/rag/index"
 
+        print("\n/// Indexing contexts for RAG...")
+
+        start = time.perf_counter()
+        end = None
+
         for entry in self.session_context_prompts_dict.values():
             context_key = entry["context_key"]
             context = entry["context"]
@@ -149,6 +152,11 @@ class RequestGenerator:
             try:
                 response = requests.post(url, json=payload)
                 response.raise_for_status()
-                print(f"Indexed context '{context_key}': {response.json()}")
+                print(f"- Indexed context '{context_key}': {response.json()}")
             except Exception as e:
                 print(f"Failed to index context '{context_key}': {e}")
+
+        end = time.perf_counter()
+        latency = end - start
+
+        print(f"\n\n(📝 Indexing delay: {latency:.2f} seconds\n")
