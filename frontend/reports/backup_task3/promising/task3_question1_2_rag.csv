@@ -1,0 +1,31 @@
+rag_accuracy,rag_latency,rag_match,context_key,rag_context_key,prompt
+0.8333333333333334,0.004109087400138378,1,SplitRPC-sigmetrics23,SplitRPC-sigmetrics23,What are the key APIs provided by SplitRPC for data access?
+0.8333333333333334,0.004042759537696838,1,SplitRPC-sigmetrics23,SplitRPC-sigmetrics23,What is the role of the inference monitor in SplitRPC?
+0.8333333333333334,0.003974398598074913,0,click,SplitRPC-sigmetrics23,What kernel-level optimization enables high I/O performance?
+0.8333333333333334,0.004507850855588913,1,cacheblend,cacheblend,"How does CacheBlend enable reuse of cached KV chunks in non-prefix locations, and what are the broader implications for LLM serving in RAG scenarios?"
+0.8333333333333334,0.004416474141180515,1,cacheblend,cacheblend,What are the three main interfaces implemented in CacheBlend’s PyTorch codebase?
+0.8333333333333334,0.00436036754399538,1,cacheblend,cacheblend,"What distinguishes CacheBlend from related work like PromptCache, vLLM, and other context compression techniques?"
+0.8333333333333334,0.004217944107949734,0,SplitRPC-sigmetrics23,click,What are the five implementation styles presented in Section 4?
+0.8333333333333334,0.004049682058393955,1,click,click,How do explicit queue elements enhance control in Click's design?
+0.8333333333333334,0.003953652456402779,1,click,click,Which prior systems are compared with Click in the related work?
+0.8333333333333334,0.01692279800772667,1,extra-compound-mape,extra-compound-mape,In what way does the stringing operator connect components from different patterns?
+0.8333333333333334,0.004392088390886784,0,osdi24-lee,extra-compound-mape,Why can't prior systems dynamically adapt to per-layer token requirements?
+0.8333333333333334,0.004369433969259262,1,extra-compound-mape,extra-compound-mape,How does the hybrid pattern address the single point of failure issue in the forest fire detection system?
+0.8333333333333334,0.004090428352355957,1,extra-compound-mape,extra-compound-mape,What new events are introduced in the hybrid compound pattern after composition?
+0.8333333333333334,0.010606804862618446,1,extra-estimate-performance,extra-estimate-performance,How does PAPE handle calibration of probability estimates for performance estimation?
+0.8333333333333334,0.004095382988452911,1,extra-estimate-performance,extra-estimate-performance,Which baseline performance estimation methods were compared against PAPE in the experiments?
+0.8333333333333334,0.004335004836320877,1,extra-estimate-performance,extra-estimate-performance,What type of performance metrics can PAPE estimate on unlabeled data?
+0.8333333333333334,0.004305689595639706,1,metron-nsdi18,metron-nsdi18,What performance throughput does Metron achieve on a single server?
+0.8333333333333334,0.004097895696759224,1,metron-nsdi18,metron-nsdi18,Which prior systems does Metron build upon according to the related work section?
+0.8333333333333334,0.004067522473633289,0,nsdi20-paper-barbette,metron-nsdi18,Where does CHEETAH embed server-mapping information within network packets?
+0.8333333333333334,0.004077356308698654,1,metron-nsdi18,metron-nsdi18,What hardware resources does Metron utilize to run stateful service chains?
+0.8333333333333334,0.004128805361688137,1,nsdi20-paper-barbette,nsdi20-paper-barbette,How does CHEETAH prevent PCC violations during server additions/removals?
+0.8333333333333334,0.004084086045622826,1,nsdi20-paper-barbette,nsdi20-paper-barbette,How does CHEETAH's resilience compare to traditional systems?
+0.8333333333333334,0.004092819057404995,1,osdi24-lee,osdi24-lee,What is the primary bottleneck when offloading KV cache to CPU memory?
+0.8333333333333334,0.004049654118716717,1,osdi24-lee,osdi24-lee,What models were used in InfiniGen's evaluation benchmarks?
+0.8333333333333334,0.004084581509232521,1,osdi24-sun-biao,osdi24-sun-biao,What problem does Llumnix solve in large language model serving?
+0.8333333333333334,0.004069189541041851,1,osdi24-sun-biao,osdi24-sun-biao,What cost savings does Llumnix achieve through auto-scaling?
+0.8333333333333334,0.0041052959859371185,0,sigcomm2023_janus,osdi24-sun-biao,Which scheduling technique contributes most significantly to Janus' performance gains?
+0.8333333333333334,0.004194349981844425,1,osdi24-sun-biao,osdi24-sun-biao,"How does ""Virtual Usage"" abstraction help in resource management?"
+0.8333333333333334,0.004052426666021347,1,sigcomm2023_janus,sigcomm2023_janus,How does Janus handle PR-MoE models with mixed expert blocks?
+0.8333333333333334,0.004103264771401882,1,sigcomm2023_janus,sigcomm2023_janus,What problem does Janus solve in distributed training of Mixture-of-Experts (MoE) models?
