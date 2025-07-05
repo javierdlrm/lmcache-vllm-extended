@@ -67,13 +67,16 @@ def get_session_context_prompts_dict(
             )
         else:
             selected_prompts = prompt_list[:num_requests]
+        chat_sessions = [
+            chat_session.ChatSession(IP1, PORT1, tokenizer=tokenizer, task=task)
+            for _ in selected_prompts
+        ]
+
         session_context_prompts_dict[context_key] = {
-            "session": chat_session.ChatSession(
-                IP1, PORT1, tokenizer=tokenizer, task=task
-            ),
-            "context": chunks[context_key],
-            "prompts": selected_prompts,
             "context_key": context_key,
+            "context": chunks[context_key],
+            "sessions": chat_sessions,
+            "prompts": selected_prompts,
         }
     return session_context_prompts_dict
 

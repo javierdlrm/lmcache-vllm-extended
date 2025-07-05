@@ -21,15 +21,14 @@ class RequestGenerator:
         session_prompt_tuples = []
 
         for entry in self.session_context_prompts_dict.values():
-            session = entry["session"]
+            sessions = entry["sessions"]
             context = entry["context"]
             prompts = entry["prompts"]
             context_key = entry["context_key"]
 
-            session.set_context_key(context_key)
-            session.set_context([context])
-
-            for prompt in prompts:
+            for session, prompt in zip(sessions, prompts):
+                session.set_context_key(context_key)
+                session.set_context([context])
                 session_prompt_tuples.append((session, prompt))
 
         # Randomize the order of session and prompt combinations
@@ -47,16 +46,15 @@ class RequestGenerator:
         session_prompt_tuples = []
 
         for entry in self.session_context_prompts_dict.values():
-            session = entry["session"]
+            sessions = entry["sessions"]
             context = entry["context"]
             prompts = entry["prompts"]
             context_key = entry["context_key"]
 
-            session.set_context_key(context_key)
-            if not use_rag:  # If not using RAG, set the session context
-                session.set_context([context])
-
-            for prompt in prompts:
+            for session, prompt in zip(sessions, prompts):
+                session.set_context_key(context_key)
+                if not use_rag:  # If not using RAG, set the session context
+                    session.set_context([context])
                 session_prompt_tuples.append((session, prompt))
 
         # Randomize the order of session and prompt combinations
@@ -91,6 +89,11 @@ class RequestGenerator:
             "sort_before_forwarding": sort_before_forwarding,
             "use_rag": use_rag,
         }
+
+        print("\n\n--------------------------------------------------------------")
+        print("# Request:")
+        print(batch_payload)
+        print("--------------------------------------------------------------\n\n")
 
         url = f"http://{self.ip}:{self.port}/v2" + "/batch/chat/completions"
         response = requests.post(url, json=batch_payload)
