@@ -626,20 +626,11 @@ def InitLMCacheEnvironment() -> None:
         print("---------------------------------------------------------")
         print("////////////////////// vLLM FastAPI server starting up...")
         print("---------------------------------------------------------")
+        from sentence_transformers import SentenceTransformer
         from rag import RAG
-        from transformers import AutoTokenizer, AutoModel
 
-        print("---------------------------------------------------------")
-        print("Loading tokenizer...")
-        print("---------------------------------------------------------")
-        model_name = "Qwen/Qwen1.5-0.5B"  # The hidden size for Qwen1.5-0.5B is 2048.
-        tokenizer = AutoTokenizer.from_pretrained(model_name)
-        model = AutoModel.from_pretrained(model_name)
-
-        rag_instance = RAG(
-            model=model, tokenizer=tokenizer, device="cpu", embedding_dim=1024
-        )
-        extended_router.rag_instance = rag_instance
+        embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
+        extended_router.rag_instance = RAG(embedding_model=embedding_model)
 
     router.include_router(extended_router, prefix="/v2", tags=["extended"])
 
