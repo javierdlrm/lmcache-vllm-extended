@@ -109,7 +109,7 @@ class RequestGenerator:
             request = request_batch[request_idx]  # find original request
 
             _, seq_length = get_num_char_and_seq_length(
-                self.tokenizer, request.request.messages
+                self.tokenizer, request["request"]["messages"]
             )
             # seq_length = metrics["seq_length"]
 
@@ -128,14 +128,14 @@ class RequestGenerator:
                 values_rag.append(metrics["rag_latency"])
                 header_rag.append("rag_match")
                 values_rag.append(
-                    1 if metrics["rag_context_key"] == request.context_key else 0
+                    1 if metrics["rag_context_key"] == request["context_key"] else 0
                 )
                 header_rag.append("context_key")
-                values_rag.append(request.context_key)
+                values_rag.append(request["context_key"])
                 header_rag.append("rag_context_key")
                 values_rag.append(metrics["rag_context_key"])
                 header_rag.append("prompt")
-                values_rag.append(request.request.messages[0]["content"])
+                values_rag.append(request["request"]["messages"][0]["content"])
 
                 record_response_metrics(self.task, values, header=header, suffix="_rag")
 
