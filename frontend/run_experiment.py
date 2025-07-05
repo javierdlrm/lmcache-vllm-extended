@@ -127,7 +127,7 @@ def main():
         generator.start_batch(
             randomize=randomize, sort_before_forwarding=True, use_rag=True
         )
-        plot_rag_latency_vs_req_id(task)
+        plot_rag_latency_vs_req_id(task + "_rag")
 
     # Generate plots of the results
     plot_latency_vs_seq_length(task)

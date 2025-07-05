@@ -1,6 +1,5 @@
-from openai import OpenAI
-from io import StringIO
 import time
+from openai import OpenAI
 from utils import record_response_metrics, get_num_char_and_seq_length
 
 
@@ -77,7 +76,6 @@ class ChatSession:
             stop="\n",
         )
 
-        output_buffer = StringIO()
         server_message = []
         for chunk in chat_completion:
             chunk_message = chunk.choices[0].delta.content
@@ -101,8 +99,6 @@ class ChatSession:
     def build_chat_completion_request(self, question):
         self.on_user_message(question, display=False)
 
-        _, seq_length = get_num_char_and_seq_length(self.tokenizer, self.messages)
-
         return {
             "request": {
                 "messages": self.messages,
@@ -111,6 +107,5 @@ class ChatSession:
                 "stream": True,
                 "stop": "\n",
             },
-            "seq_length": seq_length,
             "context_key": self.context_key,
         }

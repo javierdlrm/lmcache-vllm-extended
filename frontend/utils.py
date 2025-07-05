@@ -112,7 +112,7 @@ def plot_rag_latency_vs_req_id(task):
         return
 
     req_ids = []
-    latencies = []
+    # latencies = []
     rag_latencies = []
     with open(csv_file, newline="") as f:
         reader = csv.DictReader(f)
@@ -120,23 +120,24 @@ def plot_rag_latency_vs_req_id(task):
         for row in reader:
             req_ids.append(req_id)
             req_id += 1
-            lat = float(row["latency"]) * 1000  # milliseconds
+            # lat = float(row["latency"]) * 1000  # milliseconds
             rag_lat = float(row["rag_latency"]) * 1000  # milliseconds
-            latencies.append(lat)
-            rag_latencies.append(lat + rag_lat)
+            # latencies.append(lat)
+            # rag_latencies.append(lat + rag_lat)
+            rag_latencies.append(rag_lat)
 
-    if not req_ids or not latencies:
+    if not req_ids or not rag_latencies:
         print("No data to plot.")
         return
 
     plt.figure(figsize=(8, 5))
-    plt.scatter(req_ids, latencies, color="blue", alpha=0.7, label="Latency")
-    plt.plot(req_ids, latencies, color="blue", alpha=0.5)
+    # plt.scatter(req_ids, latencies, color="blue", alpha=0.7, label="Latency")
+    # plt.plot(req_ids, latencies, color="blue", alpha=0.5)
     plt.scatter(
         req_ids, rag_latencies, color="green", alpha=0.7, label="Latency + RAG Latency"
     )
     plt.plot(req_ids, rag_latencies, color="green", alpha=0.5)
-    plt.title(f"Latency and Latency+RAG vs Request ID for task: {task}")
+    plt.title(f"RAG latencies vs Request ID for task: {task}")
     plt.xlabel("Request ID")
     plt.ylabel("Latency (milliseconds)")
     plt.grid(True)

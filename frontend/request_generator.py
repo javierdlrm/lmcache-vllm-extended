@@ -63,8 +63,9 @@ class RequestGenerator:
 
         # For each session and prompt, build a request
         request_batch = []
-        for session, prompt in session_prompt_tuples:
+        for idx, (session, prompt) in enumerate(session_prompt_tuples):
             request = session.build_chat_completion_request(prompt)
+            request["request_id"] = idx  # add idx for future reference
             request_batch.append(request)
 
         return self._send_batch(
@@ -74,15 +75,7 @@ class RequestGenerator:
         )
 
     def _send_batch(self, request_batch, sort_before_forwarding=True, use_rag=False):
-        print("----------------------------------------------------------------------")
-        print(f"# Batch size: [{len(request_batch)}]:")
-        print(
-            "----------------------------------------------------------------------",
-            end="\n\n",
-        )
-
-        start = time.perf_counter()
-        end = None
+        url = f"http://{self.ip}:{self.port}/v2" + "/batch/chat/completions"
 
         batch_payload = {
             "requests": request_batch,
@@ -90,50 +83,61 @@ class RequestGenerator:
             "use_rag": use_rag,
         }
 
-        print("\n\n--------------------------------------------------------------")
-        print("# Request:")
-        print(batch_payload)
-        print("--------------------------------------------------------------\n\n")
+        start = time.perf_counter()
+        end = None
 
-        url = f"http://{self.ip}:{self.port}/v2" + "/batch/chat/completions"
         response = requests.post(url, json=batch_payload)
 
         end = time.perf_counter()
         latency = end - start
 
-        print(f"\n\n(📝 Response delay: {latency:.2f} seconds\n")
+        print(f"\n(📝 Response delay: {latency:.2f} seconds\n")
 
         response.raise_for_status()
         response_json = response.json()
 
-        print("\n\n--------------------------------------------------------------")
+        print("--------------------------------------------------------------")
         print("# Response:")
         print(response_json)
-        print("--------------------------------------------------------------\n\n")
+        print("--------------------------------------------------------------\n")
 
         # save metrics to csv file
         for metrics in response_json:
             header, values = [], []
-            if use_rag:
-                print("!!! ////// Recompute seq length with: ", metrics["messages"])
-                _, seq_length = get_num_char_and_seq_length(
-                    self.tokenizer, metrics["messages"]
-                )
-            else:
-                seq_length = metrics["seq_length"]
+
+            request_idx = metrics["request_idx"]
+            request = request_batch[request_idx]  # find original request
+
+            _, seq_length = get_num_char_and_seq_length(
+                self.tokenizer, request.request.messages
+            )
+            # seq_length = metrics["seq_length"]
 
             header.append("seq_length")
-            header.append("latency")
             values.append(seq_length)
+            header.append("latency")
             values.append(metrics["latency"])
 
-            if use_rag:
-                header.append("rag_accuracy")
-                header.append("rag_latency")
-                values.append(metrics["rag_accuracy"])
-                values.append(metrics["rag_latency"])
-
             record_response_metrics(self.task, values, header=header)
+
+            if use_rag:
+                header_rag, values_rag = [], []
+                header_rag.append("rag_accuracy")
+                values_rag.append(metrics["rag_accuracy"])
+                header_rag.append("rag_latency")
+                values_rag.append(metrics["rag_latency"])
+                header_rag.append("rag_match")
+                values_rag.append(
+                    1 if metrics["rag_context_key"] == request.context_key else 0
+                )
+                header_rag.append("context_key")
+                values_rag.append(request.context_key)
+                header_rag.append("rag_context_key")
+                values_rag.append(metrics["rag_context_key"])
+                header_rag.append("prompt")
+                values_rag.append(request.request.messages[0]["content"])
+
+                record_response_metrics(self.task, values, header=header, suffix="_rag")
 
         return response_json
 
@@ -155,11 +159,11 @@ class RequestGenerator:
             try:
                 response = requests.post(url, json=payload)
                 response.raise_for_status()
-                print(f"- Indexed context '{context_key}': {response.json()}")
+                print(f"... Indexed context '{context_key}': {response.json()}")
             except Exception as e:
                 print(f"Failed to index context '{context_key}': {e}")
 
         end = time.perf_counter()
         latency = end - start
 
-        print(f"\n\n(📝 Indexing delay: {latency:.2f} seconds\n")
+        print(f"\n(📝 Indexing delay: {latency:.2f} seconds\n")

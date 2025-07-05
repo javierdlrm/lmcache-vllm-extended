@@ -25,13 +25,13 @@ async def create_chat_completion(request: ChatCompletionRequest, raw_request: Re
 
 
 #######################################################################################
-# Request batch
+# Batch endpoints
 #######################################################################################
 
 
 class ExtendedChatCompletionRequest(BaseModel):
+    request_id: int
     request: ChatCompletionRequest
-    seq_length: int
     context_key: str
     rag_latency: float = None
 
@@ -112,13 +112,15 @@ async def create_batch_chat_completion(
         end = time.perf_counter()
         latency = end - start
 
-        metrics = {"seq_length": request.seq_length, "latency": latency}
+        # Build response with metrics
+        metrics = {
+            "request_id": request.request_id,
+            "latency": latency,
+        }
         if batch_request.use_rag:
-            metrics["messages"] = (
-                request.request.messages
-            )  # include rag context + question to compute seq_length at the client
             metrics["rag_accuracy"] = rag_accuracy
             metrics["rag_latency"] = request.rag_latency
+            metrics["rag_context_key"] = request.context_key
 
         responses.append(metrics)
 
@@ -126,7 +128,7 @@ async def create_batch_chat_completion(
 
 
 #######################################################################################
-# RAG-specific
+# RAG endpoints
 #######################################################################################
 
 
