@@ -76,11 +76,12 @@ async def create_batch_chat_completion(
                 end = time.perf_counter()
                 latency = end - start
 
+                rag_accuracy += 1 if context_key == request.context_key else 0
+
                 request.backup_context_key = request.context_key
                 request.context_key = context_key
                 request.rag_latency = latency
 
-                rag_accuracy += 1 if context_key == request.context_key else 0
             rag_accuracy /= len(batch_request.requests)
 
         # Sort requests by context_key

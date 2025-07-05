@@ -1,0 +1,20 @@
+What novel framework demonstrates RDMA's Turing completeness?
+How does RedN enable complex offloads without modifying RDMA hardware?
+Which RDMA verbs does RedN use to implement self-modifying chains?
+What are the two primary performance benefits of RedN over traditional RDMA systems?
+How does RedN introduce conditional logic using RDMA operations?
+What mechanism enforces strict execution order in RedN's control flow?
+How many lines of code comprise the RedN implementation?
+Which RDMA NIC generations are compatible with RedN?
+What is the latency impact of if/while constructs in RedN's microbenchmarks?
+How does RedN accelerate hash lookups compared to conventional RDMA approaches?
+What throughput does RedN achieve for get operations on dual-port RNICs?
+How does RedN optimize linked list traversal performance?
+What speedup does RedN provide for Memcached get operations?
+How does RedN eliminate CPU polling in Memcached acceleration?
+What latency improvement does RedN provide under contention scenarios?
+How does RedN maintain service continuity during OS kernel panics?
+What client scalability challenge does RedN face?
+Which solution is proposed for RedN's client scalability limitation?
+How might future RNIC designs enhance WR cache access for RedN?
+Which three computational requirements does the appendix prove RDMA satisfies for Turing completeness?
