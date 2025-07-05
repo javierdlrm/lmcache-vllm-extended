@@ -65,7 +65,7 @@ class RequestGenerator:
         request_batch = []
         for idx, (session, prompt) in enumerate(session_prompt_tuples):
             request = session.build_chat_completion_request(prompt)
-            request["request_id"] = idx  # add idx for future reference
+            request["request_idx"] = idx  # add idx for future reference
             request_batch.append(request)
 
         return self._send_batch(

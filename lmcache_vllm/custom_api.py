@@ -30,7 +30,7 @@ async def create_chat_completion(request: ChatCompletionRequest, raw_request: Re
 
 
 class ExtendedChatCompletionRequest(BaseModel):
-    request_id: int
+    request_idx: int
     request: ChatCompletionRequest
     context_key: str
     rag_latency: float = None
@@ -114,7 +114,7 @@ async def create_batch_chat_completion(
 
         # Build response with metrics
         metrics = {
-            "request_id": request.request_id,
+            "request_idx": request.request_idx,
             "latency": latency,
         }
         if batch_request.use_rag:
