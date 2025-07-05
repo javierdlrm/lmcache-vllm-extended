@@ -16,7 +16,7 @@ class RequestGenerator:
         self.task = task
         self.tokenizer = tokenizer
 
-    def start(self, randomize=True):
+    def start(self, randomize):
         # All session and prompts combinations
         session_prompt_tuples = []
 
@@ -41,7 +41,7 @@ class RequestGenerator:
             for response_chunk in response_stream:
                 yield prompt, response_chunk
 
-    def start_batch(self, randomize=True, sort_before_forwarding=True, use_rag=False):
+    def start_batch(self, randomize, sort_before_forwarding, use_rag):
         # All session and prompts combinations
         session_prompt_tuples = []
 
@@ -74,7 +74,7 @@ class RequestGenerator:
             use_rag=use_rag,
         )
 
-    def _send_batch(self, request_batch, sort_before_forwarding=True, use_rag=False):
+    def _send_batch(self, request_batch, sort_before_forwarding, use_rag):
         url = f"http://{self.ip}:{self.port}/v2" + "/batch/chat/completions"
 
         batch_payload = {

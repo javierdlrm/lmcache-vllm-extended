@@ -1,0 +1,31 @@
+rag_accuracy,rag_latency,rag_match,context_key,rag_context_key,prompt
+0.7,0.00401108805090189,1,SplitRPC-sigmetrics23,SplitRPC-sigmetrics23,How did SplitRPC perform under real workload traces?
+0.7,0.003993879072368145,0,extra-distributed-monitoring,SplitRPC-sigmetrics23,What is the impact of the framework on client-side runtime and resource usage?
+0.7,0.003920367918908596,1,SplitRPC-sigmetrics23,SplitRPC-sigmetrics23,What are the two versions of SplitRPC implemented?
+0.7,0.004030827432870865,1,SplitRPC-sigmetrics23,SplitRPC-sigmetrics23,What hardware platforms besides SmartNICs could benefit from SplitRPC's design?
+0.7,0.0039985207840800285,0,sigcomm24-crux,aplomb-sigcomm12,Which network topologies can Crux's design generalize to?
+0.7,0.00391802005469799,1,aplomb-sigcomm12,aplomb-sigcomm12,What is APLOMB's main benefit for enterprises?
+0.7,0.004076790995895863,1,cacheblend,cacheblend,"In sensitivity analysis, how consistent is CacheBlend’s performance across different chunk lengths and batch sizes?"
+0.7,0.003886832855641842,1,cacheblend,cacheblend,What is CacheBlend?
+0.7,0.0040460797026753426,0,extra-oss-monitoring,cacheblend,What are the main functional and non-functional evaluation criteria used in D3Bench?
+0.7,0.004071135073900223,1,cacheblend,cacheblend,"What distinguishes CacheBlend from related work like PromptCache, vLLM, and other context compression techniques?"
+0.7,0.004062909632921219,1,extra-distributed-monitoring,extra-distributed-monitoring,"What recent technological trend has increased the risk of financial fraud, motivating the research in this paper?"
+0.7,0.004039064049720764,1,extra-distributed-monitoring,extra-distributed-monitoring,Why might the system miss subtle changes in rare-event (fraud) patterns?
+0.7,0.004077201709151268,1,extra-estimate-performance,extra-estimate-performance,What is the impact of sample size on the accuracy of performance estimation methods like PAPE?
+0.7,0.004350433126091957,1,extra-estimate-performance,extra-estimate-performance,What is the main problem addressed by the PAPE algorithm in the context of machine learning model deployment?
+0.7,0.0040502529591321945,1,extra-estimate-performance,extra-estimate-performance,Which main assumption about the data distributions does PAPE rely on for accurate performance estimation?
+0.7,0.003941698931157589,0,aplomb-sigcomm12,extra-estimate-performance,What metrics show APLOMB's acceptable performance?
+0.7,0.00402449443936348,1,extra-oss-monitoring,extra-oss-monitoring,Which three open-source drift detection libraries are evaluated in the paper?
+0.7,0.004029613919556141,0,nsdi20-paper-barbette,metron-nsdi18,Where does CHEETAH embed server-mapping information within network packets?
+0.7,0.004007846117019653,1,nsdi20-paper-barbette,nsdi20-paper-barbette,What deployment compatibility strategies are discussed for TCP timestamps?
+0.7,0.004022523760795593,1,nsdi20-paper-barbette,nsdi20-paper-barbette,How does CHEETAH prevent PCC violations during server additions/removals?
+0.7,0.0039648450911045074,1,nsdi22-paper-reda_1,nsdi22-paper-reda_1,What novel framework demonstrates RDMA's Turing completeness?
+0.7,0.004002678208053112,1,nsdi22-paper-reda_1,nsdi22-paper-reda_1,How does RedN maintain service continuity during OS kernel panics?
+0.7,0.00426891166716814,1,nsdi22-paper-reda_1,nsdi22-paper-reda_1,What is the latency impact of if/while constructs in RedN's microbenchmarks?
+0.7,0.004013923928141594,0,vllm,osdi24-agrawal,What are the three primary memory challenges in LLM serving identified?
+0.7,0.003919022157788277,0,aplomb-sigcomm12,osdi24-sun-biao,How quickly does dynamic scaling respond to load changes?
+0.7,0.004071946255862713,0,vllm,sigcomm24-crux,How does vLLM support distributed execution across multiple GPUs?
+0.7,0.004003395326435566,1,sigcomm24-crux,sigcomm24-crux,Which metric does Crux introduce to prioritize communication scheduling?
+0.7,0.004030689597129822,1,sigcomm24-crux,sigcomm24-crux,What limitation does Crux face regarding overlap patterns in real-world scenarios?
+0.7,0.004075229167938232,1,vllm,vllm,What OS concept inspired the design of vLLM's KV cache manager?
+0.7,0.004009152762591839,0,extra-oss-monitoring,vllm,What are the key differences in memory usage among the evaluated tools?
