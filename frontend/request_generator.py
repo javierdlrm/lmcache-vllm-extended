@@ -218,9 +218,7 @@ class RequestGenerator:
                 header_rag.append("prompt")
                 values_rag.append(prompt)
 
-                record_response_metrics(
-                    self.task, values_rag, header=header_rag, suffix="_rag"
-                )
+                record_response_metrics(self.task, values_rag, header=header_rag)
 
         if total > 0:
             print(f"# Accuracy: {(accuracy/total) * 100}%")
