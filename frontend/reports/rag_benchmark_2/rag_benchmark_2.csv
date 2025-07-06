@@ -1,0 +1,41 @@
+rag_accuracy,rag_latency,rag_encode_latency,rag_search_latency,rag_match,context_key,rag_context_key,prompt
+1.0,0.01156770158559084,0.011386378668248653,0.00018132291734218597,1,sigcomm24-crux,sigcomm24-crux,What is the primary goal of Crux in deep learning training clusters?
+1.0,0.004336477257311344,0.004262273199856281,7.420405745506287e-05,1,sigcomm24-crux,sigcomm24-crux,Which metric does Crux introduce to prioritize communication scheduling?
+1.0,0.011598991230130196,0.011439656838774681,0.00015933439135551453,1,sigcomm24-crux,sigcomm24-crux,What percentage of jobs faced communication contention in the profiled production cluster?
+1.0,0.010919018648564816,0.01077322568744421,0.00014579296112060547,1,sigcomm24-crux,sigcomm24-crux,How does Crux model the problem of maximizing GPU utilization?
+1.0,0.007591652683913708,0.007488176226615906,0.00010347645729780197,1,sigcomm24-crux,sigcomm24-crux,What are the three core components of Crux's design?
+1.0,0.015669983811676502,0.015596400015056133,7.358379662036896e-05,1,sigcomm24-crux,sigcomm24-crux,How does Crux's path selection mechanism benefit high-GPU-intensity jobs?
+1.0,0.005109269171953201,0.005032393150031567,7.687602192163467e-05,1,sigcomm24-crux,sigcomm24-crux,What factors does Crux consider when assigning communication priorities to jobs?
+1.0,0.0048258863389492035,0.0047573670744895935,6.851926445960999e-05,1,sigcomm24-crux,sigcomm24-crux,Which algorithm does Crux use for priority compression?
+1.0,0.005185261368751526,0.00511043518781662,7.4826180934906e-05,1,sigcomm24-crux,sigcomm24-crux,What near-optimal performance level does Crux achieve in scheduling-step simulations?
+1.0,0.011451461352407932,0.011323835700750351,0.00012762565165758133,1,sigcomm24-crux,sigcomm24-crux,How many lines of code comprise Crux's implementation?
+1.0,0.009219818748533726,0.009095354937016964,0.00012446381151676178,1,sigcomm24-crux,sigcomm24-crux,Which deep learning frameworks does Crux integrate with?
+1.0,0.008486534468829632,0.008375623263418674,0.00011091120541095734,1,sigcomm24-crux,sigcomm24-crux,What GPU utilization gain and JCT reduction were observed in the 96-GPU testbed?
+0.9230769230769231,0.0062859877943992615,0.006201297976076603,8.468981832265854e-05,0,sigcomm24-crux,extra-oss-monitoring,"By what percentage does Crux outperform Sincronia, TACCL, and CASSINI in trace simulations?"
+0.9285714285714286,0.0061587318778038025,0.006084585562348366,7.41463154554367e-05,1,sigcomm24-crux,sigcomm24-crux,Which existing schedulers (besides communication-focused ones) is Crux compatible with?
+0.9333333333333333,0.005986079573631287,0.005908633582293987,7.744599133729935e-05,1,sigcomm24-crux,sigcomm24-crux,What visual indicator correlates with higher GPU utilization in Crux's flow patterns?
+0.9375,0.005984697490930557,0.005909079685807228,7.561780512332916e-05,1,sigcomm24-crux,sigcomm24-crux,What limitation does Crux face regarding overlap patterns in real-world scenarios?
+0.9411764705882353,0.006051256321370602,0.005979315377771854,7.194094359874725e-05,1,sigcomm24-crux,sigcomm24-crux,How might fairness concerns in Crux's priority system be addressed?
+0.9444444444444444,0.00628205481916666,0.006208148784935474,7.390603423118591e-05,1,sigcomm24-crux,sigcomm24-crux,Which network topologies can Crux's design generalize to?
+0.9473684210526315,0.006440771743655205,0.006363925524055958,7.684621959924698e-05,1,sigcomm24-crux,sigcomm24-crux,How does Crux differ fundamentally from job-level schedulers like HiveD?
+0.95,0.006208464503288269,0.0061367470771074295,7.171742618083954e-05,1,sigcomm24-crux,sigcomm24-crux,What theoretical concept grounds Crux's priority compression in Appendix B?
+0.9523809523809523,0.006192035973072052,0.006119786761701107,7.224921137094498e-05,1,extra-oss-monitoring,extra-oss-monitoring,What is the main challenge addressed by the paper regarding machine learning systems?
+0.9545454545454546,0.006175613962113857,0.0061065200716257095,6.909389048814774e-05,1,extra-oss-monitoring,extra-oss-monitoring,What is the purpose of the D3Bench microbenchmark introduced in the study?
+0.9565217391304348,0.006071147508919239,0.005999951623380184,7.119588553905487e-05,1,extra-oss-monitoring,extra-oss-monitoring,Which three open-source drift detection libraries are evaluated in the paper?
+0.9583333333333334,0.00618601031601429,0.006107102148234844,7.890816777944565e-05,1,extra-oss-monitoring,extra-oss-monitoring,List the four main types of data drift discussed in the paper.
+0.96,0.0063834041357040405,0.006311207078397274,7.219705730676651e-05,1,extra-oss-monitoring,extra-oss-monitoring,What are the two real-world use cases (UC1 and UC2) used for benchmarking in the study?
+0.9615384615384616,0.0061378395184874535,0.006068190559744835,6.964895874261856e-05,1,extra-oss-monitoring,extra-oss-monitoring,What kind of data and drift does UC1 (Occupancy Detection) focus on?
+0.9629629629629629,0.005989315919578075,0.005918966606259346,7.03493133187294e-05,1,extra-oss-monitoring,extra-oss-monitoring,What variables are analyzed in UC2 (Energy Consumption Prediction)?
+0.9642857142857143,0.00606082659214735,0.00599139928817749,6.942730396986008e-05,1,extra-oss-monitoring,extra-oss-monitoring,Which tool is noted for its broad suite of univariate drift detection methods and strong reporting features?
+0.9655172413793104,0.006140818819403648,0.006071479991078377,6.93388283252716e-05,1,extra-oss-monitoring,extra-oss-monitoring,Which drift detection tool is highlighted for pinpointing the exact timing of drifts and linking them to model accuracy?
+0.9666666666666667,0.005925025790929794,0.005857738666236401,6.728712469339371e-05,1,extra-oss-monitoring,extra-oss-monitoring,"Which tool supports tabular, image, time series, and text data, but is slower and less user-friendly?"
+0.967741935483871,0.0059263017028570175,0.005856982432305813,6.931927055120468e-05,1,extra-oss-monitoring,extra-oss-monitoring,What are the main functional and non-functional evaluation criteria used in D3Bench?
+0.96875,0.0058609843254089355,0.005792911164462566,6.807316094636917e-05,1,extra-oss-monitoring,extra-oss-monitoring,How does Evidently AI handle drift detection when only predicted values are available?
+0.9696969696969697,0.005943761207163334,0.005875252187252045,6.850901991128922e-05,1,extra-oss-monitoring,extra-oss-monitoring,In what way does NannyML facilitate the correlation between data drift and model performance?
+0.9705882352941176,0.0057470062747597694,0.005679255351424217,6.775092333555222e-05,1,extra-oss-monitoring,extra-oss-monitoring,Which tool is recommended for scenarios requiring support for image data?
+0.9714285714285714,0.005835697054862976,0.005768617615103722,6.707943975925446e-05,1,extra-oss-monitoring,extra-oss-monitoring,How do the tools compare in terms of runtime performance on large datasets?
+0.9722222222222222,0.0058014895766973495,0.005732809193432331,6.868038326501846e-05,1,extra-oss-monitoring,extra-oss-monitoring,What are the key differences in memory usage among the evaluated tools?
+0.972972972972973,0.005872658453881741,0.005806145258247852,6.651319563388824e-05,1,extra-oss-monitoring,extra-oss-monitoring,What three-step workflow do the authors recommend for robust drift management?
+0.9736842105263158,0.005689357407391071,0.005622893571853638,6.646383553743362e-05,1,extra-oss-monitoring,extra-oss-monitoring,Which statistical tests are commonly used by Evidently AI for drift detection?
+0.9743589743589743,0.005741646513342857,0.005667295306921005,7.435120642185211e-05,1,extra-oss-monitoring,extra-oss-monitoring,What limitations are noted for Alibi-Detect in terms of reporting and guidance?
+0.975,0.005567179061472416,0.005493041127920151,7.413793355226517e-05,1,extra-oss-monitoring,extra-oss-monitoring,What future research directions are suggested by the authors regarding drift detection methods?

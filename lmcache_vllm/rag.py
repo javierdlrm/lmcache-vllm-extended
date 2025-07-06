@@ -20,10 +20,6 @@ class RAG:
             print(f"/// [RAG] context_key '{context_key}' already indexed, skipping.")
             return
         print("/// [RAG] indexing context: " + context_key)
-        # embeddings_np = self.encode(context)
-        # embeddings_np = self.embedding_model.encode(
-        #     [context], normalize_embeddings=True
-        # )
 
         if self.use_faiss:
             self.faiss_index.add(embeddings_np.astype(np.float32))
@@ -35,8 +31,6 @@ class RAG:
 
     def search(self, question, question_np, top_k=5):
         print("/// [RAG] searching for question: " + question)
-        # question_np = self.encode(question)
-        # question_np = self.embedding_model.encode([question], normalize_embeddings=True)
 
         if self.use_faiss:
             _, ids = self.faiss_index.search(question_np.astype(np.float32), top_k)
