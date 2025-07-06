@@ -1,0 +1,361 @@
+rag_accuracy,rag_latency,rag_match,context_key,rag_context_key,prompt
+1.0,0.0039833709597587585,1,sigcomm24-crux,sigcomm24-crux,What is the primary goal of Crux in deep learning training clusters?
+1.0,0.0038614030927419662,1,sigcomm24-crux,sigcomm24-crux,Which metric does Crux introduce to prioritize communication scheduling?
+1.0,0.004437032155692577,1,sigcomm24-crux,sigcomm24-crux,What percentage of jobs faced communication contention in the profiled production cluster?
+1.0,0.004758988507091999,1,sigcomm24-crux,sigcomm24-crux,How does Crux model the problem of maximizing GPU utilization?
+1.0,0.004799499176442623,1,sigcomm24-crux,sigcomm24-crux,What are the three core components of Crux's design?
+1.0,0.004472776316106319,1,sigcomm24-crux,sigcomm24-crux,How does Crux's path selection mechanism benefit high-GPU-intensity jobs?
+1.0,0.0041987039148807526,1,sigcomm24-crux,sigcomm24-crux,What factors does Crux consider when assigning communication priorities to jobs?
+1.0,0.004966476000845432,1,sigcomm24-crux,sigcomm24-crux,Which algorithm does Crux use for priority compression?
+1.0,0.005129198543727398,1,sigcomm24-crux,sigcomm24-crux,What near-optimal performance level does Crux achieve in scheduling-step simulations?
+1.0,0.004870937205851078,1,sigcomm24-crux,sigcomm24-crux,How many lines of code comprise Crux's implementation?
+1.0,0.006536126136779785,1,sigcomm24-crux,sigcomm24-crux,Which deep learning frameworks does Crux integrate with?
+1.0,0.00511627271771431,1,sigcomm24-crux,sigcomm24-crux,What GPU utilization gain and JCT reduction were observed in the 96-GPU testbed?
+0.9230769230769231,0.004854563623666763,0,sigcomm24-crux,cacheblend,"By what percentage does Crux outperform Sincronia, TACCL, and CASSINI in trace simulations?"
+0.9285714285714286,0.004575228318572044,1,sigcomm24-crux,sigcomm24-crux,Which existing schedulers (besides communication-focused ones) is Crux compatible with?
+0.9333333333333333,0.010947035625576973,1,sigcomm24-crux,sigcomm24-crux,What visual indicator correlates with higher GPU utilization in Crux's flow patterns?
+0.9375,0.008637904189527035,1,sigcomm24-crux,sigcomm24-crux,What limitation does Crux face regarding overlap patterns in real-world scenarios?
+0.9411764705882353,0.00799153558909893,1,sigcomm24-crux,sigcomm24-crux,How might fairness concerns in Crux's priority system be addressed?
+0.8888888888888888,0.00701624620705843,0,sigcomm24-crux,aplomb-sigcomm12,Which network topologies can Crux's design generalize to?
+0.8947368421052632,0.009414893575012684,1,sigcomm24-crux,sigcomm24-crux,How does Crux differ fundamentally from job-level schedulers like HiveD?
+0.85,0.00810428149998188,0,sigcomm24-crux,cacheblend,What theoretical concept grounds Crux's priority compression in Appendix B?
+0.8571428571428571,0.00846486259251833,1,extra-oss-monitoring,extra-oss-monitoring,What is the main challenge addressed by the paper regarding machine learning systems?
+0.8636363636363636,0.23219869192689657,1,extra-oss-monitoring,extra-oss-monitoring,What is the purpose of the D3Bench microbenchmark introduced in the study?
+0.8695652173913043,0.004244011826813221,1,extra-oss-monitoring,extra-oss-monitoring,Which three open-source drift detection libraries are evaluated in the paper?
+0.875,0.003929437138140202,1,extra-oss-monitoring,extra-oss-monitoring,List the four main types of data drift discussed in the paper.
+0.84,0.011068101041018963,0,extra-oss-monitoring,cacheblend,What are the two real-world use cases (UC1 and UC2) used for benchmarking in the study?
+0.8461538461538461,0.00836560782045126,1,extra-oss-monitoring,extra-oss-monitoring,What kind of data and drift does UC1 (Occupancy Detection) focus on?
+0.8518518518518519,0.007590945810079575,1,extra-oss-monitoring,extra-oss-monitoring,What variables are analyzed in UC2 (Energy Consumption Prediction)?
+0.8571428571428571,0.007207032293081284,1,extra-oss-monitoring,extra-oss-monitoring,Which tool is noted for its broad suite of univariate drift detection methods and strong reporting features?
+0.8620689655172413,0.00925671961158514,1,extra-oss-monitoring,extra-oss-monitoring,Which drift detection tool is highlighted for pinpointing the exact timing of drifts and linking them to model accuracy?
+0.8666666666666667,0.00746250431984663,1,extra-oss-monitoring,extra-oss-monitoring,"Which tool supports tabular, image, time series, and text data, but is slower and less user-friendly?"
+0.8387096774193549,0.00704058725386858,0,extra-oss-monitoring,cacheblend,What are the main functional and non-functional evaluation criteria used in D3Bench?
+0.84375,0.0066704172641038895,1,extra-oss-monitoring,extra-oss-monitoring,How does Evidently AI handle drift detection when only predicted values are available?
+0.8484848484848485,0.00661828275769949,1,extra-oss-monitoring,extra-oss-monitoring,In what way does NannyML facilitate the correlation between data drift and model performance?
+0.8235294117647058,0.010841927491128445,0,extra-oss-monitoring,extra-distributed-monitoring,Which tool is recommended for scenarios requiring support for image data?
+0.8285714285714286,0.004954664036631584,1,extra-oss-monitoring,extra-oss-monitoring,How do the tools compare in terms of runtime performance on large datasets?
+0.8055555555555556,0.004621603526175022,0,extra-oss-monitoring,vllm,What are the key differences in memory usage among the evaluated tools?
+0.8108108108108109,0.01101931743323803,1,extra-oss-monitoring,extra-oss-monitoring,What three-step workflow do the authors recommend for robust drift management?
+0.8157894736842105,0.009402872994542122,1,extra-oss-monitoring,extra-oss-monitoring,Which statistical tests are commonly used by Evidently AI for drift detection?
+0.7948717948717948,0.00985396932810545,0,extra-oss-monitoring,extra-distributed-monitoring,What limitations are noted for Alibi-Detect in terms of reporting and guidance?
+0.8,0.007095705717802048,1,extra-oss-monitoring,extra-oss-monitoring,What future research directions are suggested by the authors regarding drift detection methods?
+0.7804878048780488,0.00660452526062727,0,extra-music,cacheblend,What is described as a universal language in the report?
+0.7857142857142857,0.006302155554294586,1,extra-music,extra-music,Which brain region processes sound when listening to music?
+0.7906976744186046,0.006332102231681347,1,extra-music,extra-music,What neurotransmitter is released when music stimulates the brain’s reward system?
+0.7954545454545454,0.0062497640028595924,1,extra-music,extra-music,Which system in the brain is responsible for governing emotions and is engaged by music?
+0.8,0.00617640558630228,1,extra-music,extra-music,What effect is associated with the idea that listening to certain music may enhance spatial-temporal reasoning?
+0.8043478260869565,0.0061134351417422295,1,extra-music,extra-music,How does music therapy benefit patients with Alzheimer’s disease?
+0.8085106382978723,0.00616123341023922,1,extra-music,extra-music,What physical response does listening to calming music have on cortisol levels?
+0.8125,0.006022759713232517,1,extra-music,extra-music,Name one physiological effect of listening to calming music mentioned in the report.
+0.8163265306122449,0.0058622099459171295,1,extra-music,extra-music,"What activity, besides listening, involves the motor cortex in relation to music?"
+0.82,0.005413445644080639,1,extra-music,extra-music,How does engaging with music foster social bonds?
+0.8235294117647058,0.005508700385689735,1,extra-music,extra-music,In what types of events is music’s role in uniting individuals particularly evident?
+0.8269230769230769,0.005403230898082256,1,extra-music,extra-music,What is one cognitive benefit of music mentioned in the report?
+0.8301886792452831,0.005528840236365795,1,extra-music,extra-music,Which brain imaging technique is cited as useful for studying music’s effect on the brain?
+0.8148148148148148,0.00534502137452364,0,extra-music,extra-leonardo,What is the title of the book by Daniel J. Levitin referenced in the report?
+0.8181818181818182,0.004904504865407944,1,extra-music,extra-music,Name one emotional benefit of music described in the summary.
+0.8214285714285714,0.01087560411542654,1,extra-music,extra-music,What is one way music can help with emotional regulation?
+0.8245614035087719,0.01006084494292736,1,extra-music,extra-music,Which neurotransmitter is associated with the “feel-good” effect of music?
+0.8275862068965517,0.007935862988233566,1,extra-music,extra-music,"What is the main conclusion about music’s role in human life, according to the report?"
+0.8305084745762712,0.006325198337435722,1,extra-music,extra-music,Which two authors are cited in the reference about music and neural substrates?
+0.8333333333333334,0.006156209856271744,1,extra-music,extra-music,What is one debated effect related to music and cognitive performance mentioned in the summary?
+0.8360655737704918,0.006141248159110546,1,nsdi22-paper-reda_1,nsdi22-paper-reda_1,What novel framework demonstrates RDMA's Turing completeness?
+0.8387096774193549,0.006048320792615414,1,nsdi22-paper-reda_1,nsdi22-paper-reda_1,How does RedN enable complex offloads without modifying RDMA hardware?
+0.8412698412698413,0.006018985994160175,1,nsdi22-paper-reda_1,nsdi22-paper-reda_1,Which RDMA verbs does RedN use to implement self-modifying chains?
+0.84375,0.0059294188395142555,1,nsdi22-paper-reda_1,nsdi22-paper-reda_1,What are the two primary performance benefits of RedN over traditional RDMA systems?
+0.8461538461538461,0.005963919684290886,1,nsdi22-paper-reda_1,nsdi22-paper-reda_1,How does RedN introduce conditional logic using RDMA operations?
+0.8333333333333334,0.005914254114031792,0,nsdi22-paper-reda_1,extra-compound-mape,What mechanism enforces strict execution order in RedN's control flow?
+0.835820895522388,0.005770770832896233,1,nsdi22-paper-reda_1,nsdi22-paper-reda_1,How many lines of code comprise the RedN implementation?
+0.8382352941176471,0.005724686197936535,1,nsdi22-paper-reda_1,nsdi22-paper-reda_1,Which RDMA NIC generations are compatible with RedN?
+0.8405797101449275,0.0059012798592448235,1,nsdi22-paper-reda_1,nsdi22-paper-reda_1,What is the latency impact of if/while constructs in RedN's microbenchmarks?
+0.8428571428571429,0.005461870692670345,1,nsdi22-paper-reda_1,nsdi22-paper-reda_1,How does RedN accelerate hash lookups compared to conventional RDMA approaches?
+0.8450704225352113,0.0056727975606918335,1,nsdi22-paper-reda_1,nsdi22-paper-reda_1,What throughput does RedN achieve for get operations on dual-port RNICs?
+0.8472222222222222,0.005859578028321266,1,nsdi22-paper-reda_1,nsdi22-paper-reda_1,How does RedN optimize linked list traversal performance?
+0.8493150684931506,0.005922006443142891,1,nsdi22-paper-reda_1,nsdi22-paper-reda_1,What speedup does RedN provide for Memcached get operations?
+0.8378378378378378,0.005855139344930649,0,nsdi22-paper-reda_1,metron-nsdi18,How does RedN eliminate CPU polling in Memcached acceleration?
+0.8266666666666667,0.010706780478358269,0,nsdi22-paper-reda_1,metron-nsdi18,What latency improvement does RedN provide under contention scenarios?
+0.8289473684210527,0.008933057077229023,1,nsdi22-paper-reda_1,nsdi22-paper-reda_1,How does RedN maintain service continuity during OS kernel panics?
+0.8311688311688312,0.008138446137309074,1,nsdi22-paper-reda_1,nsdi22-paper-reda_1,What client scalability challenge does RedN face?
+0.8205128205128205,0.006259960122406483,0,nsdi22-paper-reda_1,aplomb-sigcomm12,Which solution is proposed for RedN's client scalability limitation?
+0.8227848101265823,0.005835099145770073,1,nsdi22-paper-reda_1,nsdi22-paper-reda_1,How might future RNIC designs enhance WR cache access for RedN?
+0.825,0.005955108441412449,1,nsdi22-paper-reda_1,nsdi22-paper-reda_1,Which three computational requirements does the appendix prove RDMA satisfies for Turing completeness?
+0.8271604938271605,0.011313305236399174,1,osdi24-sun-biao,osdi24-sun-biao,What problem does Llumnix solve in large language model serving?
+0.8292682926829268,0.010861039161682129,1,osdi24-sun-biao,osdi24-sun-biao,How does Llumnix achieve better load balancing compared to static scheduling?
+0.8313253012048193,0.00756855309009552,1,osdi24-sun-biao,osdi24-sun-biao,What is the core mechanism Llumnix uses to enable request rescheduling?
+0.8333333333333334,0.007436344400048256,1,osdi24-sun-biao,osdi24-sun-biao,What are the three main benefits of Llumnix's live migration technique?
+0.8352941176470589,0.007577386684715748,1,osdi24-sun-biao,osdi24-sun-biao,How does Llumnix minimize downtime during request migration?
+0.8372093023255814,0.00762537494301796,1,osdi24-sun-biao,osdi24-sun-biao,What architectural components handle request-level decisions in Llumnix?
+0.8275862068965517,0.010325721465051174,0,osdi24-sun-biao,vllm,"How does ""Virtual Usage"" abstraction help in resource management?"
+0.8295454545454546,0.007402235642075539,1,osdi24-sun-biao,osdi24-sun-biao,What metric does Llumnix use for scheduling decisions?
+0.8314606741573034,0.007065406069159508,1,osdi24-sun-biao,osdi24-sun-biao,What existing system does Llumnix integrate with for implementation?
+0.8222222222222222,0.006866990588605404,0,osdi24-sun-biao,metron-nsdi18,What communication framework is used for KV cache transfers?
+0.8131868131868132,0.006830357946455479,0,osdi24-sun-biao,sigcomm2023_janus,How does block fusion improve data transfer efficiency?
+0.8152173913043478,0.006535244174301624,1,osdi24-sun-biao,osdi24-sun-biao,What is the measured overhead of Llumnix's migration mechanism?
+0.8064516129032258,0.005999290384352207,0,osdi24-sun-biao,osdi24-agrawal,How does Llumnix compare to INFaaS++ in P99 latency reduction?
+0.7978723404255319,0.005779381841421127,0,osdi24-sun-biao,osdi24-agrawal,What percentage reduction in preemption loss does Llumnix achieve?
+0.8,0.005637752823531628,1,osdi24-sun-biao,osdi24-sun-biao,How does Llumnix handle priority requests differently?
+0.8020833333333334,0.011361020617187023,1,osdi24-sun-biao,osdi24-sun-biao,What cost savings does Llumnix achieve through auto-scaling?
+0.8041237113402062,0.008725753985345364,1,osdi24-sun-biao,osdi24-sun-biao,How many instances can Llumnix support in a cluster?
+0.8061224489795918,0.008858363144099712,1,osdi24-sun-biao,osdi24-sun-biao,What distinguishes Llumnix from prior systems like vLLM and Orca?
+0.8080808080808081,0.00669598113745451,1,osdi24-sun-biao,osdi24-sun-biao,How does Llumnix address memory fragmentation issues?
+0.81,0.006201527081429958,1,osdi24-sun-biao,osdi24-sun-biao,Where can the reproduction artifacts for Llumnix be found?
+0.8118811881188119,0.005870256572961807,1,extra-biology,extra-biology,What is the definition of epigenetics?
+0.8137254901960784,0.00647896621376276,1,extra-biology,extra-biology,"From which language and prefix does the term ""epigenetics"" originate?"
+0.8155339805825242,0.006060812622308731,1,extra-biology,extra-biology,Name one core mechanism of epigenetic regulation.
+0.8173076923076923,0.006089730188250542,1,extra-biology,extra-biology,How does DNA methylation typically affect gene expression?
+0.819047619047619,0.00635830033570528,1,extra-biology,extra-biology,What is the role of histone modification in gene regulation?
+0.8207547169811321,0.006773451343178749,1,extra-biology,extra-biology,"What are non-coding RNAs, and what is their function in epigenetics?"
+0.822429906542056,0.006705605424940586,1,extra-biology,extra-biology,Do epigenetic modifications alter the DNA sequence itself?
+0.8240740740740741,0.006564490497112274,1,extra-biology,extra-biology,Can epigenetic modifications be maintained through cell divisions?
+0.8256880733944955,0.006483694538474083,1,extra-biology,extra-biology,How do epigenetic mechanisms contribute to cellular differentiation?
+0.8272727272727273,0.0066493116319179535,1,extra-biology,extra-biology,Give an example of an environmental factor that can influence the epigenome.
+0.8288288288288288,0.006443440914154053,1,extra-biology,extra-biology,How can environmental experiences affect future generations according to epigenetics?
+0.8303571428571429,0.006244526244699955,1,extra-biology,extra-biology,What type of diseases are aberrant epigenetic modifications linked to?
+0.831858407079646,0.0057413168251514435,1,extra-biology,extra-biology,How can abnormal DNA methylation patterns contribute to cancer?
+0.8333333333333334,0.0058584073558449745,1,extra-biology,extra-biology,Why are epigenetic changes considered promising targets for therapies?
+0.8347826086956521,0.005721769295632839,1,extra-biology,extra-biology,What is epigenetic transgenerational inheritance?
+0.8362068965517241,0.006068294867873192,1,extra-biology,extra-biology,How does epigenetic transgenerational inheritance differ from classical genetics?
+0.8376068376068376,0.006035295315086842,1,extra-biology,extra-biology,In what way does epigenetics complement traditional Darwinian evolutionary models?
+0.8389830508474576,0.006084291264414787,1,extra-biology,extra-biology,What does the integration of epigenetics and genetics provide for our understanding of biology?
+0.8403361344537815,0.005920879542827606,1,extra-biology,extra-biology,Why is epigenetics important for explaining cellular diversity?
+0.8416666666666667,0.006071222946047783,1,extra-biology,extra-biology,How does epigenetics offer new strategies for disease treatment and prevention?
+0.8429752066115702,0.0059179868549108505,1,extra-compound-mape,extra-compound-mape,What is the main motivation for using decentralized control in self-adaptive systems according to the paper?
+0.8442622950819673,0.005951035767793655,1,extra-compound-mape,extra-compound-mape,Which architectural pattern is central to enabling adaptation in self-adaptive systems as discussed in the paper?
+0.8455284552845529,0.005905061028897762,1,extra-compound-mape,extra-compound-mape,What are the two main steps in the proposed approach for composing compound MAPE patterns?
+0.8467741935483871,0.005884723737835884,1,extra-compound-mape,extra-compound-mape,Name and briefly describe the two merging operators introduced for pattern composition.
+0.848,0.005863497033715248,1,extra-compound-mape,extra-compound-mape,In what way does the stringing operator connect components from different patterns?
+0.8492063492063492,0.005907894112169743,1,extra-compound-mape,extra-compound-mape,What is the function of the overlapping operator in the context of MAPE pattern composition?
+0.8503937007874016,0.005873365327715874,1,extra-compound-mape,extra-compound-mape,How does the approach ensure the correctness of the composition process?
+0.8515625,0.005917882546782494,1,extra-compound-mape,extra-compound-mape,What formal method is used to specify both the structure and behavior of compound MAPE patterns?
+0.8449612403100775,0.0058502862229943275,0,extra-compound-mape,extra-biology,How are structural features of compound patterns represented in Event-B?
+0.8461538461538461,0.005664888769388199,1,extra-compound-mape,extra-compound-mape,How are behavioral features of compound patterns specified in Event-B?
+0.8396946564885496,0.00587120745331049,0,extra-compound-mape,nsdi22-paper-reda_1,What is the significance of shared events in the parallel composition of machines in Event-B?
+0.8409090909090909,0.0057962508872151375,1,extra-compound-mape,extra-compound-mape,What real-world system is used as a case study to illustrate the proposed approach?
+0.8421052631578947,0.005740511231124401,1,extra-compound-mape,extra-compound-mape,Which two MAPE patterns are composed in the forest fire detection system example?
+0.8432835820895522,0.005780280567705631,1,extra-compound-mape,extra-compound-mape,What are the main roles of the master/slave and coordinated control patterns in the case study?
+0.837037037037037,0.0058649517595767975,0,extra-compound-mape,extra-oss-monitoring,How does the hybrid pattern address the single point of failure issue in the forest fire detection system?
+0.8382352941176471,0.00577037688344717,1,extra-compound-mape,extra-compound-mape,What new events are introduced in the hybrid compound pattern after composition?
+0.8394160583941606,0.005929244682192802,1,extra-compound-mape,extra-compound-mape,How does the overlapping operator affect the internal structure of composite elements?
+0.8405797101449275,0.006114373914897442,1,extra-compound-mape,extra-compound-mape,What are some limitations of previous works on MAPE pattern composition as identified in the paper?
+0.841726618705036,0.006042478606104851,1,extra-compound-mape,extra-compound-mape,How does the formal approach presented differ from previous semi-formal or UML-based approaches?
+0.8428571428571429,0.005987708456814289,1,extra-compound-mape,extra-compound-mape,What future work do the authors propose regarding the verification of compound MAPE patterns?
+0.8439716312056738,0.006000789813697338,1,ServerlessLLM_summary,ServerlessLLM_summary,What problem does ServerlessLLM aim to solve in LLM serverless inference?
+0.8450704225352113,0.005950344726443291,1,ServerlessLLM_summary,ServerlessLLM_summary,What are the three core technical contributions of ServerlessLLM?
+0.8461538461538461,0.006019282154738903,1,ServerlessLLM_summary,ServerlessLLM_summary,How does ServerlessLLM leverage GPU server storage hierarchies?
+0.8472222222222222,0.005949938669800758,1,ServerlessLLM_summary,ServerlessLLM_summary,Why are cold starts problematic for LLMs in serverless environments?
+0.8482758620689655,0.0060374317690730095,1,ServerlessLLM_summary,ServerlessLLM_summary,What storage tiers are targeted by ServerlessLLM's caching strategy?
+0.8493150684931506,0.010855094529688358,1,ServerlessLLM_summary,ServerlessLLM_summary,What techniques are used to accelerate checkpoint loading?
+0.8503401360544217,0.004616932012140751,1,ServerlessLLM_summary,ServerlessLLM_summary,How does live migration work in ServerlessLLM?
+0.8513513513513513,0.011385463178157806,1,ServerlessLLM_summary,ServerlessLLM_summary,Why does ServerlessLLM avoid migrating KV caches during live migration?
+0.8523489932885906,0.009466227144002914,1,ServerlessLLM_summary,ServerlessLLM_summary,What metrics guide ServerlessLLM's scheduler decisions?
+0.8533333333333334,0.00941780861467123,1,ServerlessLLM_summary,ServerlessLLM_summary,How does ServerlessLLM achieve fault tolerance?
+0.8543046357615894,0.00799107737839222,1,ServerlessLLM_summary,ServerlessLLM_summary,What performance gain does ServerlessLLM achieve over PyTorch/Safetensors in checkpoint loading?
+0.8552631578947368,0.0075617460533976555,1,ServerlessLLM_summary,ServerlessLLM_summary,How does ServerlessLLM's inference latency compare to Ray Serve and KServe?
+0.8562091503267973,0.007190111093223095,1,ServerlessLLM_summary,ServerlessLLM_summary,What is the purpose of ServerlessLLM's new checkpoint format?
+0.8571428571428571,0.006911461241543293,1,ServerlessLLM_summary,ServerlessLLM_summary,Which components of GPU servers' storage are underutilized according to the paper?
+0.8516129032258064,0.010021436028182507,0,ServerlessLLM_summary,osdi24-sun-biao,What is recomputed instead of migrated during live migration?
+0.8461538461538461,0.007423462346196175,0,ServerlessLLM_summary,osdi24-sun-biao,How does the scheduler estimate loading/migration times?
+0.8471337579617835,0.007063047029078007,1,ServerlessLLM_summary,ServerlessLLM_summary,What workload characteristics make LLMs challenging for serverless inference?
+0.8481012658227848,0.006606215611100197,1,ServerlessLLM_summary,ServerlessLLM_summary,Which prior work areas does ServerlessLLM build upon?
+0.8490566037735849,0.006639701314270496,1,ServerlessLLM_summary,ServerlessLLM_summary,What latency reduction does ServerlessLLM achieve under serverless workloads?
+0.85,0.00650771614164114,1,ServerlessLLM_summary,ServerlessLLM_summary,What fundamental advancement does ServerlessLLM represent for LLM deployment?
+0.84472049689441,0.006154485046863556,0,aplomb-sigcomm12,extra-music,What problem does APLOMB solve?
+0.845679012345679,0.005984203889966011,1,aplomb-sigcomm12,aplomb-sigcomm12,How many enterprises were surveyed in the middlebox study?
+0.8466257668711656,0.006088124588131905,1,aplomb-sigcomm12,aplomb-sigcomm12,What ratio of network devices are middleboxes compared to routers/switches?
+0.8475609756097561,0.00586374755948782,1,aplomb-sigcomm12,aplomb-sigcomm12,What causes most middlebox failures?
+0.8484848484848485,0.00602959468960762,1,aplomb-sigcomm12,aplomb-sigcomm12,What three properties are lost when outsourcing middleboxes?
+0.8433734939759037,0.005908225663006306,0,aplomb-sigcomm12,nsdi22-paper-reda_1,Which redirection mechanism does APLOMB use?
+0.8383233532934131,0.005916202440857887,0,aplomb-sigcomm12,metron-nsdi18,What technique reduces bandwidth overhead for location-dependent appliances?
+0.8333333333333334,0.005905995145440102,0,aplomb-sigcomm12,click,What are APLOMB's three architectural components?
+0.8284023668639053,0.0057913921773433685,0,aplomb-sigcomm12,click,How does the APLOMB gateway handle traffic?
+0.8235294117647058,0.005837783217430115,0,aplomb-sigcomm12,click,What addressing models does APLOMB support?
+0.8187134502923976,0.0057980818673968315,0,aplomb-sigcomm12,osdi24-agrawal,What is APLOMB's average latency penalty?
+0.8197674418604651,0.005729810334742069,1,aplomb-sigcomm12,aplomb-sigcomm12,How much bandwidth cost reduction does APLOMB+ achieve?
+0.815028901734104,0.005657747387886047,0,aplomb-sigcomm12,cacheblend,What metrics show APLOMB's acceptable performance?
+0.8103448275862069,0.0055887941271066666,0,aplomb-sigcomm12,osdi24-sun-biao,How quickly does dynamic scaling respond to load changes?
+0.8114285714285714,0.005725662223994732,1,aplomb-sigcomm12,aplomb-sigcomm12,What percentage of middleboxes can be outsourced in large enterprises?
+0.8068181818181818,0.005565381608903408,0,aplomb-sigcomm12,extra-biology,What hybrid model does APLOMB follow?
+0.8022598870056498,0.005613118410110474,0,aplomb-sigcomm12,extra-music,What are two primary concerns with APLOMB's approach?
+0.8033707865168539,0.005551361478865147,1,aplomb-sigcomm12,aplomb-sigcomm12,How does APLOMB handle encrypted traffic?
+0.7988826815642458,0.0054620904847979546,0,aplomb-sigcomm12,extra-biology,What distinguishes APLOMB from ETTM?
+0.8,0.005578424781560898,1,aplomb-sigcomm12,aplomb-sigcomm12,What is APLOMB's main benefit for enterprises?
+0.8011049723756906,0.005587744526565075,1,vllm,vllm,What novel attention mechanism does vLLM introduce for KV cache management?
+0.7967032967032966,0.005572485737502575,0,vllm,ServerlessLLM_summary,What two memory fragmentation types occur in traditional LLM serving systems?
+0.7923497267759563,0.005225274711847305,0,vllm,sigcomm24-crux,How does PagedAttention's block size affect GPU utilization and fragmentation?
+0.7880434782608695,0.005368024110794067,0,vllm,osdi24-lee,What OS concept inspired the design of vLLM's KV cache manager?
+0.7891891891891892,0.011527313850820065,1,vllm,vllm,How does vLLM handle sequences with shared prefixes during decoding?
+0.7849462365591398,0.00999400019645691,0,vllm,osdi24-agrawal,What throughput improvement does vLLM achieve over FasterTransformer and Orca?
+0.7807486631016043,0.007218812592327595,0,vllm,osdi24-sun-biao,What scheduling algorithm does vLLM implement for request processing?
+0.776595744680851,0.006227428093552589,0,vllm,sigcomm24-crux,How does vLLM support distributed execution across multiple GPUs?
+0.7724867724867724,0.00590513925999403,0,vllm,osdi24-agrawal,What are the two recovery mechanisms for preempted requests in vLLM?
+0.7736842105263158,0.005755888298153877,1,vllm,vllm,Which programming frameworks were used to implement vLLM?
+0.774869109947644,0.006064805202186108,1,vllm,vllm,What is the key advantage of PagedAttention for beam search decoding?
+0.7760416666666666,0.00603291392326355,1,vllm,vllm,How does vLLM handle memory allocation for variable-length sequences?
+0.772020725388601,0.0059059374034404755,0,vllm,osdi24-agrawal,What trade-off exists between kernel latency and memory savings in vLLM?
+0.7680412371134021,0.00574251264333725,0,vllm,osdi24-agrawal,Which LLM architectures does vLLM explicitly support?
+0.7692307692307693,0.011492828838527203,1,vllm,vllm,How does vLLM implement copy-on-write for KV cache blocks?
+0.7704081632653061,0.009907970204949379,1,vllm,vllm,What memory savings percentage does vLLM achieve in beam search scenarios?
+0.766497461928934,0.008957970887422562,0,vllm,osdi24-lee,Why is contiguous memory allocation problematic for dynamic KV caches?
+0.7676767676767676,0.008034703321754932,1,vllm,vllm,How does vLLM's block table function similarly to OS page tables?
+0.7638190954773869,0.00797898881137371,0,vllm,osdi24-agrawal,What are the three primary memory challenges in LLM serving identified?
+0.765,0.007735184393823147,1,vllm,vllm,For which workload type is PagedAttention less suitable according to the discussion?
+0.7661691542288557,0.00896423403173685,1,cacheblend,cacheblend,What is CacheBlend?
+0.7673267326732673,0.007496262900531292,1,cacheblend,cacheblend,What problem does CacheBlend address in RAG?
+0.7684729064039408,0.0071332575753331184,1,cacheblend,cacheblend,How does CacheBlend differ from prefix caching?
+0.7647058823529411,0.006822560913860798,0,cacheblend,osdi24-lee,What is a KV cache in LLM inference?
+0.7658536585365854,0.006573286838829517,1,cacheblend,cacheblend,Why is cross-attention important for RAG quality?
+0.7621359223300971,0.00654981005936861,0,cacheblend,osdi24-lee,How are high-KV-deviation (HKVD) tokens identified?
+0.7632850241545893,0.006169031374156475,1,cacheblend,cacheblend,What does selective recomputation mean in CacheBlend?
+0.7644230769230769,0.005763638764619827,1,cacheblend,cacheblend,How does CacheBlend balance speed and generation quality?
+0.7655502392344498,0.005892264656722546,1,cacheblend,cacheblend,What are the main components of CacheBlend’s system design?
+0.7619047619047619,0.005916542373597622,0,cacheblend,ServerlessLLM_summary,How does the Loading Controller decide between recompute and load?
+0.7630331753554502,0.005953841842710972,1,cacheblend,cacheblend,In what way does the Fusor merge caches using layer-wise recomputation?
+0.7641509433962265,0.00577987264841795,1,cacheblend,cacheblend,How does CacheBlend’s workflow pipeline improve efficiency during inference?
+0.7605633802816901,0.005684642121195793,0,cacheblend,nsdi22-paper-reda_1,What are the three main interfaces implemented in CacheBlend’s PyTorch codebase?
+0.7616822429906542,0.005576469004154205,1,cacheblend,cacheblend,How does CacheBlend’s performance compare to full KV recomputation and full KV reuse?
+0.7627906976744186,0.00540346372872591,1,cacheblend,cacheblend,What datasets and models were used to evaluate CacheBlend’s effectiveness and efficiency?
+0.7638888888888888,0.005291296169161797,1,cacheblend,cacheblend,How does CacheBlend maintain high quality while reducing time-to-first-token (TTFT) and increasing throughput?
+0.7649769585253456,0.007348744198679924,1,cacheblend,cacheblend,"In sensitivity analysis, how consistent is CacheBlend’s performance across different chunk lengths and batch sizes?"
+0.7660550458715596,0.004850231111049652,1,cacheblend,cacheblend,"What distinguishes CacheBlend from related work like PromptCache, vLLM, and other context compression techniques?"
+0.7625570776255708,0.004607003182172775,0,cacheblend,osdi24-lee,"What limitations are noted for CacheBlend, especially regarding non-transformer architectures and integration with new serving engines?"
+0.7636363636363637,0.004615060053765774,1,cacheblend,cacheblend,"How does CacheBlend enable reuse of cached KV chunks in non-prefix locations, and what are the broader implications for LLM serving in RAG scenarios?"
+0.7647058823529411,0.004411553032696247,1,extra-leonardo,extra-leonardo,Who is described as the quintessential Renaissance man in the report?
+0.7657657657657657,0.0046964772045612335,1,extra-leonardo,extra-leonardo,What years did Leonardo da Vinci live between?
+0.7668161434977578,0.011258594691753387,1,extra-leonardo,extra-leonardo,"Which two professions, besides painting, is Leonardo da Vinci noted for in the report?"
+0.7678571428571429,0.008904446847736835,1,extra-leonardo,extra-leonardo,What is the name of Leonardo’s most famous painting mentioned in the report?
+0.7688888888888888,0.008311002515256405,1,extra-leonardo,extra-leonardo,Which technique did Leonardo use in the Mona Lisa to create depth and realism?
+0.7699115044247787,0.006560145877301693,1,extra-leonardo,extra-leonardo,What is the title of the biblical scene Leonardo reimagined with dramatic perspective?
+0.7709251101321586,0.00621563196182251,1,extra-leonardo,extra-leonardo,"In The Last Supper, what draws the viewer’s eye to the center of the composition?"
+0.7719298245614035,0.005989110097289085,1,extra-leonardo,extra-leonardo,What do the apostles’ varied reactions in The Last Supper convey?
+0.7729257641921398,0.0058059608563780785,1,extra-leonardo,extra-leonardo,What did Leonardo study to achieve unprecedented realism in his art?
+0.7739130434782608,0.0059538064524531364,1,extra-leonardo,extra-leonardo,Which famous sketch by Leonardo illustrates the harmony between art and science?
+0.7748917748917749,0.005821940489113331,1,extra-leonardo,extra-leonardo,What do Leonardo’s notebooks reveal about his approach to art?
+0.7758620689655172,0.005464482121169567,1,extra-leonardo,extra-leonardo,What is sfumato?
+0.776824034334764,0.00584502425044775,1,extra-leonardo,extra-leonardo,"Which two fields, besides art, did Leonardo da Vinci bridge in his work?"
+0.7777777777777778,0.005649399943649769,1,extra-leonardo,extra-leonardo,What is the main subject of the Mona Lisa?
+0.7787234042553192,0.005982900038361549,1,extra-leonardo,extra-leonardo,What does the report say about the legacy of Leonardo da Vinci?
+0.7796610169491526,0.005786903202533722,1,extra-leonardo,extra-leonardo,How does the report describe Leonardo’s curiosity?
+0.7805907172995781,0.0060042329132556915,1,extra-leonardo,extra-leonardo,"What is the central theme of Leonardo’s artistic achievements, according to the report?"
+0.7815126050420168,0.010934028774499893,1,extra-leonardo,extra-leonardo,What does the report say about the number of admirers Leonardo’s works attract?
+0.7824267782426778,0.009548709727823734,1,extra-leonardo,extra-leonardo,What does the report suggest about the relevance of Leonardo’s legacy today?
+0.7833333333333333,0.009762763045728207,1,extra-leonardo,extra-leonardo,What does the report identify as the driving forces behind Leonardo’s art?
+0.7842323651452282,0.00743800587952137,1,click,click,What architectural approach does Click use for building modular routers?
+0.7851239669421488,0.007355275563895702,1,click,click,How do explicit queue elements enhance control in Click's design?
+0.7860082304526749,0.0072265081107616425,1,click,click,What performance benchmark (packets per second) is achieved by Click?
+0.7868852459016393,0.0069983117282390594,1,click,click,What two connection types facilitate packet flow between elements?
+0.7877551020408163,0.006145053543150425,1,click,click,How does flow-based router context assist elements?
+0.7886178861788617,0.01068812981247902,1,click,click,What configuration method is used to define Click routers?
+0.7894736842105263,0.009028890170156956,1,click,click,How many elements comprise a standard IP router path in Click?
+0.7862903225806451,0.008252838626503944,0,click,nsdi22-paper-reda_1,What metadata mechanism carries information across processing elements?
+0.7871485943775101,0.006248329766094685,1,click,click,Which scheduling algorithms does Click support?
+0.788,0.006119756028056145,1,click,click,What dropping policy does Click implement using queue length thresholds?
+0.7848605577689243,0.006126352585852146,0,click,metron-nsdi18,What advanced queueing technique provides fairness in bandwidth allocation?
+0.7857142857142857,0.006087911315262318,1,click,click,Which networking standards does Click support beyond basic IP routing?
+0.7865612648221344,0.005741840228438377,1,click,click,How does Click handle Ethernet switching?
+0.7834645669291339,0.005749308504164219,0,click,osdi24-lee,What kernel-level optimization enables high I/O performance?
+0.7843137254901961,0.00548162404447794,1,click,click,How is user interaction with Click routers facilitated?
+0.78515625,0.005459535866975784,1,click,click,What programming language are Click elements implemented in?
+0.7859922178988327,0.005984479561448097,1,click,click,What is the measured overhead for modularity in a 16-element path?
+0.7829457364341085,0.005635697394609451,0,click,metron-nsdi18,How do custom elements improve performance compared to generic ones?
+0.7837837837837838,0.011464565992355347,1,click,click,Which prior systems are compared with Click in the related work?
+0.7807692307692308,0.0099864536896348,0,click,cacheblend,What are three examples of elements listed in the appendix glossary?
+0.7816091954022989,0.00928608700633049,1,osdi24-agrawal,osdi24-agrawal,What is the core innovation proposed by Sarathi-Serve to address the throughput-latency tradeoff in LLM inference?
+0.7824427480916031,0.008037806488573551,1,osdi24-agrawal,osdi24-agrawal,"How does ""chunked-prefills"" work in Sarathi-Serve?"
+0.7832699619771863,0.007806857116520405,1,osdi24-agrawal,osdi24-agrawal,"What is ""stall-free batching"" and how does it prevent generation stalls?"
+0.7840909090909091,0.00724451057612896,1,osdi24-agrawal,osdi24-agrawal,What are the three main performance metrics used to evaluate LLM inference systems?
+0.7849056603773585,0.009145357646048069,1,osdi24-agrawal,osdi24-agrawal,Why do decode batches suffer from low arithmetic intensity?
+0.7857142857142857,0.007753422483801842,1,osdi24-agrawal,osdi24-agrawal,How does prioritizing prefill requests cause generation stalls?
+0.7865168539325843,0.00771769043058157,1,osdi24-agrawal,osdi24-agrawal,"What role does the ""token budget"" parameter play in Sarathi-Serve?"
+0.7835820895522388,0.007131512276828289,0,osdi24-agrawal,metron-nsdi18,Which existing system was Sarathi-Serve built upon?
+0.7806691449814126,0.0062277475371956825,0,osdi24-agrawal,cacheblend,What models were used for evaluation in the paper?
+0.7814814814814814,0.010396458208560944,1,osdi24-agrawal,osdi24-agrawal,Which datasets were used for benchmarking Sarathi-Serve?
+0.7822878228782287,0.0077699702233076096,1,osdi24-agrawal,osdi24-agrawal,How much higher throughput does Sarathi-Serve achieve compared to vLLM under strict SLOs?
+0.7830882352941176,0.006993708200752735,1,osdi24-agrawal,osdi24-agrawal,How does Sarathi-Serve reduce pipeline bubbles in pipeline parallelism?
+0.7802197802197802,0.006803811527788639,0,osdi24-agrawal,cacheblend,What were the key findings from the ablation study regarding hybrid-batching and chunked-prefills?
+0.781021897810219,0.006851989775896072,1,osdi24-agrawal,osdi24-agrawal,How does Sarathi-Serve differ from disaggregation-based systems like SplitWise?
+0.7818181818181819,0.006678109057247639,1,osdi24-agrawal,osdi24-agrawal,What hardware limitations do disaggregation-based systems require that Sarathi-Serve avoids?
+0.782608695652174,0.006092533469200134,1,osdi24-agrawal,osdi24-agrawal,What are the two primary scheduling strategies used in existing LLM inference systems?
+0.7833935018050542,0.005828898400068283,1,osdi24-agrawal,osdi24-agrawal,Why is prefill phase considered compute-bound while decode is memory-bound?
+0.7805755395683454,0.005767660215497017,0,osdi24-agrawal,metron-nsdi18,How does Sarathi-Serve achieve fine-grained control over throughput-latency tradeoffs?
+0.7777777777777778,0.005768206901848316,0,osdi24-agrawal,metron-nsdi18,What telemetry mechanisms were added in Sarathi-Serve's implementation?
+0.775,0.005612869746983051,0,osdi24-agrawal,metron-nsdi18,Where can the source code for Sarathi-Serve be accessed?
+0.7758007117437722,0.0054768770933151245,1,metron-nsdi18,metron-nsdi18,What hardware resources does Metron utilize to run stateful service chains?
+0.776595744680851,0.005213089287281036,1,metron-nsdi18,metron-nsdi18,How does Metron eliminate inter-core communication?
+0.7773851590106007,0.005366643890738487,1,metron-nsdi18,metron-nsdi18,What performance throughput does Metron achieve on a single server?
+0.778169014084507,0.005381348542869091,1,metron-nsdi18,metron-nsdi18,What challenge in NFV does Metron address according to the introduction?
+0.7789473684210526,0.005112563259899616,1,metron-nsdi18,metron-nsdi18,How does Metron's data plane architecture handle packet dispatching?
+0.7797202797202797,0.00495278462767601,1,metron-nsdi18,metron-nsdi18,What role do programmable switches and NICs play in Metron's architecture?
+0.7804878048780488,0.004954737611114979,1,metron-nsdi18,metron-nsdi18,How does Metron implement traffic steering using NIC-based tags?
+0.78125,0.0053594522178173065,1,metron-nsdi18,metron-nsdi18,What is the function of the master agent in Metron's data plane?
+0.7820069204152249,0.011240614578127861,1,metron-nsdi18,metron-nsdi18,How does graph synthesis via SNF contribute to Metron's control plane?
+0.7827586206896552,0.00912677776068449,1,metron-nsdi18,metron-nsdi18,What strategy does Metron use for dynamic scaling of NFs?
+0.7835051546391752,0.007933377288281918,1,metron-nsdi18,metron-nsdi18,How does Metron handle routing and failover in case of failures?
+0.7842465753424658,0.008723964914679527,1,metron-nsdi18,metron-nsdi18,What throughput does Metron achieve for Deep Packet Inspection (DPI)?
+0.7849829351535836,0.007142402231693268,1,metron-nsdi18,metron-nsdi18,How does Metron's performance compare to OpenBox and E2 in latency and throughput?
+0.7857142857142857,0.006612869910895824,1,metron-nsdi18,metron-nsdi18,How does Metron adapt to workload changes during dynamic scaling?
+0.7864406779661017,0.006444944068789482,1,metron-nsdi18,metron-nsdi18,What is the timescale for rule installation in Metron's deployment?
+0.7871621621621622,0.006337985396385193,1,metron-nsdi18,metron-nsdi18,Which prior systems does Metron build upon according to the related work section?
+0.7878787878787878,0.006022588349878788,1,metron-nsdi18,metron-nsdi18,What hardware/software combination enables Metron's efficient deployment?
+0.7885906040268457,0.005818057805299759,1,metron-nsdi18,metron-nsdi18,What key advantage does Metron's hardware offloading provide?
+0.7892976588628763,0.005672593601047993,1,metron-nsdi18,metron-nsdi18,What conclusion does the paper draw about commodity servers and NFV efficiency?
+0.7866666666666666,0.005556522868573666,0,metron-nsdi18,extra-music,Which organizations funded the research?
+0.7873754152823921,0.005443315953016281,1,osdi24-lee,osdi24-lee,What is the primary bottleneck when offloading KV cache to CPU memory?
+0.7847682119205298,0.005404931493103504,0,osdi24-lee,osdi24-agrawal,How does InfiniGen reduce PCIe bandwidth consumption during LLM inference?
+0.7854785478547854,0.005261128768324852,1,osdi24-lee,osdi24-lee,What two key techniques does InfiniGen use for speculative prefetching?
+0.7861842105263158,0.005110589787364006,1,osdi24-lee,osdi24-lee,Why do existing KV eviction strategies like H2O struggle with shifting token importance?
+0.7868852459016393,0.005559773184359074,1,osdi24-lee,osdi24-lee,What matrix transformation method does InfiniGen apply offline to optimize attention patterns?
+0.7875816993464052,0.011249839328229427,1,osdi24-lee,osdi24-lee,How does InfiniGen leverage outlier tokens in its prefetching mechanism?
+0.7882736156351792,0.009077700786292553,1,osdi24-lee,osdi24-lee,What three cache eviction strategies were evaluated for CPU KV pool management?
+0.788961038961039,0.007846544496715069,1,osdi24-lee,osdi24-lee,Which cache eviction strategy performed best with minimal overhead?
+0.7896440129449838,0.008810015395283699,1,osdi24-lee,osdi24-lee,What accuracy loss threshold does InfiniGen maintain compared to full KV cache?
+0.7903225806451613,0.006790224462747574,1,osdi24-lee,osdi24-lee,What models were used in InfiniGen's evaluation benchmarks?
+0.7909967845659164,0.0062816692516207695,1,osdi24-lee,osdi24-lee,Which datasets were used to measure InfiniGen's accuracy?
+0.7916666666666666,0.005817370489239693,1,osdi24-lee,osdi24-lee,How does InfiniGen's performance scale with increasing batch sizes?
+0.792332268370607,0.00590134970843792,1,osdi24-lee,osdi24-lee,What speedup does InfiniGen achieve over FlexGen in maximum cases?
+0.7898089171974523,0.005756283178925514,0,osdi24-lee,osdi24-agrawal,How does the alpha parameter balance latency and accuracy in InfiniGen?
+0.7873015873015873,0.005461055785417557,0,osdi24-lee,cacheblend,What partial weight ratio provides an optimal tradeoff for attention speculation?
+0.7879746835443038,0.0054220035672187805,1,osdi24-lee,osdi24-lee,How does InfiniGen adapt to models with million-token contexts like Llama-3?
+0.7854889589905363,0.005689998157322407,0,osdi24-lee,osdi24-agrawal,What is the performance gap between InfiniGen's speculation and ideal GPU execution?
+0.7861635220125787,0.005858293734490871,1,osdi24-lee,osdi24-lee,How does InfiniGen compare to quantization-based methods in preserving accuracy?
+0.786833855799373,0.01099838875234127,1,osdi24-lee,osdi24-lee,What limitation of fixed-budget KV cache management does InfiniGen address?
+0.784375,0.008749069646000862,0,osdi24-lee,extra-compound-mape,Why can't prior systems dynamically adapt to per-layer token requirements?
+0.7850467289719626,0.007962701842188835,1,sigcomm2023_janus,sigcomm2023_janus,What problem does Janus solve in distributed training of Mixture-of-Experts (MoE) models?
+0.7857142857142857,0.00916402880102396,1,sigcomm2023_janus,sigcomm2023_janus,How does Janus' data-centric paradigm differ from traditional expert-centric approaches?
+0.7863777089783281,0.011891737580299377,1,sigcomm2023_janus,sigcomm2023_janus,What communication bottleneck does All-to-All communication create in MoE training?
+0.7870370370370371,0.009322416968643665,1,sigcomm2023_janus,sigcomm2023_janus,What are the three main limitations of expert-centric communication identified in the paper?
+0.7876923076923077,0.007181515917181969,1,sigcomm2023_janus,sigcomm2023_janus,How does Janus determine whether to use expert-centric or data-centric communication for a MoE block?
+0.7852760736196319,0.006563927978277206,0,sigcomm2023_janus,click,What are the key components of Janus' system architecture?
+0.7828746177370031,0.006284406408667564,0,sigcomm2023_janus,osdi24-agrawal,How does fine-grained scheduling in Janus reduce memory usage?
+0.7804878048780488,0.005877722054719925,0,sigcomm2023_janus,osdi24-sun-biao,What techniques does Janus use for topology-aware scheduling?
+0.7811550151975684,0.0057018818333745,1,sigcomm2023_janus,sigcomm2023_janus,How does expert prefetching in Janus utilize idle bandwidth?
+0.7818181818181819,0.005610737018287182,1,sigcomm2023_janus,sigcomm2023_janus,What PyTorch integration techniques does Janus use for autograd compatibility?
+0.7794561933534743,0.005230201408267021,0,sigcomm2023_janus,metron-nsdi18,What communication protocols does Janus implement for data transfer?
+0.7801204819277109,0.005209601484239101,1,sigcomm2023_janus,sigcomm2023_janus,What speedup does Janus achieve over Tutel on 32-A100 clusters?
+0.7777777777777778,0.00539880245923996,0,sigcomm2023_janus,osdi24-agrawal,Which scheduling technique contributes most significantly to Janus' performance gains?
+0.7754491017964071,0.011210702359676361,0,sigcomm2023_janus,osdi24-agrawal,How do larger batch sizes and sequence lengths affect Janus' speedup?
+0.7761194029850746,0.009739557281136513,1,sigcomm2023_janus,sigcomm2023_janus,How does Janus handle PR-MoE models with mixed expert blocks?
+0.7767857142857143,0.009097347967326641,1,sigcomm2023_janus,sigcomm2023_janus,What distinguishes Janus from other MoE frameworks like Tutel and DeepSpeed?
+0.7774480712166172,0.007560609839856625,1,sigcomm2023_janus,sigcomm2023_janus,Why does data-centric communication become more beneficial with longer sequence lengths?
+0.7781065088757396,0.007255087606608868,1,sigcomm2023_janus,sigcomm2023_janus,Is Janus compatible with tensor parallelism techniques?
+0.775811209439528,0.00724463164806366,0,sigcomm2023_janus,osdi24-sun-biao,What future deployment scenarios are mentioned for Janus?
+0.7764705882352941,0.007293051108717918,1,sigcomm2023_janus,sigcomm2023_janus,What novel communication model does Janus introduce for MoE training?
+0.7771260997067448,0.009751140139997005,1,extra-distributed-monitoring,extra-distributed-monitoring,"What recent technological trend has increased the risk of financial fraud, motivating the research in this paper?"
+0.7777777777777778,0.00794166699051857,1,extra-distributed-monitoring,extra-distributed-monitoring,"What is edge ML, and why is it particularly suitable for fraud detection in mobile payments?"
+0.7784256559766763,0.007542791776359081,1,extra-distributed-monitoring,extra-distributed-monitoring,What main challenge does the paper address regarding edge ML systems?
+0.7790697674418605,0.007422780618071556,1,extra-distributed-monitoring,extra-distributed-monitoring,What statistical test does the proposed framework use to detect data distribution shifts?
+0.7768115942028986,0.009707226417958736,0,extra-distributed-monitoring,cacheblend,How does the t-digest data structure contribute to the framework’s efficiency?
+0.7745664739884393,0.00785803608596325,0,extra-distributed-monitoring,aplomb-sigcomm12,What is the role of the backend server in the proposed monitoring framework?
+0.7723342939481268,0.0072605907917022705,0,extra-distributed-monitoring,ServerlessLLM_summary,Which cloud services are leveraged in the serverless backend architecture?
+0.7729885057471264,0.007038198411464691,1,extra-distributed-monitoring,extra-distributed-monitoring,How does the framework aggregate data from multiple edge devices to perform distribution shift detection?
+0.7707736389684814,0.006739035248756409,0,extra-distributed-monitoring,extra-oss-monitoring,What types of datasets were used to evaluate the framework?
+0.7714285714285715,0.00633692741394043,1,extra-distributed-monitoring,extra-distributed-monitoring,"What is the T-Digest-KS statistic, and how does it compare to the Optimal-KS statistic?"
+0.7692307692307693,0.0059715090319514275,0,extra-distributed-monitoring,cacheblend,What is the typical median error observed between T-Digest-KS and Optimal-KS in the experiments?
+0.7698863636363636,0.01086722407490015,1,extra-distributed-monitoring,extra-distributed-monitoring,How does the framework minimize false positives and false negatives in shift detection?
+0.7677053824362606,0.008311761543154716,0,extra-distributed-monitoring,osdi24-sun-biao,What is the impact of the framework on client-side runtime and resource usage?
+0.7655367231638418,0.007856717333197594,0,extra-distributed-monitoring,ServerlessLLM_summary,How does the server runtime scale with the aggregation size in the proposed solution?
+0.7661971830985915,0.010200856253504753,1,extra-distributed-monitoring,extra-distributed-monitoring,"What are some limitations of the framework, especially in the context of fraud detection?"
+0.7668539325842697,0.007979022338986397,1,extra-distributed-monitoring,extra-distributed-monitoring,Why might the system miss subtle changes in rare-event (fraud) patterns?
+0.7647058823529411,0.007368464022874832,0,extra-distributed-monitoring,extra-oss-monitoring,What future improvements do the authors suggest for the framework?
+0.7653631284916201,0.007176854647696018,1,extra-distributed-monitoring,extra-distributed-monitoring,How does the framework ensure privacy when aggregating data from edge devices?
+0.7632311977715878,0.006526591256260872,0,extra-distributed-monitoring,extra-oss-monitoring,What practical benefits does the open-source nature of the framework provide for the research community?
+0.7638888888888888,0.010325976647436619,1,extra-distributed-monitoring,extra-distributed-monitoring,In what ways does this work lay the foundation for robust edge ML operations in real-world deployments?
