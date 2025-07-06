@@ -1,0 +1,121 @@
+rag_accuracy,rag_latency,rag_encode_latency,rag_search_latency,rag_match,context_key,rag_context_key,prompt
+1.0,0.004065431654453278,0.003848351538181305,0.00021708011627197266,1,sigcomm24-crux,sigcomm24-crux,What is the primary goal of Crux in deep learning training clusters?
+1.0,0.00402141734957695,0.003819812089204788,0.00020160526037216187,1,sigcomm24-crux,sigcomm24-crux,Which metric does Crux introduce to prioritize communication scheduling?
+1.0,0.0044672489166259766,0.004277186468243599,0.00019006244838237762,1,sigcomm24-crux,sigcomm24-crux,What percentage of jobs faced communication contention in the profiled production cluster?
+1.0,0.004795363172888756,0.004578960128128529,0.0002164030447602272,1,sigcomm24-crux,sigcomm24-crux,How does Crux model the problem of maximizing GPU utilization?
+1.0,0.004807471297681332,0.004616604186594486,0.0001908671110868454,1,sigcomm24-crux,sigcomm24-crux,What are the three core components of Crux's design?
+1.0,0.0044903624802827835,0.004301528446376324,0.0001888340339064598,1,sigcomm24-crux,sigcomm24-crux,How does Crux's path selection mechanism benefit high-GPU-intensity jobs?
+1.0,0.010475363582372665,0.010069935582578182,0.0004054279997944832,1,sigcomm24-crux,sigcomm24-crux,What factors does Crux consider when assigning communication priorities to jobs?
+1.0,0.00860412698239088,0.008235730230808258,0.00036839675158262253,1,sigcomm24-crux,sigcomm24-crux,Which algorithm does Crux use for priority compression?
+1.0,0.008662407286465168,0.008288765326142311,0.0003736419603228569,1,sigcomm24-crux,sigcomm24-crux,What near-optimal performance level does Crux achieve in scheduling-step simulations?
+1.0,0.008879398927092552,0.008545066229999065,0.0003343326970934868,1,sigcomm24-crux,sigcomm24-crux,How many lines of code comprise Crux's implementation?
+1.0,0.007486985996365547,0.0071819499135017395,0.0003050360828638077,1,sigcomm24-crux,sigcomm24-crux,Which deep learning frameworks does Crux integrate with?
+1.0,0.0072200847789645195,0.006912928074598312,0.0003071567043662071,1,sigcomm24-crux,sigcomm24-crux,What GPU utilization gain and JCT reduction were observed in the 96-GPU testbed?
+0.9230769230769231,0.007251366972923279,0.006940649822354317,0.0003107171505689621,0,sigcomm24-crux,cacheblend,"By what percentage does Crux outperform Sincronia, TACCL, and CASSINI in trace simulations?"
+0.9285714285714286,0.007258150726556778,0.006950669921934605,0.0003074808046221733,1,sigcomm24-crux,sigcomm24-crux,Which existing schedulers (besides communication-focused ones) is Crux compatible with?
+0.9333333333333333,0.010227547027170658,0.009862415492534637,0.00036513153463602066,1,sigcomm24-crux,sigcomm24-crux,What visual indicator correlates with higher GPU utilization in Crux's flow patterns?
+0.9375,0.008353126235306263,0.007998669520020485,0.00035445671528577805,1,sigcomm24-crux,sigcomm24-crux,What limitation does Crux face regarding overlap patterns in real-world scenarios?
+0.9411764705882353,0.008763673715293407,0.008387628011405468,0.00037604570388793945,1,sigcomm24-crux,sigcomm24-crux,How might fairness concerns in Crux's priority system be addressed?
+0.8888888888888888,0.009144291281700134,0.008784649893641472,0.0003596413880586624,0,sigcomm24-crux,aplomb-sigcomm12,Which network topologies can Crux's design generalize to?
+0.8947368421052632,0.008133609779179096,0.007782884873449802,0.0003507249057292938,1,sigcomm24-crux,sigcomm24-crux,How does Crux differ fundamentally from job-level schedulers like HiveD?
+0.85,0.008379682898521423,0.00800861045718193,0.0003710724413394928,0,sigcomm24-crux,cacheblend,What theoretical concept grounds Crux's priority compression in Appendix B?
+0.8095238095238095,0.010138996876776218,0.009778213687241077,0.000360783189535141,0,extra-oss-monitoring,extra-estimate-performance,What is the main challenge addressed by the paper regarding machine learning systems?
+0.8181818181818182,0.008284092880785465,0.007939339615404606,0.0003447532653808594,1,extra-oss-monitoring,extra-oss-monitoring,What is the purpose of the D3Bench microbenchmark introduced in the study?
+0.8260869565217391,0.008589565753936768,0.008229617029428482,0.0003599487245082855,1,extra-oss-monitoring,extra-oss-monitoring,Which three open-source drift detection libraries are evaluated in the paper?
+0.8333333333333334,0.009877409785985947,0.009517587721347809,0.0003598220646381378,1,extra-oss-monitoring,extra-oss-monitoring,List the four main types of data drift discussed in the paper.
+0.8,0.008726571686565876,0.008365731686353683,0.00036084000021219254,0,extra-oss-monitoring,cacheblend,What are the two real-world use cases (UC1 and UC2) used for benchmarking in the study?
+0.8076923076923077,0.008683046326041222,0.008321592584252357,0.00036145374178886414,1,extra-oss-monitoring,extra-oss-monitoring,What kind of data and drift does UC1 (Occupancy Detection) focus on?
+0.7777777777777778,0.006810454651713371,0.006535845808684826,0.0002746088430285454,0,extra-oss-monitoring,extra-estimate-performance,What variables are analyzed in UC2 (Energy Consumption Prediction)?
+0.7857142857142857,0.006107958033680916,0.005874562077224255,0.00023339595645666122,1,extra-oss-monitoring,extra-oss-monitoring,Which tool is noted for its broad suite of univariate drift detection methods and strong reporting features?
+0.7931034482758621,0.005952687002718449,0.005725721828639507,0.00022696517407894135,1,extra-oss-monitoring,extra-oss-monitoring,Which drift detection tool is highlighted for pinpointing the exact timing of drifts and linking them to model accuracy?
+0.8,0.005950866267085075,0.005722801201045513,0.00022806506603956223,1,extra-oss-monitoring,extra-oss-monitoring,"Which tool supports tabular, image, time series, and text data, but is slower and less user-friendly?"
+0.7741935483870968,0.006064862012863159,0.005822834558784962,0.00024202745407819748,0,extra-oss-monitoring,cacheblend,What are the main functional and non-functional evaluation criteria used in D3Bench?
+0.78125,0.006212224252521992,0.005972796119749546,0.00023942813277244568,1,extra-oss-monitoring,extra-oss-monitoring,How does Evidently AI handle drift detection when only predicted values are available?
+0.7878787878787878,0.006244033575057983,0.0060021961107850075,0.00024183746427297592,1,extra-oss-monitoring,extra-oss-monitoring,In what way does NannyML facilitate the correlation between data drift and model performance?
+0.7647058823529411,0.0060804858803749084,0.0058295950293540955,0.000250890851020813,0,extra-oss-monitoring,extra-distributed-monitoring,Which tool is recommended for scenarios requiring support for image data?
+0.7428571428571429,0.006417552009224892,0.0061641717329621315,0.00025338027626276016,0,extra-oss-monitoring,SplitRPC-sigmetrics23,How do the tools compare in terms of runtime performance on large datasets?
+0.7222222222222222,0.006472797133028507,0.006214838474988937,0.00025795865803956985,0,extra-oss-monitoring,vllm,What are the key differences in memory usage among the evaluated tools?
+0.7297297297297297,0.006747571751475334,0.006477716378867626,0.000269855372607708,1,extra-oss-monitoring,extra-oss-monitoring,What three-step workflow do the authors recommend for robust drift management?
+0.7368421052631579,0.006797301582992077,0.006524186581373215,0.00027311500161886215,1,extra-oss-monitoring,extra-oss-monitoring,Which statistical tests are commonly used by Evidently AI for drift detection?
+0.717948717948718,0.006833554245531559,0.006563587114214897,0.00026996713131666183,0,extra-oss-monitoring,extra-distributed-monitoring,What limitations are noted for Alibi-Detect in terms of reporting and guidance?
+0.725,0.006815584376454353,0.006547422148287296,0.00026816222816705704,1,extra-oss-monitoring,extra-oss-monitoring,What future research directions are suggested by the authors regarding drift detection methods?
+0.7073170731707317,0.0060728928074240685,0.005831204354763031,0.00024168845266103745,0,extra-music,cacheblend,What is described as a universal language in the report?
+0.7142857142857143,0.01098124124109745,0.010523944161832333,0.00045729707926511765,1,extra-music,extra-music,Which brain region processes sound when listening to music?
+0.7209302325581395,0.011379935778677464,0.011015395633876324,0.00036454014480113983,1,extra-music,extra-music,What neurotransmitter is released when music stimulates the brain’s reward system?
+0.7272727272727273,0.00817740149796009,0.007847998291254044,0.00032940320670604706,1,extra-music,extra-music,Which system in the brain is responsible for governing emotions and is engaged by music?
+0.7333333333333333,0.007988057099282742,0.007660555653274059,0.00032750144600868225,1,extra-music,extra-music,What effect is associated with the idea that listening to certain music may enhance spatial-temporal reasoning?
+0.7391304347826086,0.007745850831270218,0.0074126748368144035,0.00033317599445581436,1,extra-music,extra-music,How does music therapy benefit patients with Alzheimer’s disease?
+0.7446808510638298,0.006628875620663166,0.006372862495481968,0.0002560131251811981,1,extra-music,extra-music,What physical response does listening to calming music have on cortisol levels?
+0.75,0.006021174602210522,0.005788102746009827,0.00023307185620069504,1,extra-music,extra-music,Name one physiological effect of listening to calming music mentioned in the report.
+0.7551020408163265,0.011728180572390556,0.011277806013822556,0.0004503745585680008,1,extra-music,extra-music,"What activity, besides listening, involves the motor cortex in relation to music?"
+0.76,0.010264300741255283,0.009810532443225384,0.0004537682980298996,1,extra-music,extra-music,How does engaging with music foster social bonds?
+0.7647058823529411,0.007449667900800705,0.007136086001992226,0.0003135818988084793,1,extra-music,extra-music,In what types of events is music’s role in uniting individuals particularly evident?
+0.7692307692307693,0.006698149256408215,0.0064346157014369965,0.0002635335549712181,1,extra-music,extra-music,What is one cognitive benefit of music mentioned in the report?
+0.7735849056603774,0.0065972525626420975,0.006329230032861233,0.0002680225297808647,1,extra-music,extra-music,Which brain imaging technique is cited as useful for studying music’s effect on the brain?
+0.7592592592592593,0.006516881287097931,0.006255210377275944,0.00026167090982198715,0,extra-music,extra-leonardo,What is the title of the book by Daniel J. Levitin referenced in the report?
+0.7636363636363637,0.0062433453276753426,0.005992659367620945,0.0002506859600543976,1,extra-music,extra-music,Name one emotional benefit of music described in the summary.
+0.7678571428571429,0.0060384320095181465,0.005785364657640457,0.00025306735187768936,1,extra-music,extra-music,What is one way music can help with emotional regulation?
+0.7719298245614035,0.006142256781458855,0.005892978049814701,0.0002492787316441536,1,extra-music,extra-music,Which neurotransmitter is associated with the “feel-good” effect of music?
+0.7758620689655172,0.010454807430505753,0.010173671878874302,0.00028113555163145065,1,extra-music,extra-music,"What is the main conclusion about music’s role in human life, according to the report?"
+0.7796610169491526,0.009170213714241982,0.008835840970277786,0.00033437274396419525,1,extra-music,extra-music,Which two authors are cited in the reference about music and neural substrates?
+0.7833333333333333,0.007857318967580795,0.007537228986620903,0.0003200899809598923,1,extra-music,extra-music,What is one debated effect related to music and cognitive performance mentioned in the summary?
+0.7868852459016393,0.007182300090789795,0.006878522224724293,0.00030377786606550217,1,nsdi22-paper-reda_1,nsdi22-paper-reda_1,What novel framework demonstrates RDMA's Turing completeness?
+0.7903225806451613,0.007171482779085636,0.006866334937512875,0.00030514784157276154,1,nsdi22-paper-reda_1,nsdi22-paper-reda_1,How does RedN enable complex offloads without modifying RDMA hardware?
+0.7936507936507936,0.010648787021636963,0.010276615619659424,0.00037217140197753906,1,nsdi22-paper-reda_1,nsdi22-paper-reda_1,Which RDMA verbs does RedN use to implement self-modifying chains?
+0.796875,0.008116310462355614,0.007778692990541458,0.0003376174718141556,1,nsdi22-paper-reda_1,nsdi22-paper-reda_1,What are the two primary performance benefits of RedN over traditional RDMA systems?
+0.8,0.007966367527842522,0.00761350616812706,0.00035286135971546173,1,nsdi22-paper-reda_1,nsdi22-paper-reda_1,How does RedN introduce conditional logic using RDMA operations?
+0.7878787878787878,0.00786496140062809,0.007532740943133831,0.0003322204574942589,0,nsdi22-paper-reda_1,extra-compound-mape,What mechanism enforces strict execution order in RedN's control flow?
+0.7910447761194029,0.008899340406060219,0.008565411902964115,0.00033392850309610367,1,nsdi22-paper-reda_1,nsdi22-paper-reda_1,How many lines of code comprise the RedN implementation?
+0.7941176470588235,0.00751898717135191,0.007201484404504299,0.0003175027668476105,1,nsdi22-paper-reda_1,nsdi22-paper-reda_1,Which RDMA NIC generations are compatible with RedN?
+0.7971014492753623,0.00734521821141243,0.007041121833026409,0.00030409637838602066,1,nsdi22-paper-reda_1,nsdi22-paper-reda_1,What is the latency impact of if/while constructs in RedN's microbenchmarks?
+0.8,0.007028639316558838,0.006733990274369717,0.00029464904218912125,1,nsdi22-paper-reda_1,nsdi22-paper-reda_1,How does RedN accelerate hash lookups compared to conventional RDMA approaches?
+0.8028169014084507,0.006911559961736202,0.006614852696657181,0.00029670726507902145,1,nsdi22-paper-reda_1,nsdi22-paper-reda_1,What throughput does RedN achieve for get operations on dual-port RNICs?
+0.8055555555555556,0.010678539052605629,0.010344614274799824,0.0003339247778058052,1,nsdi22-paper-reda_1,nsdi22-paper-reda_1,How does RedN optimize linked list traversal performance?
+0.7945205479452054,0.007603124715387821,0.007298941724002361,0.0003041829913854599,0,nsdi22-paper-reda_1,SplitRPC-sigmetrics23,What speedup does RedN provide for Memcached get operations?
+0.7837837837837838,0.006927008740603924,0.006637011654675007,0.00028999708592891693,0,nsdi22-paper-reda_1,SplitRPC-sigmetrics23,How does RedN eliminate CPU polling in Memcached acceleration?
+0.7733333333333333,0.006668263114988804,0.006377675570547581,0.00029058754444122314,0,nsdi22-paper-reda_1,metron-nsdi18,What latency improvement does RedN provide under contention scenarios?
+0.7763157894736842,0.0070466892793774605,0.006740575656294823,0.0003061136230826378,1,nsdi22-paper-reda_1,nsdi22-paper-reda_1,How does RedN maintain service continuity during OS kernel panics?
+0.7792207792207793,0.006955822929739952,0.006647462956607342,0.0003083599731326103,1,nsdi22-paper-reda_1,nsdi22-paper-reda_1,What client scalability challenge does RedN face?
+0.7692307692307693,0.00649280846118927,0.0062237270176410675,0.0002690814435482025,0,nsdi22-paper-reda_1,aplomb-sigcomm12,Which solution is proposed for RedN's client scalability limitation?
+0.7721518987341772,0.010684888809919357,0.010333745740354061,0.0003511430695652962,1,nsdi22-paper-reda_1,nsdi22-paper-reda_1,How might future RNIC designs enhance WR cache access for RedN?
+0.775,0.007999131456017494,0.00766413751989603,0.0003349939361214638,1,nsdi22-paper-reda_1,nsdi22-paper-reda_1,Which three computational requirements does the appendix prove RDMA satisfies for Turing completeness?
+0.7777777777777778,0.007734678685665131,0.007400646805763245,0.000334031879901886,1,osdi24-sun-biao,osdi24-sun-biao,What problem does Llumnix solve in large language model serving?
+0.7804878048780488,0.010806943289935589,0.010475778952240944,0.00033116433769464493,1,osdi24-sun-biao,osdi24-sun-biao,How does Llumnix achieve better load balancing compared to static scheduling?
+0.7831325301204819,0.007677800953388214,0.007358625531196594,0.0003191754221916199,1,osdi24-sun-biao,osdi24-sun-biao,What is the core mechanism Llumnix uses to enable request rescheduling?
+0.7857142857142857,0.007410739548504353,0.00709148682653904,0.00031925272196531296,1,osdi24-sun-biao,osdi24-sun-biao,What are the three main benefits of Llumnix's live migration technique?
+0.788235294117647,0.007318910211324692,0.006991042755544186,0.00032786745578050613,1,osdi24-sun-biao,osdi24-sun-biao,How does Llumnix minimize downtime during request migration?
+0.7906976744186046,0.007318220101296902,0.007001174613833427,0.0003170454874634743,1,osdi24-sun-biao,osdi24-sun-biao,What architectural components handle request-level decisions in Llumnix?
+0.7816091954022989,0.009334185160696507,0.009016213938593864,0.00031797122210264206,0,osdi24-sun-biao,vllm,"How does ""Virtual Usage"" abstraction help in resource management?"
+0.7840909090909091,0.007220651023089886,0.006902237422764301,0.0003184136003255844,1,osdi24-sun-biao,osdi24-sun-biao,What metric does Llumnix use for scheduling decisions?
+0.7865168539325843,0.007389124482870102,0.007069631479680538,0.00031949300318956375,1,osdi24-sun-biao,osdi24-sun-biao,What existing system does Llumnix integrate with for implementation?
+0.7777777777777778,0.0072117336094379425,0.006882704794406891,0.00032902881503105164,0,osdi24-sun-biao,metron-nsdi18,What communication framework is used for KV cache transfers?
+0.7692307692307693,0.006922890432178974,0.006619985215365887,0.00030290521681308746,0,osdi24-sun-biao,SplitRPC-sigmetrics23,How does block fusion improve data transfer efficiency?
+0.7717391304347826,0.006753903813660145,0.006463272497057915,0.00029063131660223007,1,osdi24-sun-biao,osdi24-sun-biao,What is the measured overhead of Llumnix's migration mechanism?
+0.7634408602150538,0.010236072354018688,0.00990124512463808,0.0003348272293806076,0,osdi24-sun-biao,osdi24-agrawal,How does Llumnix compare to INFaaS++ in P99 latency reduction?
+0.7553191489361702,0.007674429565668106,0.007352757267653942,0.00032167229801416397,0,osdi24-sun-biao,osdi24-agrawal,What percentage reduction in preemption loss does Llumnix achieve?
+0.7578947368421053,0.007253342308104038,0.006935903802514076,0.000317438505589962,1,osdi24-sun-biao,osdi24-sun-biao,How does Llumnix handle priority requests differently?
+0.7604166666666666,0.007132525555789471,0.006829587742686272,0.000302937813103199,1,osdi24-sun-biao,osdi24-sun-biao,What cost savings does Llumnix achieve through auto-scaling?
+0.7628865979381443,0.006748818792402744,0.006460925564169884,0.00028789322823286057,1,osdi24-sun-biao,osdi24-sun-biao,How many instances can Llumnix support in a cluster?
+0.7653061224489796,0.006504993885755539,0.006235828623175621,0.0002691652625799179,1,osdi24-sun-biao,osdi24-sun-biao,What distinguishes Llumnix from prior systems like vLLM and Orca?
+0.7676767676767676,0.00600234791636467,0.005753574892878532,0.0002487730234861374,1,osdi24-sun-biao,osdi24-sun-biao,How does Llumnix address memory fragmentation issues?
+0.77,0.005849401466548443,0.005611587315797806,0.00023781415075063705,1,osdi24-sun-biao,osdi24-sun-biao,Where can the reproduction artifacts for Llumnix be found?
+0.7722772277227723,0.005717136897146702,0.005479755811393261,0.00023738108575344086,1,extra-biology,extra-biology,What is the definition of epigenetics?
+0.7745098039215687,0.0060658445581793785,0.005814934149384499,0.0002509104087948799,1,extra-biology,extra-biology,"From which language and prefix does the term ""epigenetics"" originate?"
+0.7766990291262136,0.0058830901980400085,0.005634636618196964,0.0002484535798430443,1,extra-biology,extra-biology,Name one core mechanism of epigenetic regulation.
+0.7788461538461539,0.005861672572791576,0.005613307468593121,0.0002483651041984558,1,extra-biology,extra-biology,How does DNA methylation typically affect gene expression?
+0.780952380952381,0.005880475975573063,0.00563238188624382,0.0002480940893292427,1,extra-biology,extra-biology,What is the role of histone modification in gene regulation?
+0.7830188679245284,0.006049633026123047,0.005802168510854244,0.00024746451526880264,1,extra-biology,extra-biology,"What are non-coding RNAs, and what is their function in epigenetics?"
+0.7850467289719626,0.005920319817960262,0.005673922598361969,0.0002463972195982933,1,extra-biology,extra-biology,Do epigenetic modifications alter the DNA sequence itself?
+0.7870370370370371,0.00595497153699398,0.005706320516765118,0.00024865102022886276,1,extra-biology,extra-biology,Can epigenetic modifications be maintained through cell divisions?
+0.7889908256880734,0.005781796760857105,0.005541606806218624,0.00024018995463848114,1,extra-biology,extra-biology,How do epigenetic mechanisms contribute to cellular differentiation?
+0.7909090909090909,0.005910370498895645,0.005670858547091484,0.00023951195180416107,1,extra-biology,extra-biology,Give an example of an environmental factor that can influence the epigenome.
+0.7927927927927928,0.0057663219049572945,0.005533657968044281,0.00023266393691301346,1,extra-biology,extra-biology,How can environmental experiences affect future generations according to epigenetics?
+0.7946428571428571,0.005936563014984131,0.005692635662853718,0.00024392735213041306,1,extra-biology,extra-biology,What type of diseases are aberrant epigenetic modifications linked to?
+0.7964601769911505,0.005734034813940525,0.005503795109689236,0.00023023970425128937,1,extra-biology,extra-biology,How can abnormal DNA methylation patterns contribute to cancer?
+0.7982456140350878,0.0057593826204538345,0.005525873973965645,0.0002335086464881897,1,extra-biology,extra-biology,Why are epigenetic changes considered promising targets for therapies?
+0.8,0.005615553818643093,0.005389055237174034,0.000226498581469059,1,extra-biology,extra-biology,What is epigenetic transgenerational inheritance?
+0.8017241379310345,0.005691203288733959,0.00546577014029026,0.00022543314844369888,1,extra-biology,extra-biology,How does epigenetic transgenerational inheritance differ from classical genetics?
+0.8034188034188035,0.005627043545246124,0.0054056765511631966,0.0002213669940829277,1,extra-biology,extra-biology,In what way does epigenetics complement traditional Darwinian evolutionary models?
+0.8050847457627118,0.005553198978304863,0.005328872241079807,0.0002243267372250557,1,extra-biology,extra-biology,What does the integration of epigenetics and genetics provide for our understanding of biology?
+0.8067226890756303,0.005300900898873806,0.005071649327874184,0.00022925157099962234,1,extra-biology,extra-biology,Why is epigenetics important for explaining cellular diversity?
+0.8083333333333333,0.005441107787191868,0.005217603407800198,0.00022350437939167023,1,extra-biology,extra-biology,How does epigenetics offer new strategies for disease treatment and prevention?

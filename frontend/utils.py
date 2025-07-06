@@ -150,7 +150,7 @@ def plot_rag_latency_vs_req_id(task):
         return
 
     req_ids = []
-    rag_encoded_latencies = []
+    rag_encode_latencies = []
     rag_search_latencies = []
     rag_latencies = []
     with open(csv_file, newline="") as f:
@@ -160,10 +160,10 @@ def plot_rag_latency_vs_req_id(task):
             req_ids.append(req_id)
             req_id += 1
             # Safely get each latency, default to 0 if missing or empty
-            rag_encoded_lat = float(row.get("rag_encoded_latency", 0) or 0) * 1000
+            rag_encode_lat = float(row.get("rag_encode_latency", 0) or 0) * 1000
             rag_search_lat = float(row.get("rag_search_latency", 0) or 0) * 1000
             rag_lat = float(row.get("rag_latency", 0) or 0) * 1000
-            rag_encoded_latencies.append(rag_encoded_lat)
+            rag_encode_latencies.append(rag_encode_lat)
             rag_search_latencies.append(rag_search_lat)
             rag_latencies.append(rag_lat)
 
@@ -174,7 +174,7 @@ def plot_rag_latency_vs_req_id(task):
     plt.figure(figsize=(8, 5))
     plt.plot(
         req_ids,
-        rag_encoded_latencies,
+        rag_encode_latencies,
         color="blue",
         alpha=0.7,
         label="RAG Encode Latency",
