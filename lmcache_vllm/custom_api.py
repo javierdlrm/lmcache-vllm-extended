@@ -133,7 +133,10 @@ class RAGSearchRequest(BaseModel):
 @extended_router.post("/rag/index")
 async def rag_index(request: RAGIndexRequest):
     try:
-        extended_router.rag_instance.index(request.context_key, request.context)
+        context_np = extended_router.rag_instance.encode(request.context)
+        extended_router.rag_instance.index(
+            request.context_key, request.context, context_np
+        )
         return {
             "status": "success",
             "message": f"Context '{request.context_key}' indexed.",
@@ -146,17 +149,21 @@ async def rag_index(request: RAGIndexRequest):
 async def rag_search(request: RAGSearchRequest):
     try:
         start = time.perf_counter()
-        end = None
+        prompt_np = extended_router.rag_instance.encode(request.prompt)
+        encode_latency = time.perf_counter() - start
 
-        context_key, _ = extended_router.rag_instance.search(request.prompt)
+        start = time.perf_counter()
+        context_key, _ = extended_router.rag_instance.search(prompt_np)
+        search_latency = time.perf_counter() - start
 
-        end = time.perf_counter()
-        latency = end - start
+        latency = encode_latency + search_latency
 
         return {
             "status": "success",
             "rag_context_key": context_key,
             "rag_latency": latency,
+            "rag_encode_latency": encode_latency,
+            "rag_search_latency": search_latency,
         }
     except Exception as e:
         return {"status": "error", "message": str(e)}
