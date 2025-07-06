@@ -145,10 +145,18 @@ async def rag_index(request: RAGIndexRequest):
 @extended_router.post("/rag/search")
 async def rag_search(request: RAGSearchRequest):
     try:
+        start = time.perf_counter()
+        end = None
+
         context_key, _ = extended_router.rag_instance.search(request.prompt)
+
+        end = time.perf_counter()
+        latency = end - start
+
         return {
             "status": "success",
             "rag_context_key": context_key,
+            "rag_latency": latency,
         }
     except Exception as e:
         return {"status": "error", "message": str(e)}
