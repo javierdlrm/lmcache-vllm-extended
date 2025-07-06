@@ -169,3 +169,59 @@ class RequestGenerator:
         latency = end - start
 
         print(f"\n(📝 Indexing delay: {latency:.2f} seconds\n")
+
+    def rag_benchmark(self):
+        url = f"http://{self.ip}:{self.port}/v2/rag/search"
+
+        print("\n/// Searching contexts for RAG...")
+
+        accuracy = 0
+        total = 0
+
+        for entry in self.session_context_prompts_dict.values():
+            prompts = entry["prompts"]
+            context_key = entry["context_key"]
+
+            for prompt in prompts:
+                payload = {"prompt": prompt}
+
+                start = time.perf_counter()
+                end = None
+
+                try:
+                    response = requests.post(url, json=payload)
+                    response.raise_for_status()
+                    response_json = response.json()
+                    print(f"... Found context '{context_key}': {response.json()}")
+                except Exception as e:
+                    print(f"Failed to find context '{context_key}': {e}")
+
+                end = time.perf_counter()
+                latency = end - start
+
+                rag_match = 1 if response_json["rag_context_key"] == context_key else 0
+                accuracy += rag_match
+                total += 1
+
+                header_rag, values_rag = [], []
+                # header_rag.append("rag_accuracy")
+                # values_rag.append(metrics["rag_accuracy"])
+                header_rag.append("rag_latency")
+                values_rag.append(latency)
+                header_rag.append("rag_match")
+                values_rag.append(rag_match)
+                header_rag.append("context_key")
+                values_rag.append(context_key)
+                header_rag.append("rag_context_key")
+                values_rag.append(response_json["context_key"])
+                header_rag.append("prompt")
+                values_rag.append(prompt)
+
+                record_response_metrics(
+                    self.task, values_rag, header=header_rag, suffix="_rag"
+                )
+
+                if total > 0:
+                    print(f"# Accuracy: {(accuracy/total) * 100}%")
+                else:
+                    print("No questions found")

@@ -1,4 +1,6 @@
-Figure 1. Unsorted Req IDS with one line: total latencies per request (request+RAG)
 Figure 2. RAG latencies.
 Table 1. Rag accuracy, and rows with Matched, Original, Found, Question given.
 Figure 3. Sorted Req IDS with one line: total latencies per request (request+RAG)
+
+Figure 4. RAG latencies again with a ton shit of documents.
+Not table, but mention the accuracy with a ton shit of documents.

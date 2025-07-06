@@ -129,6 +129,13 @@ def main():
         )
         plot_rag_latency_vs_req_id(task + "_rag")
 
+    elif task.startswith("rag_benchmark"):
+        print("# Running rag benchmark")
+        generator.index_contexts_for_rag()  # index the contexts in vectordb first
+        generator.rag_benchmark()
+        plot_rag_latency_vs_req_id(task)
+        return
+
     # Generate plots of the results
     plot_latency_vs_seq_length(task)
     plot_multiple_latency_vs_seq_length(task)
