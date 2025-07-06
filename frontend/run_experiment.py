@@ -124,7 +124,7 @@ def main():
 
     elif task.startswith("task3"):
         print("# Running task 3: Batch requests with RAG")
-        generator.index_contexts_for_rag()  # index the contexts in vectordb first
+        generator.index_contexts_for_rag()  # index the contexts in rag first
         generator.start_batch(
             randomize=randomize, sort_before_forwarding=True, use_rag=True
         )
@@ -132,7 +132,7 @@ def main():
 
     elif task.startswith("rag_benchmark"):
         print("# Running rag benchmark")
-        generator.index_contexts_for_rag()  # index the contexts in vectordb first
+        generator.index_contexts_for_rag()  # index the contexts in rag first
         generator.rag_benchmark()
         plot_rag_latency_vs_req_id(task)
         plot_multiple_rag_latency_vs_req_id(task)

@@ -105,44 +105,6 @@ def plot_latency_vs_req_id(task):
     print(f"Plot saved to {output_path}")
 
 
-# def plot_rag_latency_vs_req_id(task):
-#     csv_file = f"reports/{task}.csv"
-#     if not os.path.isfile(csv_file):
-#         print(f"CSV file {csv_file} does not exist.")
-#         return
-
-#     req_ids = []
-#     rag_latencies = []
-#     with open(csv_file, newline="") as f:
-#         reader = csv.DictReader(f)
-#         req_id = 1
-#         for row in reader:
-#             req_ids.append(req_id)
-#             req_id += 1
-#             rag_lat = float(row["rag_latency"]) * 1000  # milliseconds
-#             rag_latencies.append(rag_lat)
-
-#     if not req_ids or not rag_latencies:
-#         print("No data to plot.")
-#         return
-
-#     plt.figure(figsize=(8, 5))
-#     plt.scatter(
-#         req_ids, rag_latencies, color="green", alpha=0.7, label="RAG Search Latency"
-#     )
-#     plt.plot(req_ids, rag_latencies, color="green", alpha=0.5)
-#     plt.title(f"RAG latencies vs Request ID for task: {task}")
-#     plt.xlabel("Request ID")
-#     plt.ylabel("Latency (milliseconds)")
-#     plt.grid(True)
-#     plt.legend()
-#     plt.tight_layout()
-#     output_path = f"reports/{task}_rag_latency_vs_req_id.png"
-#     plt.savefig(output_path)
-#     plt.close()
-#     print(f"Plot saved to {output_path}")
-
-
 def plot_rag_latency_vs_req_id(task):
     csv_file = f"reports/{task}.csv"
     if not os.path.isfile(csv_file):

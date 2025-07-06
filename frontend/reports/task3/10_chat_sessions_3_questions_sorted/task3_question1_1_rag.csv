@@ -1,0 +1,31 @@
+rag_accuracy,rag_latency,rag_encode_latency,rag_search_latency,rag_match,context_key,rag_context_key,prompt
+0.8333333333333334,0.004230712540447712,0.004111545160412788,0.00011916738003492355,1,ServerlessLLM_summary,ServerlessLLM_summary,What fundamental advancement does ServerlessLLM represent for LLM deployment?
+0.8333333333333334,0.00421533640474081,0.004106101579964161,0.00010923482477664948,1,ServerlessLLM_summary,ServerlessLLM_summary,What storage tiers are targeted by ServerlessLLM's caching strategy?
+0.8333333333333334,0.00440574623644352,0.004290415905416012,0.00011533033102750778,1,cacheblend,cacheblend,How does CacheBlend maintain high quality while reducing time-to-first-token (TTFT) and increasing throughput?
+0.8333333333333334,0.004257785156369209,0.004145191051065922,0.0001125941053032875,0,sigcomm24-crux,cacheblend,"By what percentage does Crux outperform Sincronia, TACCL, and CASSINI in trace simulations?"
+0.8333333333333334,0.004021825268864632,0.003913884051144123,0.00010794121772050858,1,cacheblend,cacheblend,"What limitations are noted for CacheBlend, especially regarding non-transformer architectures and integration with new serving engines?"
+0.8333333333333334,0.004012897610664368,0.0039041871204972267,0.00010871049016714096,0,extra-distributed-monitoring,cacheblend,What is the typical median error observed between T-Digest-KS and Optimal-KS in the experiments?
+0.8333333333333334,0.0040053315460681915,0.0038919076323509216,0.0001134239137172699,1,click,click,What is the measured overhead for modularity in a 16-element path?
+0.8333333333333334,0.0038782628253102303,0.0037701884284615517,0.00010807439684867859,1,click,click,Which prior systems are compared with Click in the related work?
+0.8333333333333334,0.003967395983636379,0.003857230767607689,0.00011016521602869034,1,click,click,How do explicit queue elements enhance control in Click's design?
+0.8333333333333334,0.0039749834686517715,0.0038643870502710342,0.0001105964183807373,1,extra-biology,extra-biology,In what way does epigenetics complement traditional Darwinian evolutionary models?
+0.8333333333333334,0.003996443003416061,0.003887188620865345,0.0001092543825507164,1,extra-biology,extra-biology,"From which language and prefix does the term ""epigenetics"" originate?"
+0.8333333333333334,0.0039947545155882835,0.0038860831409692764,0.00010867137461900711,1,extra-biology,extra-biology,Give an example of an environmental factor that can influence the epigenome.
+0.8333333333333334,0.007553907111287117,0.007416553795337677,0.00013735331594944,0,cacheblend,extra-distributed-monitoring,How are high-KV-deviation (HKVD) tokens identified?
+0.8333333333333334,0.004249131307005882,0.004137048497796059,0.00011208280920982361,1,extra-distributed-monitoring,extra-distributed-monitoring,In what ways does this work lay the foundation for robust edge ML operations in real-world deployments?
+0.8333333333333334,0.0039977580308914185,0.0038882894441485405,0.00010946858674287796,1,extra-distributed-monitoring,extra-distributed-monitoring,How does the framework ensure privacy when aggregating data from edge devices?
+0.8333333333333334,0.003996801562607288,0.0038878805935382843,0.00010892096906900406,1,extra-leonardo,extra-leonardo,What does the report say about the legacy of Leonardo da Vinci?
+0.8333333333333334,0.004235564731061459,0.004125967621803284,0.0001095971092581749,1,extra-leonardo,extra-leonardo,What is the name of Leonardo’s most famous painting mentioned in the report?
+0.8333333333333334,0.003995751030743122,0.003887621685862541,0.0001081293448805809,1,extra-leonardo,extra-leonardo,What is the title of the biblical scene Leonardo reimagined with dramatic perspective?
+0.8333333333333334,0.004294726066291332,0.004185384139418602,0.00010934192687273026,1,extra-music,extra-music,Which neurotransmitter is associated with the “feel-good” effect of music?
+0.8333333333333334,0.004251259379088879,0.004141823388636112,0.00010943599045276642,1,extra-music,extra-music,"What is the main conclusion about music’s role in human life, according to the report?"
+0.8333333333333334,0.003992349840700626,0.0038840416818857193,0.00010830815881490707,1,extra-music,extra-music,What is one debated effect related to music and cognitive performance mentioned in the summary?
+0.8333333333333334,0.014679922722280025,0.014405050314962864,0.00027487240731716156,1,metron-nsdi18,metron-nsdi18,What challenge in NFV does Metron address according to the introduction?
+0.8333333333333334,0.00891854241490364,0.008794472552835941,0.00012406986206769943,0,nsdi22-paper-reda_1,metron-nsdi18,What latency improvement does RedN provide under contention scenarios?
+0.8333333333333334,0.008208480663597584,0.00809447281062603,0.0001140078529715538,1,metron-nsdi18,metron-nsdi18,How does Metron implement traffic steering using NIC-based tags?
+0.8333333333333334,0.003982606343924999,0.0038701118901371956,0.00011249445378780365,1,metron-nsdi18,metron-nsdi18,What strategy does Metron use for dynamic scaling of NFs?
+0.8333333333333334,0.004149178043007851,0.004036241210997105,0.000112936832010746,1,nsdi22-paper-reda_1,nsdi22-paper-reda_1,How many lines of code comprise the RedN implementation?
+0.8333333333333334,0.004322224296629429,0.0042084213346242905,0.0001138029620051384,1,nsdi22-paper-reda_1,nsdi22-paper-reda_1,What is the latency impact of if/while constructs in RedN's microbenchmarks?
+0.8333333333333334,0.0042127324268221855,0.004098786972463131,0.00011394545435905457,1,sigcomm24-crux,sigcomm24-crux,Which algorithm does Crux use for priority compression?
+0.8333333333333334,0.0038981186226010323,0.003783866763114929,0.00011425185948610306,0,ServerlessLLM_summary,sigcomm24-crux,How does the scheduler estimate loading/migration times?
+0.8333333333333334,0.003978390246629715,0.0038683461025357246,0.00011004414409399033,1,sigcomm24-crux,sigcomm24-crux,What percentage of jobs faced communication contention in the profiled production cluster?
