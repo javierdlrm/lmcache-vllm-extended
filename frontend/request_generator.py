@@ -214,7 +214,7 @@ class RequestGenerator:
                 header_rag.append("context_key")
                 values_rag.append(context_key)
                 header_rag.append("rag_context_key")
-                values_rag.append(response_json["context_key"])
+                values_rag.append(response_json["rag_context_key"])
                 header_rag.append("prompt")
                 values_rag.append(prompt)
 

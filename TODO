@@ -4,3 +4,9 @@ Figure 3. Sorted Req IDS with one line: total latencies per request (request+RAG
 
 Figure 4. RAG latencies again with a ton shit of documents.
 Not table, but mention the accuracy with a ton shit of documents.
+
+
+
+[ ] Question 1: RAG benchmark with all prompts and contexts 22 * 20 -> Accuracy ?
+[ ] Question 3: Figure 10, latencies for whole RAG benchmark.
+[ ] Question 4: Figure 11, latencies for whole RAG benchmark but multiple runs with different number of documents.

@@ -142,13 +142,13 @@ async def rag_index(request: RAGIndexRequest):
         return {"status": "error", "message": str(e)}
 
 
-@extended_router.post("/rag/index")
+@extended_router.post("/rag/search")
 async def rag_search(request: RAGSearchRequest):
     try:
         context_key, _ = extended_router.rag_instance.search(request.question)
         return {
             "status": "success",
-            "context_key": context_key,
+            "rag_context_key": context_key,
         }
     except Exception as e:
         return {"status": "error", "message": str(e)}
