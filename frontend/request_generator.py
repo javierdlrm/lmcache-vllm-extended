@@ -177,10 +177,12 @@ class RequestGenerator:
 
         accuracy = 0
         total = 0
+        num_contexts = 0
 
         for entry in self.session_context_prompts_dict.values():
             prompts = entry["prompts"]
             context_key = entry["context_key"]
+            num_contexts += 1
 
             for prompt in prompts:
                 payload = {"prompt": prompt}
@@ -213,6 +215,10 @@ class RequestGenerator:
                 values_rag.append(prompt)
 
                 record_response_metrics(self.task, values_rag, header=header_rag)
+
+        print(
+            f"\n(📝 Num of contexts: {num_contexts} contexts // Num of prompts: {total} promtps\n"
+        )
 
         if total > 0:
             print(f"# Accuracy: {(accuracy/total) * 100}%")
