@@ -33,7 +33,7 @@ class RAG:
         self.context_keys.append(context_key)
         self.contexts[context_key] = context
 
-    def search(self, question_np, top_k=5):
+    def search(self, question, question_np, top_k=5):
         print("/// [RAG] searching for question: " + question)
         # question_np = self.encode(question)
         # question_np = self.embedding_model.encode([question], normalize_embeddings=True)

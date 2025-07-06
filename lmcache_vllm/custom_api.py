@@ -61,8 +61,9 @@ async def create_batch_chat_completion(
                 end = None
 
                 question = request.request.messages[-1]["content"]
+                question_np = extended_router.rag_instance.encode(question)
                 context_key, context = extended_router.rag_instance.search(
-                    question=question, top_k=1
+                    question, question_np, top_k=1
                 )
                 # Add the context to the last user message
                 request.request.messages[-1] = {
@@ -153,7 +154,7 @@ async def rag_search(request: RAGSearchRequest):
         encode_latency = time.perf_counter() - start
 
         start = time.perf_counter()
-        context_key, _ = extended_router.rag_instance.search(prompt_np)
+        context_key, _ = extended_router.rag_instance.search(request.prompt, prompt_np)
         search_latency = time.perf_counter() - start
 
         latency = encode_latency + search_latency
