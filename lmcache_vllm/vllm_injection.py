@@ -630,7 +630,9 @@ def InitLMCacheEnvironment() -> None:
         from rag import RAG
 
         embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
-        extended_router.rag_instance = RAG(embedding_model=embedding_model)
+        extended_router.rag_instance = RAG(
+            embedding_model=embedding_model, use_faiss=False
+        )
 
     router.include_router(extended_router, prefix="/v2", tags=["extended"])
 
