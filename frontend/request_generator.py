@@ -199,13 +199,14 @@ class RequestGenerator:
                 latency = end - start
 
                 response_json = response.json()
+
                 rag_match = 1 if response_json["rag_context_key"] == context_key else 0
                 accuracy += rag_match
                 total += 1
 
                 header_rag, values_rag = [], []
-                # header_rag.append("rag_accuracy")
-                # values_rag.append(metrics["rag_accuracy"])
+                header_rag.append("rag_accuracy")
+                values_rag.append(accuracy / total)
                 header_rag.append("rag_latency")
                 values_rag.append(latency)
                 header_rag.append("rag_match")
@@ -221,7 +222,7 @@ class RequestGenerator:
                     self.task, values_rag, header=header_rag, suffix="_rag"
                 )
 
-                if total > 0:
-                    print(f"# Accuracy: {(accuracy/total) * 100}%")
-                else:
-                    print("No questions found")
+        if total > 0:
+            print(f"# Accuracy: {(accuracy/total) * 100}%")
+        else:
+            print("No questions found")
