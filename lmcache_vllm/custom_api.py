@@ -127,7 +127,7 @@ class RAGIndexRequest(BaseModel):
 
 
 class RAGSearchRequest(BaseModel):
-    question: str
+    prompt: str
 
 
 @extended_router.post("/rag/index")
@@ -145,7 +145,7 @@ async def rag_index(request: RAGIndexRequest):
 @extended_router.post("/rag/search")
 async def rag_search(request: RAGSearchRequest):
     try:
-        context_key, _ = extended_router.rag_instance.search(request.question)
+        context_key, _ = extended_router.rag_instance.search(request.prompt)
         return {
             "status": "success",
             "rag_context_key": context_key,
