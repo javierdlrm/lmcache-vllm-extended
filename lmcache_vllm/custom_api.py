@@ -57,14 +57,19 @@ async def create_batch_chat_completion(
 
             # If using RAG, retrieve context for each request before sorting
             for request in batch_request.requests:
+                question = request.request.messages[-1]["content"]
+
                 start = time.perf_counter()
                 end = None
 
-                question = request.request.messages[-1]["content"]
                 question_np = extended_router.rag_instance.encode(question)
                 context_key, context = extended_router.rag_instance.search(
                     question, question_np, top_k=1
                 )
+
+                end = time.perf_counter()
+                latency = end - start
+
                 # Add the context to the last user message
                 request.request.messages[-1] = {
                     "role": "user",
@@ -72,9 +77,6 @@ async def create_batch_chat_completion(
                     + "\nPlease, answer given the following context: "
                     + context,
                 }
-
-                end = time.perf_counter()
-                latency = end - start
 
                 rag_accuracy += 1 if context_key == request.context_key else 0
 
