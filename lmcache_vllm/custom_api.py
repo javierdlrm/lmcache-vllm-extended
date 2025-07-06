@@ -34,6 +34,8 @@ class ExtendedChatCompletionRequest(BaseModel):
     request: ChatCompletionRequest
     context_key: str
     rag_latency: float = None
+    rag_encode_latency: float = None
+    rag_search_latency: float = None
 
 
 class BatchExtendedChatCompletionRequest(BaseModel):
@@ -60,15 +62,16 @@ async def create_batch_chat_completion(
                 question = request.request.messages[-1]["content"]
 
                 start = time.perf_counter()
-                end = None
-
                 question_np = extended_router.rag_instance.encode(question)
+                encode_latency = time.perf_counter() - start
+
+                start = time.perf_counter()
                 context_key, context = extended_router.rag_instance.search(
                     question, question_np, top_k=1
                 )
+                search_latency = time.perf_counter() - start
 
-                end = time.perf_counter()
-                latency = end - start
+                latency = encode_latency + search_latency
 
                 # Add the context to the last user message
                 request.request.messages[-1] = {
@@ -82,6 +85,8 @@ async def create_batch_chat_completion(
 
                 request.context_key = context_key
                 request.rag_latency = latency
+                request.rag_encode_latency = encode_latency
+                request.rag_search_latency = search_latency
 
             rag_accuracy /= len(batch_request.requests)
 
@@ -112,6 +117,8 @@ async def create_batch_chat_completion(
         if batch_request.use_rag:
             metrics["rag_accuracy"] = rag_accuracy
             metrics["rag_latency"] = request.rag_latency
+            metrics["rag_encode_latency"] = request.rag_encode_latency
+            metrics["rag_search_latency"] = request.rag_search_latency
             metrics["rag_context_key"] = request.context_key
 
         responses.append(metrics)

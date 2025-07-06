@@ -126,6 +126,10 @@ class RequestGenerator:
                 values_rag.append(metrics["rag_accuracy"])
                 header_rag.append("rag_latency")
                 values_rag.append(metrics["rag_latency"])
+                header_rag.append("rag_encode_latency")
+                values_rag.append(metrics["rag_encode_latency"])
+                header_rag.append("rag_search_latency")
+                values_rag.append(metrics["rag_search_latency"])
                 header_rag.append("rag_match")
                 values_rag.append(
                     1 if metrics["rag_context_key"] == request["context_key"] else 0
