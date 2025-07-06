@@ -183,6 +183,46 @@ def plot_multiple_latency_vs_seq_length(task):
     print(f"Multi-line plot saved to {output_path}")
 
 
+def plot_multiple_rag_latency_vs_req_id(task):
+    plt.figure(figsize=(10, 6))
+
+    task_prefix = task[: len("rag_benchmark")]
+    pattern = f"reports/{task_prefix}_*.csv"
+    csv_paths = glob.glob(pattern)
+    if not csv_paths:
+        print(f"No CSV files found for pattern: {pattern}")
+        return
+
+    labels = [os.path.splitext(os.path.basename(path))[0] for path in csv_paths]
+    title = f"RAG Latency vs Request ID for task: {task}"
+
+    for idx, csv_file in enumerate(csv_paths):
+        req_ids = []
+        rag_latencies = []
+        with open(csv_file, newline="") as f:
+            reader = csv.DictReader(f)
+            req_id = 1
+            for row in reader:
+                if "rag_latency" in row and row["rag_latency"]:
+                    req_ids.append(req_id)
+                    rag_latencies.append(float(row["rag_latency"]) * 1000)  # ms
+                    req_id += 1
+        if req_ids and rag_latencies:
+            label = labels[idx] if labels and idx < len(labels) else f"Run {idx+1}"
+            plt.plot(req_ids, rag_latencies, marker="o", label=label)
+
+    plt.title(title)
+    plt.xlabel("Request ID")
+    plt.ylabel("RAG Latency (milliseconds)")
+    plt.grid(True)
+    plt.legend()
+    plt.tight_layout()
+    output_path = f"reports/{task}_multi_rag_latency_vs_req_id.png"
+    plt.savefig(output_path)
+    plt.close()
+    print(f"Multi-line RAG latency plot saved to {output_path}")
+
+
 def get_num_char_and_seq_length(tokenizer, messages):
     chat_str = tokenizer.apply_chat_template(messages, tokenize=False)
     token_ids = tokenizer.encode(chat_str)

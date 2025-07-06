@@ -24,449 +24,449 @@
 ... Indexed context 'SplitRPC-sigmetrics23': {'status': 'success', 'message': "Context 'SplitRPC-sigmetrics23' indexed."}
 ... Indexed context 'extra-finance': {'status': 'success', 'message': "Context 'extra-finance' indexed."}
 
-(📝 Indexing delay: 0.88 seconds
+(📝 Indexing delay: 0.81 seconds
 
 
 /// Searching contexts for RAG...
-... Found context 'sigcomm24-crux': {'status': 'success', 'rag_context_key': 'sigcomm24-crux'}
-... Found context 'sigcomm24-crux': {'status': 'success', 'rag_context_key': 'sigcomm24-crux'}
-... Found context 'sigcomm24-crux': {'status': 'success', 'rag_context_key': 'sigcomm24-crux'}
-... Found context 'sigcomm24-crux': {'status': 'success', 'rag_context_key': 'sigcomm24-crux'}
-... Found context 'sigcomm24-crux': {'status': 'success', 'rag_context_key': 'sigcomm24-crux'}
-... Found context 'sigcomm24-crux': {'status': 'success', 'rag_context_key': 'sigcomm24-crux'}
-... Found context 'sigcomm24-crux': {'status': 'success', 'rag_context_key': 'sigcomm24-crux'}
-... Found context 'sigcomm24-crux': {'status': 'success', 'rag_context_key': 'sigcomm24-crux'}
-... Found context 'sigcomm24-crux': {'status': 'success', 'rag_context_key': 'sigcomm24-crux'}
-... Found context 'sigcomm24-crux': {'status': 'success', 'rag_context_key': 'sigcomm24-crux'}
-... Found context 'sigcomm24-crux': {'status': 'success', 'rag_context_key': 'sigcomm24-crux'}
-... Found context 'sigcomm24-crux': {'status': 'success', 'rag_context_key': 'sigcomm24-crux'}
-... Found context 'sigcomm24-crux': {'status': 'success', 'rag_context_key': 'cacheblend'}
-... Found context 'sigcomm24-crux': {'status': 'success', 'rag_context_key': 'sigcomm24-crux'}
-... Found context 'sigcomm24-crux': {'status': 'success', 'rag_context_key': 'sigcomm24-crux'}
-... Found context 'sigcomm24-crux': {'status': 'success', 'rag_context_key': 'sigcomm24-crux'}
-... Found context 'sigcomm24-crux': {'status': 'success', 'rag_context_key': 'sigcomm24-crux'}
-... Found context 'sigcomm24-crux': {'status': 'success', 'rag_context_key': 'aplomb-sigcomm12'}
-... Found context 'sigcomm24-crux': {'status': 'success', 'rag_context_key': 'sigcomm24-crux'}
-... Found context 'sigcomm24-crux': {'status': 'success', 'rag_context_key': 'cacheblend'}
-... Found context 'extra-oss-monitoring': {'status': 'success', 'rag_context_key': 'extra-estimate-performance'}
-... Found context 'extra-oss-monitoring': {'status': 'success', 'rag_context_key': 'extra-oss-monitoring'}
-... Found context 'extra-oss-monitoring': {'status': 'success', 'rag_context_key': 'extra-oss-monitoring'}
-... Found context 'extra-oss-monitoring': {'status': 'success', 'rag_context_key': 'extra-oss-monitoring'}
-... Found context 'extra-oss-monitoring': {'status': 'success', 'rag_context_key': 'cacheblend'}
-... Found context 'extra-oss-monitoring': {'status': 'success', 'rag_context_key': 'extra-oss-monitoring'}
-... Found context 'extra-oss-monitoring': {'status': 'success', 'rag_context_key': 'extra-estimate-performance'}
-... Found context 'extra-oss-monitoring': {'status': 'success', 'rag_context_key': 'extra-oss-monitoring'}
-... Found context 'extra-oss-monitoring': {'status': 'success', 'rag_context_key': 'extra-oss-monitoring'}
-... Found context 'extra-oss-monitoring': {'status': 'success', 'rag_context_key': 'extra-oss-monitoring'}
-... Found context 'extra-oss-monitoring': {'status': 'success', 'rag_context_key': 'cacheblend'}
-... Found context 'extra-oss-monitoring': {'status': 'success', 'rag_context_key': 'extra-oss-monitoring'}
-... Found context 'extra-oss-monitoring': {'status': 'success', 'rag_context_key': 'extra-oss-monitoring'}
-... Found context 'extra-oss-monitoring': {'status': 'success', 'rag_context_key': 'extra-distributed-monitoring'}
-... Found context 'extra-oss-monitoring': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23'}
-... Found context 'extra-oss-monitoring': {'status': 'success', 'rag_context_key': 'vllm'}
-... Found context 'extra-oss-monitoring': {'status': 'success', 'rag_context_key': 'extra-oss-monitoring'}
-... Found context 'extra-oss-monitoring': {'status': 'success', 'rag_context_key': 'extra-oss-monitoring'}
-... Found context 'extra-oss-monitoring': {'status': 'success', 'rag_context_key': 'extra-distributed-monitoring'}
-... Found context 'extra-oss-monitoring': {'status': 'success', 'rag_context_key': 'extra-oss-monitoring'}
-... Found context 'extra-music': {'status': 'success', 'rag_context_key': 'cacheblend'}
-... Found context 'extra-music': {'status': 'success', 'rag_context_key': 'extra-music'}
-... Found context 'extra-music': {'status': 'success', 'rag_context_key': 'extra-music'}
-... Found context 'extra-music': {'status': 'success', 'rag_context_key': 'extra-music'}
-... Found context 'extra-music': {'status': 'success', 'rag_context_key': 'extra-music'}
-... Found context 'extra-music': {'status': 'success', 'rag_context_key': 'extra-music'}
-... Found context 'extra-music': {'status': 'success', 'rag_context_key': 'extra-music'}
-... Found context 'extra-music': {'status': 'success', 'rag_context_key': 'extra-music'}
-... Found context 'extra-music': {'status': 'success', 'rag_context_key': 'extra-music'}
-... Found context 'extra-music': {'status': 'success', 'rag_context_key': 'extra-music'}
-... Found context 'extra-music': {'status': 'success', 'rag_context_key': 'extra-music'}
-... Found context 'extra-music': {'status': 'success', 'rag_context_key': 'extra-music'}
-... Found context 'extra-music': {'status': 'success', 'rag_context_key': 'extra-music'}
-... Found context 'extra-music': {'status': 'success', 'rag_context_key': 'extra-leonardo'}
-... Found context 'extra-music': {'status': 'success', 'rag_context_key': 'extra-music'}
-... Found context 'extra-music': {'status': 'success', 'rag_context_key': 'extra-music'}
-... Found context 'extra-music': {'status': 'success', 'rag_context_key': 'extra-music'}
-... Found context 'extra-music': {'status': 'success', 'rag_context_key': 'extra-music'}
-... Found context 'extra-music': {'status': 'success', 'rag_context_key': 'extra-music'}
-... Found context 'extra-music': {'status': 'success', 'rag_context_key': 'extra-music'}
-... Found context 'nsdi22-paper-reda_1': {'status': 'success', 'rag_context_key': 'nsdi22-paper-reda_1'}
-... Found context 'nsdi22-paper-reda_1': {'status': 'success', 'rag_context_key': 'nsdi22-paper-reda_1'}
-... Found context 'nsdi22-paper-reda_1': {'status': 'success', 'rag_context_key': 'nsdi22-paper-reda_1'}
-... Found context 'nsdi22-paper-reda_1': {'status': 'success', 'rag_context_key': 'nsdi22-paper-reda_1'}
-... Found context 'nsdi22-paper-reda_1': {'status': 'success', 'rag_context_key': 'nsdi22-paper-reda_1'}
-... Found context 'nsdi22-paper-reda_1': {'status': 'success', 'rag_context_key': 'extra-compound-mape'}
-... Found context 'nsdi22-paper-reda_1': {'status': 'success', 'rag_context_key': 'nsdi22-paper-reda_1'}
-... Found context 'nsdi22-paper-reda_1': {'status': 'success', 'rag_context_key': 'nsdi22-paper-reda_1'}
-... Found context 'nsdi22-paper-reda_1': {'status': 'success', 'rag_context_key': 'nsdi22-paper-reda_1'}
-... Found context 'nsdi22-paper-reda_1': {'status': 'success', 'rag_context_key': 'nsdi22-paper-reda_1'}
-... Found context 'nsdi22-paper-reda_1': {'status': 'success', 'rag_context_key': 'nsdi22-paper-reda_1'}
-... Found context 'nsdi22-paper-reda_1': {'status': 'success', 'rag_context_key': 'nsdi22-paper-reda_1'}
-... Found context 'nsdi22-paper-reda_1': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23'}
-... Found context 'nsdi22-paper-reda_1': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23'}
-... Found context 'nsdi22-paper-reda_1': {'status': 'success', 'rag_context_key': 'metron-nsdi18'}
-... Found context 'nsdi22-paper-reda_1': {'status': 'success', 'rag_context_key': 'nsdi22-paper-reda_1'}
-... Found context 'nsdi22-paper-reda_1': {'status': 'success', 'rag_context_key': 'nsdi22-paper-reda_1'}
-... Found context 'nsdi22-paper-reda_1': {'status': 'success', 'rag_context_key': 'aplomb-sigcomm12'}
-... Found context 'nsdi22-paper-reda_1': {'status': 'success', 'rag_context_key': 'nsdi22-paper-reda_1'}
-... Found context 'nsdi22-paper-reda_1': {'status': 'success', 'rag_context_key': 'nsdi22-paper-reda_1'}
-... Found context 'osdi24-sun-biao': {'status': 'success', 'rag_context_key': 'osdi24-sun-biao'}
-... Found context 'osdi24-sun-biao': {'status': 'success', 'rag_context_key': 'osdi24-sun-biao'}
-... Found context 'osdi24-sun-biao': {'status': 'success', 'rag_context_key': 'osdi24-sun-biao'}
-... Found context 'osdi24-sun-biao': {'status': 'success', 'rag_context_key': 'osdi24-sun-biao'}
-... Found context 'osdi24-sun-biao': {'status': 'success', 'rag_context_key': 'osdi24-sun-biao'}
-... Found context 'osdi24-sun-biao': {'status': 'success', 'rag_context_key': 'osdi24-sun-biao'}
-... Found context 'osdi24-sun-biao': {'status': 'success', 'rag_context_key': 'vllm'}
-... Found context 'osdi24-sun-biao': {'status': 'success', 'rag_context_key': 'osdi24-sun-biao'}
-... Found context 'osdi24-sun-biao': {'status': 'success', 'rag_context_key': 'osdi24-sun-biao'}
-... Found context 'osdi24-sun-biao': {'status': 'success', 'rag_context_key': 'metron-nsdi18'}
-... Found context 'osdi24-sun-biao': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23'}
-... Found context 'osdi24-sun-biao': {'status': 'success', 'rag_context_key': 'osdi24-sun-biao'}
-... Found context 'osdi24-sun-biao': {'status': 'success', 'rag_context_key': 'osdi24-agrawal'}
-... Found context 'osdi24-sun-biao': {'status': 'success', 'rag_context_key': 'osdi24-agrawal'}
-... Found context 'osdi24-sun-biao': {'status': 'success', 'rag_context_key': 'osdi24-sun-biao'}
-... Found context 'osdi24-sun-biao': {'status': 'success', 'rag_context_key': 'osdi24-sun-biao'}
-... Found context 'osdi24-sun-biao': {'status': 'success', 'rag_context_key': 'osdi24-sun-biao'}
-... Found context 'osdi24-sun-biao': {'status': 'success', 'rag_context_key': 'osdi24-sun-biao'}
-... Found context 'osdi24-sun-biao': {'status': 'success', 'rag_context_key': 'osdi24-sun-biao'}
-... Found context 'osdi24-sun-biao': {'status': 'success', 'rag_context_key': 'osdi24-sun-biao'}
-... Found context 'extra-biology': {'status': 'success', 'rag_context_key': 'extra-biology'}
-... Found context 'extra-biology': {'status': 'success', 'rag_context_key': 'extra-biology'}
-... Found context 'extra-biology': {'status': 'success', 'rag_context_key': 'extra-biology'}
-... Found context 'extra-biology': {'status': 'success', 'rag_context_key': 'extra-biology'}
-... Found context 'extra-biology': {'status': 'success', 'rag_context_key': 'extra-biology'}
-... Found context 'extra-biology': {'status': 'success', 'rag_context_key': 'extra-biology'}
-... Found context 'extra-biology': {'status': 'success', 'rag_context_key': 'extra-biology'}
-... Found context 'extra-biology': {'status': 'success', 'rag_context_key': 'extra-biology'}
-... Found context 'extra-biology': {'status': 'success', 'rag_context_key': 'extra-biology'}
-... Found context 'extra-biology': {'status': 'success', 'rag_context_key': 'extra-biology'}
-... Found context 'extra-biology': {'status': 'success', 'rag_context_key': 'extra-biology'}
-... Found context 'extra-biology': {'status': 'success', 'rag_context_key': 'extra-biology'}
-... Found context 'extra-biology': {'status': 'success', 'rag_context_key': 'extra-biology'}
-... Found context 'extra-biology': {'status': 'success', 'rag_context_key': 'extra-biology'}
-... Found context 'extra-biology': {'status': 'success', 'rag_context_key': 'extra-biology'}
-... Found context 'extra-biology': {'status': 'success', 'rag_context_key': 'extra-biology'}
-... Found context 'extra-biology': {'status': 'success', 'rag_context_key': 'extra-biology'}
-... Found context 'extra-biology': {'status': 'success', 'rag_context_key': 'extra-biology'}
-... Found context 'extra-biology': {'status': 'success', 'rag_context_key': 'extra-biology'}
-... Found context 'extra-biology': {'status': 'success', 'rag_context_key': 'extra-biology'}
-... Found context 'extra-compound-mape': {'status': 'success', 'rag_context_key': 'extra-compound-mape'}
-... Found context 'extra-compound-mape': {'status': 'success', 'rag_context_key': 'extra-compound-mape'}
-... Found context 'extra-compound-mape': {'status': 'success', 'rag_context_key': 'extra-compound-mape'}
-... Found context 'extra-compound-mape': {'status': 'success', 'rag_context_key': 'extra-compound-mape'}
-... Found context 'extra-compound-mape': {'status': 'success', 'rag_context_key': 'extra-compound-mape'}
-... Found context 'extra-compound-mape': {'status': 'success', 'rag_context_key': 'extra-compound-mape'}
-... Found context 'extra-compound-mape': {'status': 'success', 'rag_context_key': 'extra-compound-mape'}
-... Found context 'extra-compound-mape': {'status': 'success', 'rag_context_key': 'extra-compound-mape'}
-... Found context 'extra-compound-mape': {'status': 'success', 'rag_context_key': 'extra-biology'}
-... Found context 'extra-compound-mape': {'status': 'success', 'rag_context_key': 'extra-compound-mape'}
-... Found context 'extra-compound-mape': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23'}
-... Found context 'extra-compound-mape': {'status': 'success', 'rag_context_key': 'extra-compound-mape'}
-... Found context 'extra-compound-mape': {'status': 'success', 'rag_context_key': 'extra-compound-mape'}
-... Found context 'extra-compound-mape': {'status': 'success', 'rag_context_key': 'extra-compound-mape'}
-... Found context 'extra-compound-mape': {'status': 'success', 'rag_context_key': 'extra-oss-monitoring'}
-... Found context 'extra-compound-mape': {'status': 'success', 'rag_context_key': 'extra-compound-mape'}
-... Found context 'extra-compound-mape': {'status': 'success', 'rag_context_key': 'extra-compound-mape'}
-... Found context 'extra-compound-mape': {'status': 'success', 'rag_context_key': 'extra-compound-mape'}
-... Found context 'extra-compound-mape': {'status': 'success', 'rag_context_key': 'extra-compound-mape'}
-... Found context 'extra-compound-mape': {'status': 'success', 'rag_context_key': 'extra-compound-mape'}
-... Found context 'ServerlessLLM_summary': {'status': 'success', 'rag_context_key': 'ServerlessLLM_summary'}
-... Found context 'ServerlessLLM_summary': {'status': 'success', 'rag_context_key': 'ServerlessLLM_summary'}
-... Found context 'ServerlessLLM_summary': {'status': 'success', 'rag_context_key': 'ServerlessLLM_summary'}
-... Found context 'ServerlessLLM_summary': {'status': 'success', 'rag_context_key': 'ServerlessLLM_summary'}
-... Found context 'ServerlessLLM_summary': {'status': 'success', 'rag_context_key': 'ServerlessLLM_summary'}
-... Found context 'ServerlessLLM_summary': {'status': 'success', 'rag_context_key': 'ServerlessLLM_summary'}
-... Found context 'ServerlessLLM_summary': {'status': 'success', 'rag_context_key': 'ServerlessLLM_summary'}
-... Found context 'ServerlessLLM_summary': {'status': 'success', 'rag_context_key': 'ServerlessLLM_summary'}
-... Found context 'ServerlessLLM_summary': {'status': 'success', 'rag_context_key': 'ServerlessLLM_summary'}
-... Found context 'ServerlessLLM_summary': {'status': 'success', 'rag_context_key': 'ServerlessLLM_summary'}
-... Found context 'ServerlessLLM_summary': {'status': 'success', 'rag_context_key': 'ServerlessLLM_summary'}
-... Found context 'ServerlessLLM_summary': {'status': 'success', 'rag_context_key': 'ServerlessLLM_summary'}
-... Found context 'ServerlessLLM_summary': {'status': 'success', 'rag_context_key': 'ServerlessLLM_summary'}
-... Found context 'ServerlessLLM_summary': {'status': 'success', 'rag_context_key': 'ServerlessLLM_summary'}
-... Found context 'ServerlessLLM_summary': {'status': 'success', 'rag_context_key': 'osdi24-sun-biao'}
-... Found context 'ServerlessLLM_summary': {'status': 'success', 'rag_context_key': 'osdi24-sun-biao'}
-... Found context 'ServerlessLLM_summary': {'status': 'success', 'rag_context_key': 'ServerlessLLM_summary'}
-... Found context 'ServerlessLLM_summary': {'status': 'success', 'rag_context_key': 'ServerlessLLM_summary'}
-... Found context 'ServerlessLLM_summary': {'status': 'success', 'rag_context_key': 'ServerlessLLM_summary'}
-... Found context 'ServerlessLLM_summary': {'status': 'success', 'rag_context_key': 'ServerlessLLM_summary'}
-... Found context 'aplomb-sigcomm12': {'status': 'success', 'rag_context_key': 'extra-music'}
-... Found context 'aplomb-sigcomm12': {'status': 'success', 'rag_context_key': 'aplomb-sigcomm12'}
-... Found context 'aplomb-sigcomm12': {'status': 'success', 'rag_context_key': 'aplomb-sigcomm12'}
-... Found context 'aplomb-sigcomm12': {'status': 'success', 'rag_context_key': 'aplomb-sigcomm12'}
-... Found context 'aplomb-sigcomm12': {'status': 'success', 'rag_context_key': 'aplomb-sigcomm12'}
-... Found context 'aplomb-sigcomm12': {'status': 'success', 'rag_context_key': 'nsdi22-paper-reda_1'}
-... Found context 'aplomb-sigcomm12': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23'}
-... Found context 'aplomb-sigcomm12': {'status': 'success', 'rag_context_key': 'click'}
-... Found context 'aplomb-sigcomm12': {'status': 'success', 'rag_context_key': 'click'}
-... Found context 'aplomb-sigcomm12': {'status': 'success', 'rag_context_key': 'click'}
-... Found context 'aplomb-sigcomm12': {'status': 'success', 'rag_context_key': 'osdi24-agrawal'}
-... Found context 'aplomb-sigcomm12': {'status': 'success', 'rag_context_key': 'aplomb-sigcomm12'}
-... Found context 'aplomb-sigcomm12': {'status': 'success', 'rag_context_key': 'extra-estimate-performance'}
-... Found context 'aplomb-sigcomm12': {'status': 'success', 'rag_context_key': 'osdi24-sun-biao'}
-... Found context 'aplomb-sigcomm12': {'status': 'success', 'rag_context_key': 'aplomb-sigcomm12'}
-... Found context 'aplomb-sigcomm12': {'status': 'success', 'rag_context_key': 'extra-biology'}
-... Found context 'aplomb-sigcomm12': {'status': 'success', 'rag_context_key': 'extra-music'}
-... Found context 'aplomb-sigcomm12': {'status': 'success', 'rag_context_key': 'aplomb-sigcomm12'}
-... Found context 'aplomb-sigcomm12': {'status': 'success', 'rag_context_key': 'extra-biology'}
-... Found context 'aplomb-sigcomm12': {'status': 'success', 'rag_context_key': 'aplomb-sigcomm12'}
-... Found context 'vllm': {'status': 'success', 'rag_context_key': 'vllm'}
-... Found context 'vllm': {'status': 'success', 'rag_context_key': 'ServerlessLLM_summary'}
-... Found context 'vllm': {'status': 'success', 'rag_context_key': 'sigcomm24-crux'}
-... Found context 'vllm': {'status': 'success', 'rag_context_key': 'osdi24-lee'}
-... Found context 'vllm': {'status': 'success', 'rag_context_key': 'vllm'}
-... Found context 'vllm': {'status': 'success', 'rag_context_key': 'osdi24-agrawal'}
-... Found context 'vllm': {'status': 'success', 'rag_context_key': 'osdi24-sun-biao'}
-... Found context 'vllm': {'status': 'success', 'rag_context_key': 'sigcomm24-crux'}
-... Found context 'vllm': {'status': 'success', 'rag_context_key': 'osdi24-agrawal'}
-... Found context 'vllm': {'status': 'success', 'rag_context_key': 'vllm'}
-... Found context 'vllm': {'status': 'success', 'rag_context_key': 'vllm'}
-... Found context 'vllm': {'status': 'success', 'rag_context_key': 'vllm'}
-... Found context 'vllm': {'status': 'success', 'rag_context_key': 'osdi24-agrawal'}
-... Found context 'vllm': {'status': 'success', 'rag_context_key': 'osdi24-agrawal'}
-... Found context 'vllm': {'status': 'success', 'rag_context_key': 'vllm'}
-... Found context 'vllm': {'status': 'success', 'rag_context_key': 'vllm'}
-... Found context 'vllm': {'status': 'success', 'rag_context_key': 'osdi24-lee'}
-... Found context 'vllm': {'status': 'success', 'rag_context_key': 'vllm'}
-... Found context 'vllm': {'status': 'success', 'rag_context_key': 'osdi24-agrawal'}
-... Found context 'vllm': {'status': 'success', 'rag_context_key': 'vllm'}
-... Found context 'cacheblend': {'status': 'success', 'rag_context_key': 'cacheblend'}
-... Found context 'cacheblend': {'status': 'success', 'rag_context_key': 'cacheblend'}
-... Found context 'cacheblend': {'status': 'success', 'rag_context_key': 'cacheblend'}
-... Found context 'cacheblend': {'status': 'success', 'rag_context_key': 'osdi24-lee'}
-... Found context 'cacheblend': {'status': 'success', 'rag_context_key': 'cacheblend'}
-... Found context 'cacheblend': {'status': 'success', 'rag_context_key': 'osdi24-lee'}
-... Found context 'cacheblend': {'status': 'success', 'rag_context_key': 'cacheblend'}
-... Found context 'cacheblend': {'status': 'success', 'rag_context_key': 'cacheblend'}
-... Found context 'cacheblend': {'status': 'success', 'rag_context_key': 'cacheblend'}
-... Found context 'cacheblend': {'status': 'success', 'rag_context_key': 'nsdi20-paper-barbette'}
-... Found context 'cacheblend': {'status': 'success', 'rag_context_key': 'cacheblend'}
-... Found context 'cacheblend': {'status': 'success', 'rag_context_key': 'cacheblend'}
-... Found context 'cacheblend': {'status': 'success', 'rag_context_key': 'nsdi22-paper-reda_1'}
-... Found context 'cacheblend': {'status': 'success', 'rag_context_key': 'cacheblend'}
-... Found context 'cacheblend': {'status': 'success', 'rag_context_key': 'cacheblend'}
-... Found context 'cacheblend': {'status': 'success', 'rag_context_key': 'cacheblend'}
-... Found context 'cacheblend': {'status': 'success', 'rag_context_key': 'cacheblend'}
-... Found context 'cacheblend': {'status': 'success', 'rag_context_key': 'cacheblend'}
-... Found context 'cacheblend': {'status': 'success', 'rag_context_key': 'osdi24-lee'}
-... Found context 'cacheblend': {'status': 'success', 'rag_context_key': 'cacheblend'}
-... Found context 'extra-leonardo': {'status': 'success', 'rag_context_key': 'extra-leonardo'}
-... Found context 'extra-leonardo': {'status': 'success', 'rag_context_key': 'extra-leonardo'}
-... Found context 'extra-leonardo': {'status': 'success', 'rag_context_key': 'extra-leonardo'}
-... Found context 'extra-leonardo': {'status': 'success', 'rag_context_key': 'extra-leonardo'}
-... Found context 'extra-leonardo': {'status': 'success', 'rag_context_key': 'extra-leonardo'}
-... Found context 'extra-leonardo': {'status': 'success', 'rag_context_key': 'extra-leonardo'}
-... Found context 'extra-leonardo': {'status': 'success', 'rag_context_key': 'extra-leonardo'}
-... Found context 'extra-leonardo': {'status': 'success', 'rag_context_key': 'extra-leonardo'}
-... Found context 'extra-leonardo': {'status': 'success', 'rag_context_key': 'extra-leonardo'}
-... Found context 'extra-leonardo': {'status': 'success', 'rag_context_key': 'extra-leonardo'}
-... Found context 'extra-leonardo': {'status': 'success', 'rag_context_key': 'extra-leonardo'}
-... Found context 'extra-leonardo': {'status': 'success', 'rag_context_key': 'extra-leonardo'}
-... Found context 'extra-leonardo': {'status': 'success', 'rag_context_key': 'extra-leonardo'}
-... Found context 'extra-leonardo': {'status': 'success', 'rag_context_key': 'extra-leonardo'}
-... Found context 'extra-leonardo': {'status': 'success', 'rag_context_key': 'extra-leonardo'}
-... Found context 'extra-leonardo': {'status': 'success', 'rag_context_key': 'extra-leonardo'}
-... Found context 'extra-leonardo': {'status': 'success', 'rag_context_key': 'extra-leonardo'}
-... Found context 'extra-leonardo': {'status': 'success', 'rag_context_key': 'extra-leonardo'}
-... Found context 'extra-leonardo': {'status': 'success', 'rag_context_key': 'extra-leonardo'}
-... Found context 'extra-leonardo': {'status': 'success', 'rag_context_key': 'extra-leonardo'}
-... Found context 'click': {'status': 'success', 'rag_context_key': 'click'}
-... Found context 'click': {'status': 'success', 'rag_context_key': 'click'}
-... Found context 'click': {'status': 'success', 'rag_context_key': 'click'}
-... Found context 'click': {'status': 'success', 'rag_context_key': 'click'}
-... Found context 'click': {'status': 'success', 'rag_context_key': 'click'}
-... Found context 'click': {'status': 'success', 'rag_context_key': 'click'}
-... Found context 'click': {'status': 'success', 'rag_context_key': 'click'}
-... Found context 'click': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23'}
-... Found context 'click': {'status': 'success', 'rag_context_key': 'click'}
-... Found context 'click': {'status': 'success', 'rag_context_key': 'click'}
-... Found context 'click': {'status': 'success', 'rag_context_key': 'metron-nsdi18'}
-... Found context 'click': {'status': 'success', 'rag_context_key': 'click'}
-... Found context 'click': {'status': 'success', 'rag_context_key': 'click'}
-... Found context 'click': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23'}
-... Found context 'click': {'status': 'success', 'rag_context_key': 'click'}
-... Found context 'click': {'status': 'success', 'rag_context_key': 'click'}
-... Found context 'click': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23'}
-... Found context 'click': {'status': 'success', 'rag_context_key': 'metron-nsdi18'}
-... Found context 'click': {'status': 'success', 'rag_context_key': 'click'}
-... Found context 'click': {'status': 'success', 'rag_context_key': 'cacheblend'}
-... Found context 'osdi24-agrawal': {'status': 'success', 'rag_context_key': 'osdi24-agrawal'}
-... Found context 'osdi24-agrawal': {'status': 'success', 'rag_context_key': 'osdi24-agrawal'}
-... Found context 'osdi24-agrawal': {'status': 'success', 'rag_context_key': 'osdi24-agrawal'}
-... Found context 'osdi24-agrawal': {'status': 'success', 'rag_context_key': 'osdi24-agrawal'}
-... Found context 'osdi24-agrawal': {'status': 'success', 'rag_context_key': 'osdi24-agrawal'}
-... Found context 'osdi24-agrawal': {'status': 'success', 'rag_context_key': 'osdi24-agrawal'}
-... Found context 'osdi24-agrawal': {'status': 'success', 'rag_context_key': 'osdi24-agrawal'}
-... Found context 'osdi24-agrawal': {'status': 'success', 'rag_context_key': 'metron-nsdi18'}
-... Found context 'osdi24-agrawal': {'status': 'success', 'rag_context_key': 'extra-estimate-performance'}
-... Found context 'osdi24-agrawal': {'status': 'success', 'rag_context_key': 'osdi24-agrawal'}
-... Found context 'osdi24-agrawal': {'status': 'success', 'rag_context_key': 'osdi24-agrawal'}
-... Found context 'osdi24-agrawal': {'status': 'success', 'rag_context_key': 'osdi24-agrawal'}
-... Found context 'osdi24-agrawal': {'status': 'success', 'rag_context_key': 'cacheblend'}
-... Found context 'osdi24-agrawal': {'status': 'success', 'rag_context_key': 'osdi24-agrawal'}
-... Found context 'osdi24-agrawal': {'status': 'success', 'rag_context_key': 'osdi24-agrawal'}
-... Found context 'osdi24-agrawal': {'status': 'success', 'rag_context_key': 'osdi24-agrawal'}
-... Found context 'osdi24-agrawal': {'status': 'success', 'rag_context_key': 'osdi24-agrawal'}
-... Found context 'osdi24-agrawal': {'status': 'success', 'rag_context_key': 'metron-nsdi18'}
-... Found context 'osdi24-agrawal': {'status': 'success', 'rag_context_key': 'metron-nsdi18'}
-... Found context 'osdi24-agrawal': {'status': 'success', 'rag_context_key': 'metron-nsdi18'}
-... Found context 'metron-nsdi18': {'status': 'success', 'rag_context_key': 'metron-nsdi18'}
-... Found context 'metron-nsdi18': {'status': 'success', 'rag_context_key': 'metron-nsdi18'}
-... Found context 'metron-nsdi18': {'status': 'success', 'rag_context_key': 'metron-nsdi18'}
-... Found context 'metron-nsdi18': {'status': 'success', 'rag_context_key': 'metron-nsdi18'}
-... Found context 'metron-nsdi18': {'status': 'success', 'rag_context_key': 'metron-nsdi18'}
-... Found context 'metron-nsdi18': {'status': 'success', 'rag_context_key': 'metron-nsdi18'}
-... Found context 'metron-nsdi18': {'status': 'success', 'rag_context_key': 'metron-nsdi18'}
-... Found context 'metron-nsdi18': {'status': 'success', 'rag_context_key': 'metron-nsdi18'}
-... Found context 'metron-nsdi18': {'status': 'success', 'rag_context_key': 'metron-nsdi18'}
-... Found context 'metron-nsdi18': {'status': 'success', 'rag_context_key': 'metron-nsdi18'}
-... Found context 'metron-nsdi18': {'status': 'success', 'rag_context_key': 'metron-nsdi18'}
-... Found context 'metron-nsdi18': {'status': 'success', 'rag_context_key': 'metron-nsdi18'}
-... Found context 'metron-nsdi18': {'status': 'success', 'rag_context_key': 'metron-nsdi18'}
-... Found context 'metron-nsdi18': {'status': 'success', 'rag_context_key': 'metron-nsdi18'}
-... Found context 'metron-nsdi18': {'status': 'success', 'rag_context_key': 'metron-nsdi18'}
-... Found context 'metron-nsdi18': {'status': 'success', 'rag_context_key': 'metron-nsdi18'}
-... Found context 'metron-nsdi18': {'status': 'success', 'rag_context_key': 'metron-nsdi18'}
-... Found context 'metron-nsdi18': {'status': 'success', 'rag_context_key': 'metron-nsdi18'}
-... Found context 'metron-nsdi18': {'status': 'success', 'rag_context_key': 'metron-nsdi18'}
-... Found context 'metron-nsdi18': {'status': 'success', 'rag_context_key': 'extra-music'}
-... Found context 'osdi24-lee': {'status': 'success', 'rag_context_key': 'osdi24-lee'}
-... Found context 'osdi24-lee': {'status': 'success', 'rag_context_key': 'osdi24-agrawal'}
-... Found context 'osdi24-lee': {'status': 'success', 'rag_context_key': 'osdi24-lee'}
-... Found context 'osdi24-lee': {'status': 'success', 'rag_context_key': 'osdi24-lee'}
-... Found context 'osdi24-lee': {'status': 'success', 'rag_context_key': 'osdi24-lee'}
-... Found context 'osdi24-lee': {'status': 'success', 'rag_context_key': 'osdi24-lee'}
-... Found context 'osdi24-lee': {'status': 'success', 'rag_context_key': 'osdi24-lee'}
-... Found context 'osdi24-lee': {'status': 'success', 'rag_context_key': 'osdi24-lee'}
-... Found context 'osdi24-lee': {'status': 'success', 'rag_context_key': 'osdi24-lee'}
-... Found context 'osdi24-lee': {'status': 'success', 'rag_context_key': 'osdi24-lee'}
-... Found context 'osdi24-lee': {'status': 'success', 'rag_context_key': 'osdi24-lee'}
-... Found context 'osdi24-lee': {'status': 'success', 'rag_context_key': 'osdi24-lee'}
-... Found context 'osdi24-lee': {'status': 'success', 'rag_context_key': 'osdi24-lee'}
-... Found context 'osdi24-lee': {'status': 'success', 'rag_context_key': 'osdi24-agrawal'}
-... Found context 'osdi24-lee': {'status': 'success', 'rag_context_key': 'cacheblend'}
-... Found context 'osdi24-lee': {'status': 'success', 'rag_context_key': 'osdi24-lee'}
-... Found context 'osdi24-lee': {'status': 'success', 'rag_context_key': 'osdi24-agrawal'}
-... Found context 'osdi24-lee': {'status': 'success', 'rag_context_key': 'osdi24-lee'}
-... Found context 'osdi24-lee': {'status': 'success', 'rag_context_key': 'osdi24-lee'}
-... Found context 'osdi24-lee': {'status': 'success', 'rag_context_key': 'extra-compound-mape'}
-... Found context 'sigcomm2023_janus': {'status': 'success', 'rag_context_key': 'sigcomm2023_janus'}
-... Found context 'sigcomm2023_janus': {'status': 'success', 'rag_context_key': 'sigcomm2023_janus'}
-... Found context 'sigcomm2023_janus': {'status': 'success', 'rag_context_key': 'sigcomm2023_janus'}
-... Found context 'sigcomm2023_janus': {'status': 'success', 'rag_context_key': 'sigcomm2023_janus'}
-... Found context 'sigcomm2023_janus': {'status': 'success', 'rag_context_key': 'sigcomm2023_janus'}
-... Found context 'sigcomm2023_janus': {'status': 'success', 'rag_context_key': 'click'}
-... Found context 'sigcomm2023_janus': {'status': 'success', 'rag_context_key': 'osdi24-agrawal'}
-... Found context 'sigcomm2023_janus': {'status': 'success', 'rag_context_key': 'osdi24-sun-biao'}
-... Found context 'sigcomm2023_janus': {'status': 'success', 'rag_context_key': 'sigcomm2023_janus'}
-... Found context 'sigcomm2023_janus': {'status': 'success', 'rag_context_key': 'sigcomm2023_janus'}
-... Found context 'sigcomm2023_janus': {'status': 'success', 'rag_context_key': 'metron-nsdi18'}
-... Found context 'sigcomm2023_janus': {'status': 'success', 'rag_context_key': 'sigcomm2023_janus'}
-... Found context 'sigcomm2023_janus': {'status': 'success', 'rag_context_key': 'osdi24-agrawal'}
-... Found context 'sigcomm2023_janus': {'status': 'success', 'rag_context_key': 'osdi24-agrawal'}
-... Found context 'sigcomm2023_janus': {'status': 'success', 'rag_context_key': 'sigcomm2023_janus'}
-... Found context 'sigcomm2023_janus': {'status': 'success', 'rag_context_key': 'sigcomm2023_janus'}
-... Found context 'sigcomm2023_janus': {'status': 'success', 'rag_context_key': 'sigcomm2023_janus'}
-... Found context 'sigcomm2023_janus': {'status': 'success', 'rag_context_key': 'sigcomm2023_janus'}
-... Found context 'sigcomm2023_janus': {'status': 'success', 'rag_context_key': 'osdi24-sun-biao'}
-... Found context 'sigcomm2023_janus': {'status': 'success', 'rag_context_key': 'sigcomm2023_janus'}
-... Found context 'extra-distributed-monitoring': {'status': 'success', 'rag_context_key': 'extra-finance'}
-... Found context 'extra-distributed-monitoring': {'status': 'success', 'rag_context_key': 'extra-distributed-monitoring'}
-... Found context 'extra-distributed-monitoring': {'status': 'success', 'rag_context_key': 'extra-distributed-monitoring'}
-... Found context 'extra-distributed-monitoring': {'status': 'success', 'rag_context_key': 'extra-distributed-monitoring'}
-... Found context 'extra-distributed-monitoring': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23'}
-... Found context 'extra-distributed-monitoring': {'status': 'success', 'rag_context_key': 'aplomb-sigcomm12'}
-... Found context 'extra-distributed-monitoring': {'status': 'success', 'rag_context_key': 'ServerlessLLM_summary'}
-... Found context 'extra-distributed-monitoring': {'status': 'success', 'rag_context_key': 'extra-distributed-monitoring'}
-... Found context 'extra-distributed-monitoring': {'status': 'success', 'rag_context_key': 'extra-oss-monitoring'}
-... Found context 'extra-distributed-monitoring': {'status': 'success', 'rag_context_key': 'extra-distributed-monitoring'}
-... Found context 'extra-distributed-monitoring': {'status': 'success', 'rag_context_key': 'cacheblend'}
-... Found context 'extra-distributed-monitoring': {'status': 'success', 'rag_context_key': 'extra-distributed-monitoring'}
-... Found context 'extra-distributed-monitoring': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23'}
-... Found context 'extra-distributed-monitoring': {'status': 'success', 'rag_context_key': 'ServerlessLLM_summary'}
-... Found context 'extra-distributed-monitoring': {'status': 'success', 'rag_context_key': 'extra-distributed-monitoring'}
-... Found context 'extra-distributed-monitoring': {'status': 'success', 'rag_context_key': 'extra-distributed-monitoring'}
-... Found context 'extra-distributed-monitoring': {'status': 'success', 'rag_context_key': 'extra-oss-monitoring'}
-... Found context 'extra-distributed-monitoring': {'status': 'success', 'rag_context_key': 'extra-distributed-monitoring'}
-... Found context 'extra-distributed-monitoring': {'status': 'success', 'rag_context_key': 'extra-oss-monitoring'}
-... Found context 'extra-distributed-monitoring': {'status': 'success', 'rag_context_key': 'extra-distributed-monitoring'}
-... Found context 'nsdi20-paper-barbette': {'status': 'success', 'rag_context_key': 'nsdi20-paper-barbette'}
-... Found context 'nsdi20-paper-barbette': {'status': 'success', 'rag_context_key': 'nsdi20-paper-barbette'}
-... Found context 'nsdi20-paper-barbette': {'status': 'success', 'rag_context_key': 'nsdi20-paper-barbette'}
-... Found context 'nsdi20-paper-barbette': {'status': 'success', 'rag_context_key': 'nsdi20-paper-barbette'}
-... Found context 'nsdi20-paper-barbette': {'status': 'success', 'rag_context_key': 'metron-nsdi18'}
-... Found context 'nsdi20-paper-barbette': {'status': 'success', 'rag_context_key': 'nsdi20-paper-barbette'}
-... Found context 'nsdi20-paper-barbette': {'status': 'success', 'rag_context_key': 'nsdi22-paper-reda_1'}
-... Found context 'nsdi20-paper-barbette': {'status': 'success', 'rag_context_key': 'nsdi20-paper-barbette'}
-... Found context 'nsdi20-paper-barbette': {'status': 'success', 'rag_context_key': 'nsdi20-paper-barbette'}
-... Found context 'nsdi20-paper-barbette': {'status': 'success', 'rag_context_key': 'nsdi20-paper-barbette'}
-... Found context 'nsdi20-paper-barbette': {'status': 'success', 'rag_context_key': 'metron-nsdi18'}
-... Found context 'nsdi20-paper-barbette': {'status': 'success', 'rag_context_key': 'nsdi20-paper-barbette'}
-... Found context 'nsdi20-paper-barbette': {'status': 'success', 'rag_context_key': 'nsdi20-paper-barbette'}
-... Found context 'nsdi20-paper-barbette': {'status': 'success', 'rag_context_key': 'click'}
-... Found context 'nsdi20-paper-barbette': {'status': 'success', 'rag_context_key': 'nsdi20-paper-barbette'}
-... Found context 'nsdi20-paper-barbette': {'status': 'success', 'rag_context_key': 'nsdi20-paper-barbette'}
-... Found context 'nsdi20-paper-barbette': {'status': 'success', 'rag_context_key': 'nsdi20-paper-barbette'}
-... Found context 'nsdi20-paper-barbette': {'status': 'success', 'rag_context_key': 'nsdi20-paper-barbette'}
-... Found context 'nsdi20-paper-barbette': {'status': 'success', 'rag_context_key': 'nsdi20-paper-barbette'}
-... Found context 'nsdi20-paper-barbette': {'status': 'success', 'rag_context_key': 'nsdi20-paper-barbette'}
-... Found context 'extra-estimate-performance': {'status': 'success', 'rag_context_key': 'extra-estimate-performance'}
-... Found context 'extra-estimate-performance': {'status': 'success', 'rag_context_key': 'extra-estimate-performance'}
-... Found context 'extra-estimate-performance': {'status': 'success', 'rag_context_key': 'extra-estimate-performance'}
-... Found context 'extra-estimate-performance': {'status': 'success', 'rag_context_key': 'extra-estimate-performance'}
-... Found context 'extra-estimate-performance': {'status': 'success', 'rag_context_key': 'extra-estimate-performance'}
-... Found context 'extra-estimate-performance': {'status': 'success', 'rag_context_key': 'extra-estimate-performance'}
-... Found context 'extra-estimate-performance': {'status': 'success', 'rag_context_key': 'extra-estimate-performance'}
-... Found context 'extra-estimate-performance': {'status': 'success', 'rag_context_key': 'extra-estimate-performance'}
-... Found context 'extra-estimate-performance': {'status': 'success', 'rag_context_key': 'extra-estimate-performance'}
-... Found context 'extra-estimate-performance': {'status': 'success', 'rag_context_key': 'extra-estimate-performance'}
-... Found context 'extra-estimate-performance': {'status': 'success', 'rag_context_key': 'extra-estimate-performance'}
-... Found context 'extra-estimate-performance': {'status': 'success', 'rag_context_key': 'extra-estimate-performance'}
-... Found context 'extra-estimate-performance': {'status': 'success', 'rag_context_key': 'extra-estimate-performance'}
-... Found context 'extra-estimate-performance': {'status': 'success', 'rag_context_key': 'extra-estimate-performance'}
-... Found context 'extra-estimate-performance': {'status': 'success', 'rag_context_key': 'extra-estimate-performance'}
-... Found context 'extra-estimate-performance': {'status': 'success', 'rag_context_key': 'extra-estimate-performance'}
-... Found context 'extra-estimate-performance': {'status': 'success', 'rag_context_key': 'extra-estimate-performance'}
-... Found context 'extra-estimate-performance': {'status': 'success', 'rag_context_key': 'extra-estimate-performance'}
-... Found context 'extra-estimate-performance': {'status': 'success', 'rag_context_key': 'extra-estimate-performance'}
-... Found context 'extra-estimate-performance': {'status': 'success', 'rag_context_key': 'extra-estimate-performance'}
-... Found context 'SplitRPC-sigmetrics23': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23'}
-... Found context 'SplitRPC-sigmetrics23': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23'}
-... Found context 'SplitRPC-sigmetrics23': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23'}
-... Found context 'SplitRPC-sigmetrics23': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23'}
-... Found context 'SplitRPC-sigmetrics23': {'status': 'success', 'rag_context_key': 'extra-music'}
-... Found context 'SplitRPC-sigmetrics23': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23'}
-... Found context 'SplitRPC-sigmetrics23': {'status': 'success', 'rag_context_key': 'click'}
-... Found context 'SplitRPC-sigmetrics23': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23'}
-... Found context 'SplitRPC-sigmetrics23': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23'}
-... Found context 'SplitRPC-sigmetrics23': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23'}
-... Found context 'SplitRPC-sigmetrics23': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23'}
-... Found context 'SplitRPC-sigmetrics23': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23'}
-... Found context 'SplitRPC-sigmetrics23': {'status': 'success', 'rag_context_key': 'osdi24-agrawal'}
-... Found context 'SplitRPC-sigmetrics23': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23'}
-... Found context 'SplitRPC-sigmetrics23': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23'}
-... Found context 'SplitRPC-sigmetrics23': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23'}
-... Found context 'SplitRPC-sigmetrics23': {'status': 'success', 'rag_context_key': 'sigcomm24-crux'}
-... Found context 'SplitRPC-sigmetrics23': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23'}
-... Found context 'SplitRPC-sigmetrics23': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23'}
-... Found context 'SplitRPC-sigmetrics23': {'status': 'success', 'rag_context_key': 'extra-music'}
-... Found context 'extra-finance': {'status': 'success', 'rag_context_key': 'extra-music'}
-... Found context 'extra-finance': {'status': 'success', 'rag_context_key': 'extra-finance'}
-... Found context 'extra-finance': {'status': 'success', 'rag_context_key': 'extra-finance'}
-... Found context 'extra-finance': {'status': 'success', 'rag_context_key': 'extra-finance'}
-... Found context 'extra-finance': {'status': 'success', 'rag_context_key': 'extra-finance'}
-... Found context 'extra-finance': {'status': 'success', 'rag_context_key': 'extra-finance'}
-... Found context 'extra-finance': {'status': 'success', 'rag_context_key': 'extra-finance'}
-... Found context 'extra-finance': {'status': 'success', 'rag_context_key': 'extra-finance'}
-... Found context 'extra-finance': {'status': 'success', 'rag_context_key': 'extra-finance'}
-... Found context 'extra-finance': {'status': 'success', 'rag_context_key': 'extra-finance'}
-... Found context 'extra-finance': {'status': 'success', 'rag_context_key': 'extra-finance'}
-... Found context 'extra-finance': {'status': 'success', 'rag_context_key': 'extra-finance'}
-... Found context 'extra-finance': {'status': 'success', 'rag_context_key': 'extra-finance'}
-... Found context 'extra-finance': {'status': 'success', 'rag_context_key': 'extra-finance'}
-... Found context 'extra-finance': {'status': 'success', 'rag_context_key': 'extra-finance'}
-... Found context 'extra-finance': {'status': 'success', 'rag_context_key': 'extra-finance'}
-... Found context 'extra-finance': {'status': 'success', 'rag_context_key': 'extra-finance'}
-... Found context 'extra-finance': {'status': 'success', 'rag_context_key': 'extra-finance'}
-... Found context 'extra-finance': {'status': 'success', 'rag_context_key': 'extra-estimate-performance'}
-... Found context 'extra-finance': {'status': 'success', 'rag_context_key': 'extra-finance'}
+... Found context 'sigcomm24-crux': {'status': 'success', 'rag_context_key': 'sigcomm24-crux', 'rag_latency': 0.011494281701743603}
+... Found context 'sigcomm24-crux': {'status': 'success', 'rag_context_key': 'sigcomm24-crux', 'rag_latency': 0.008352911099791527}
+... Found context 'sigcomm24-crux': {'status': 'success', 'rag_context_key': 'sigcomm24-crux', 'rag_latency': 0.00732993520796299}
+... Found context 'sigcomm24-crux': {'status': 'success', 'rag_context_key': 'sigcomm24-crux', 'rag_latency': 0.006648999638855457}
+... Found context 'sigcomm24-crux': {'status': 'success', 'rag_context_key': 'sigcomm24-crux', 'rag_latency': 0.006234348751604557}
+... Found context 'sigcomm24-crux': {'status': 'success', 'rag_context_key': 'sigcomm24-crux', 'rag_latency': 0.01285316701978445}
+... Found context 'sigcomm24-crux': {'status': 'success', 'rag_context_key': 'sigcomm24-crux', 'rag_latency': 0.004168680869042873}
+... Found context 'sigcomm24-crux': {'status': 'success', 'rag_context_key': 'sigcomm24-crux', 'rag_latency': 0.004830453544855118}
+... Found context 'sigcomm24-crux': {'status': 'success', 'rag_context_key': 'sigcomm24-crux', 'rag_latency': 0.004817645996809006}
+... Found context 'sigcomm24-crux': {'status': 'success', 'rag_context_key': 'sigcomm24-crux', 'rag_latency': 0.004546591080725193}
+... Found context 'sigcomm24-crux': {'status': 'success', 'rag_context_key': 'sigcomm24-crux', 'rag_latency': 0.004077165387570858}
+... Found context 'sigcomm24-crux': {'status': 'success', 'rag_context_key': 'sigcomm24-crux', 'rag_latency': 0.004502445459365845}
+... Found context 'sigcomm24-crux': {'status': 'success', 'rag_context_key': 'cacheblend', 'rag_latency': 0.004429801367223263}
+... Found context 'sigcomm24-crux': {'status': 'success', 'rag_context_key': 'sigcomm24-crux', 'rag_latency': 0.004184405319392681}
+... Found context 'sigcomm24-crux': {'status': 'success', 'rag_context_key': 'sigcomm24-crux', 'rag_latency': 0.011372684501111507}
+... Found context 'sigcomm24-crux': {'status': 'success', 'rag_context_key': 'sigcomm24-crux', 'rag_latency': 0.007788356393575668}
+... Found context 'sigcomm24-crux': {'status': 'success', 'rag_context_key': 'sigcomm24-crux', 'rag_latency': 0.006443877704441547}
+... Found context 'sigcomm24-crux': {'status': 'success', 'rag_context_key': 'aplomb-sigcomm12', 'rag_latency': 0.0060700830072164536}
+... Found context 'sigcomm24-crux': {'status': 'success', 'rag_context_key': 'sigcomm24-crux', 'rag_latency': 0.0059600332751870155}
+... Found context 'sigcomm24-crux': {'status': 'success', 'rag_context_key': 'cacheblend', 'rag_latency': 0.005629934370517731}
+... Found context 'extra-oss-monitoring': {'status': 'success', 'rag_context_key': 'extra-estimate-performance', 'rag_latency': 0.005607168190181255}
+... Found context 'extra-oss-monitoring': {'status': 'success', 'rag_context_key': 'extra-oss-monitoring', 'rag_latency': 0.005692102015018463}
+... Found context 'extra-oss-monitoring': {'status': 'success', 'rag_context_key': 'extra-oss-monitoring', 'rag_latency': 0.005436896346509457}
+... Found context 'extra-oss-monitoring': {'status': 'success', 'rag_context_key': 'extra-oss-monitoring', 'rag_latency': 0.00555486511439085}
+... Found context 'extra-oss-monitoring': {'status': 'success', 'rag_context_key': 'cacheblend', 'rag_latency': 0.005634866654872894}
+... Found context 'extra-oss-monitoring': {'status': 'success', 'rag_context_key': 'extra-oss-monitoring', 'rag_latency': 0.005768607370555401}
+... Found context 'extra-oss-monitoring': {'status': 'success', 'rag_context_key': 'extra-estimate-performance', 'rag_latency': 0.0058700647205114365}
+... Found context 'extra-oss-monitoring': {'status': 'success', 'rag_context_key': 'extra-oss-monitoring', 'rag_latency': 0.006028028205037117}
+... Found context 'extra-oss-monitoring': {'status': 'success', 'rag_context_key': 'extra-oss-monitoring', 'rag_latency': 0.006201368756592274}
+... Found context 'extra-oss-monitoring': {'status': 'success', 'rag_context_key': 'extra-oss-monitoring', 'rag_latency': 0.006120440550148487}
+... Found context 'extra-oss-monitoring': {'status': 'success', 'rag_context_key': 'cacheblend', 'rag_latency': 0.00589827261865139}
+... Found context 'extra-oss-monitoring': {'status': 'success', 'rag_context_key': 'extra-oss-monitoring', 'rag_latency': 0.005880213342607021}
+... Found context 'extra-oss-monitoring': {'status': 'success', 'rag_context_key': 'extra-oss-monitoring', 'rag_latency': 0.006071506999433041}
+... Found context 'extra-oss-monitoring': {'status': 'success', 'rag_context_key': 'extra-distributed-monitoring', 'rag_latency': 0.005909818224608898}
+... Found context 'extra-oss-monitoring': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23', 'rag_latency': 0.006077297963202}
+... Found context 'extra-oss-monitoring': {'status': 'success', 'rag_context_key': 'vllm', 'rag_latency': 0.006080003455281258}
+... Found context 'extra-oss-monitoring': {'status': 'success', 'rag_context_key': 'extra-oss-monitoring', 'rag_latency': 0.005876065231859684}
+... Found context 'extra-oss-monitoring': {'status': 'success', 'rag_context_key': 'extra-oss-monitoring', 'rag_latency': 0.005850357934832573}
+... Found context 'extra-oss-monitoring': {'status': 'success', 'rag_context_key': 'extra-distributed-monitoring', 'rag_latency': 0.01145934872329235}
+... Found context 'extra-oss-monitoring': {'status': 'success', 'rag_context_key': 'extra-oss-monitoring', 'rag_latency': 0.010388660244643688}
+... Found context 'extra-music': {'status': 'success', 'rag_context_key': 'cacheblend', 'rag_latency': 0.007579479366540909}
+... Found context 'extra-music': {'status': 'success', 'rag_context_key': 'extra-music', 'rag_latency': 0.007317009381949902}
+... Found context 'extra-music': {'status': 'success', 'rag_context_key': 'extra-music', 'rag_latency': 0.00774966087192297}
+... Found context 'extra-music': {'status': 'success', 'rag_context_key': 'extra-music', 'rag_latency': 0.007822883315384388}
+... Found context 'extra-music': {'status': 'success', 'rag_context_key': 'extra-music', 'rag_latency': 0.009696307592093945}
+... Found context 'extra-music': {'status': 'success', 'rag_context_key': 'extra-music', 'rag_latency': 0.007501492276787758}
+... Found context 'extra-music': {'status': 'success', 'rag_context_key': 'extra-music', 'rag_latency': 0.0073806121945381165}
+... Found context 'extra-music': {'status': 'success', 'rag_context_key': 'extra-music', 'rag_latency': 0.007416612468659878}
+... Found context 'extra-music': {'status': 'success', 'rag_context_key': 'extra-music', 'rag_latency': 0.0075055258348584175}
+... Found context 'extra-music': {'status': 'success', 'rag_context_key': 'extra-music', 'rag_latency': 0.009578105993568897}
+... Found context 'extra-music': {'status': 'success', 'rag_context_key': 'extra-music', 'rag_latency': 0.00835699774324894}
+... Found context 'extra-music': {'status': 'success', 'rag_context_key': 'extra-music', 'rag_latency': 0.008271830156445503}
+... Found context 'extra-music': {'status': 'success', 'rag_context_key': 'extra-music', 'rag_latency': 0.009753746911883354}
+... Found context 'extra-music': {'status': 'success', 'rag_context_key': 'extra-leonardo', 'rag_latency': 0.008191408589482307}
+... Found context 'extra-music': {'status': 'success', 'rag_context_key': 'extra-music', 'rag_latency': 0.01350362878292799}
+... Found context 'extra-music': {'status': 'success', 'rag_context_key': 'extra-music', 'rag_latency': 0.006119934841990471}
+... Found context 'extra-music': {'status': 'success', 'rag_context_key': 'extra-music', 'rag_latency': 0.006225723773241043}
+... Found context 'extra-music': {'status': 'success', 'rag_context_key': 'extra-music', 'rag_latency': 0.006127730943262577}
+... Found context 'extra-music': {'status': 'success', 'rag_context_key': 'extra-music', 'rag_latency': 0.006096069701015949}
+... Found context 'extra-music': {'status': 'success', 'rag_context_key': 'extra-music', 'rag_latency': 0.006080949679017067}
+... Found context 'nsdi22-paper-reda_1': {'status': 'success', 'rag_context_key': 'nsdi22-paper-reda_1', 'rag_latency': 0.006006182171404362}
+... Found context 'nsdi22-paper-reda_1': {'status': 'success', 'rag_context_key': 'nsdi22-paper-reda_1', 'rag_latency': 0.006390031427145004}
+... Found context 'nsdi22-paper-reda_1': {'status': 'success', 'rag_context_key': 'nsdi22-paper-reda_1', 'rag_latency': 0.0063863880932331085}
+... Found context 'nsdi22-paper-reda_1': {'status': 'success', 'rag_context_key': 'nsdi22-paper-reda_1', 'rag_latency': 0.006323346868157387}
+... Found context 'nsdi22-paper-reda_1': {'status': 'success', 'rag_context_key': 'nsdi22-paper-reda_1', 'rag_latency': 0.006222199648618698}
+... Found context 'nsdi22-paper-reda_1': {'status': 'success', 'rag_context_key': 'extra-compound-mape', 'rag_latency': 0.01102408580482006}
+... Found context 'nsdi22-paper-reda_1': {'status': 'success', 'rag_context_key': 'nsdi22-paper-reda_1', 'rag_latency': 0.008326767012476921}
+... Found context 'nsdi22-paper-reda_1': {'status': 'success', 'rag_context_key': 'nsdi22-paper-reda_1', 'rag_latency': 0.008309460245072842}
+... Found context 'nsdi22-paper-reda_1': {'status': 'success', 'rag_context_key': 'nsdi22-paper-reda_1', 'rag_latency': 0.0101673798635602}
+... Found context 'nsdi22-paper-reda_1': {'status': 'success', 'rag_context_key': 'nsdi22-paper-reda_1', 'rag_latency': 0.007870367728173733}
+... Found context 'nsdi22-paper-reda_1': {'status': 'success', 'rag_context_key': 'nsdi22-paper-reda_1', 'rag_latency': 0.008157536387443542}
+... Found context 'nsdi22-paper-reda_1': {'status': 'success', 'rag_context_key': 'nsdi22-paper-reda_1', 'rag_latency': 0.01015982124954462}
+... Found context 'nsdi22-paper-reda_1': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23', 'rag_latency': 0.008576927706599236}
+... Found context 'nsdi22-paper-reda_1': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23', 'rag_latency': 0.008505607955157757}
+... Found context 'nsdi22-paper-reda_1': {'status': 'success', 'rag_context_key': 'metron-nsdi18', 'rag_latency': 0.008610786870121956}
+... Found context 'nsdi22-paper-reda_1': {'status': 'success', 'rag_context_key': 'nsdi22-paper-reda_1', 'rag_latency': 0.0072131771594285965}
+... Found context 'nsdi22-paper-reda_1': {'status': 'success', 'rag_context_key': 'nsdi22-paper-reda_1', 'rag_latency': 0.0068009719252586365}
+... Found context 'nsdi22-paper-reda_1': {'status': 'success', 'rag_context_key': 'aplomb-sigcomm12', 'rag_latency': 0.006911924108862877}
+... Found context 'nsdi22-paper-reda_1': {'status': 'success', 'rag_context_key': 'nsdi22-paper-reda_1', 'rag_latency': 0.006760711781680584}
+... Found context 'nsdi22-paper-reda_1': {'status': 'success', 'rag_context_key': 'nsdi22-paper-reda_1', 'rag_latency': 0.006825354881584644}
+... Found context 'osdi24-sun-biao': {'status': 'success', 'rag_context_key': 'osdi24-sun-biao', 'rag_latency': 0.010760357603430748}
+... Found context 'osdi24-sun-biao': {'status': 'success', 'rag_context_key': 'osdi24-sun-biao', 'rag_latency': 0.008382143452763557}
+... Found context 'osdi24-sun-biao': {'status': 'success', 'rag_context_key': 'osdi24-sun-biao', 'rag_latency': 0.008242393843829632}
+... Found context 'osdi24-sun-biao': {'status': 'success', 'rag_context_key': 'osdi24-sun-biao', 'rag_latency': 0.01006911601871252}
+... Found context 'osdi24-sun-biao': {'status': 'success', 'rag_context_key': 'osdi24-sun-biao', 'rag_latency': 0.007705344818532467}
+... Found context 'osdi24-sun-biao': {'status': 'success', 'rag_context_key': 'osdi24-sun-biao', 'rag_latency': 0.007411859929561615}
+... Found context 'osdi24-sun-biao': {'status': 'success', 'rag_context_key': 'vllm', 'rag_latency': 0.006952106952667236}
+... Found context 'osdi24-sun-biao': {'status': 'success', 'rag_context_key': 'osdi24-sun-biao', 'rag_latency': 0.007036722265183926}
+... Found context 'osdi24-sun-biao': {'status': 'success', 'rag_context_key': 'osdi24-sun-biao', 'rag_latency': 0.010071968659758568}
+... Found context 'osdi24-sun-biao': {'status': 'success', 'rag_context_key': 'metron-nsdi18', 'rag_latency': 0.007442939095199108}
+... Found context 'osdi24-sun-biao': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23', 'rag_latency': 0.007026718929409981}
+... Found context 'osdi24-sun-biao': {'status': 'success', 'rag_context_key': 'osdi24-sun-biao', 'rag_latency': 0.006732450798153877}
+... Found context 'osdi24-sun-biao': {'status': 'success', 'rag_context_key': 'osdi24-agrawal', 'rag_latency': 0.011903863400220871}
+... Found context 'osdi24-sun-biao': {'status': 'success', 'rag_context_key': 'osdi24-agrawal', 'rag_latency': 0.009830107912421227}
+... Found context 'osdi24-sun-biao': {'status': 'success', 'rag_context_key': 'osdi24-sun-biao', 'rag_latency': 0.007259644567966461}
+... Found context 'osdi24-sun-biao': {'status': 'success', 'rag_context_key': 'osdi24-sun-biao', 'rag_latency': 0.006885344162583351}
+... Found context 'osdi24-sun-biao': {'status': 'success', 'rag_context_key': 'osdi24-sun-biao', 'rag_latency': 0.006647099740803242}
+... Found context 'osdi24-sun-biao': {'status': 'success', 'rag_context_key': 'osdi24-sun-biao', 'rag_latency': 0.006561007350683212}
+... Found context 'osdi24-sun-biao': {'status': 'success', 'rag_context_key': 'osdi24-sun-biao', 'rag_latency': 0.006097828038036823}
+... Found context 'osdi24-sun-biao': {'status': 'success', 'rag_context_key': 'osdi24-sun-biao', 'rag_latency': 0.005847510881721973}
+... Found context 'extra-biology': {'status': 'success', 'rag_context_key': 'extra-biology', 'rag_latency': 0.005577378906309605}
+... Found context 'extra-biology': {'status': 'success', 'rag_context_key': 'extra-biology', 'rag_latency': 0.00560340192168951}
+... Found context 'extra-biology': {'status': 'success', 'rag_context_key': 'extra-biology', 'rag_latency': 0.005452008917927742}
+... Found context 'extra-biology': {'status': 'success', 'rag_context_key': 'extra-biology', 'rag_latency': 0.005380920134484768}
+... Found context 'extra-biology': {'status': 'success', 'rag_context_key': 'extra-biology', 'rag_latency': 0.005065751262009144}
+... Found context 'extra-biology': {'status': 'success', 'rag_context_key': 'extra-biology', 'rag_latency': 0.005091761238873005}
+... Found context 'extra-biology': {'status': 'success', 'rag_context_key': 'extra-biology', 'rag_latency': 0.00467655248939991}
+... Found context 'extra-biology': {'status': 'success', 'rag_context_key': 'extra-biology', 'rag_latency': 0.00549125112593174}
+... Found context 'extra-biology': {'status': 'success', 'rag_context_key': 'extra-biology', 'rag_latency': 0.005826168693602085}
+... Found context 'extra-biology': {'status': 'success', 'rag_context_key': 'extra-biology', 'rag_latency': 0.005976120941340923}
+... Found context 'extra-biology': {'status': 'success', 'rag_context_key': 'extra-biology', 'rag_latency': 0.005734128877520561}
+... Found context 'extra-biology': {'status': 'success', 'rag_context_key': 'extra-biology', 'rag_latency': 0.00567855779081583}
+... Found context 'extra-biology': {'status': 'success', 'rag_context_key': 'extra-biology', 'rag_latency': 0.005399525165557861}
+... Found context 'extra-biology': {'status': 'success', 'rag_context_key': 'extra-biology', 'rag_latency': 0.005371028557419777}
+... Found context 'extra-biology': {'status': 'success', 'rag_context_key': 'extra-biology', 'rag_latency': 0.005219935439527035}
+... Found context 'extra-biology': {'status': 'success', 'rag_context_key': 'extra-biology', 'rag_latency': 0.005201372317969799}
+... Found context 'extra-biology': {'status': 'success', 'rag_context_key': 'extra-biology', 'rag_latency': 0.00507474597543478}
+... Found context 'extra-biology': {'status': 'success', 'rag_context_key': 'extra-biology', 'rag_latency': 0.005093702115118504}
+... Found context 'extra-biology': {'status': 'success', 'rag_context_key': 'extra-biology', 'rag_latency': 0.005683992989361286}
+... Found context 'extra-biology': {'status': 'success', 'rag_context_key': 'extra-biology', 'rag_latency': 0.004772040992975235}
+... Found context 'extra-compound-mape': {'status': 'success', 'rag_context_key': 'extra-compound-mape', 'rag_latency': 0.011158705689013004}
+... Found context 'extra-compound-mape': {'status': 'success', 'rag_context_key': 'extra-compound-mape', 'rag_latency': 0.009142138063907623}
+... Found context 'extra-compound-mape': {'status': 'success', 'rag_context_key': 'extra-compound-mape', 'rag_latency': 0.007589198648929596}
+... Found context 'extra-compound-mape': {'status': 'success', 'rag_context_key': 'extra-compound-mape', 'rag_latency': 0.012269596569240093}
+... Found context 'extra-compound-mape': {'status': 'success', 'rag_context_key': 'extra-compound-mape', 'rag_latency': 0.014814561232924461}
+... Found context 'extra-compound-mape': {'status': 'success', 'rag_context_key': 'extra-compound-mape', 'rag_latency': 0.00987105444073677}
+... Found context 'extra-compound-mape': {'status': 'success', 'rag_context_key': 'extra-compound-mape', 'rag_latency': 0.008508512750267982}
+... Found context 'extra-compound-mape': {'status': 'success', 'rag_context_key': 'extra-compound-mape', 'rag_latency': 0.008115173317492008}
+... Found context 'extra-compound-mape': {'status': 'success', 'rag_context_key': 'extra-biology', 'rag_latency': 0.010901695117354393}
+... Found context 'extra-compound-mape': {'status': 'success', 'rag_context_key': 'extra-compound-mape', 'rag_latency': 0.00854633841663599}
+... Found context 'extra-compound-mape': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23', 'rag_latency': 0.008179780095815659}
+... Found context 'extra-compound-mape': {'status': 'success', 'rag_context_key': 'extra-compound-mape', 'rag_latency': 0.010968383401632309}
+... Found context 'extra-compound-mape': {'status': 'success', 'rag_context_key': 'extra-compound-mape', 'rag_latency': 0.008787674829363823}
+... Found context 'extra-compound-mape': {'status': 'success', 'rag_context_key': 'extra-compound-mape', 'rag_latency': 0.00858398713171482}
+... Found context 'extra-compound-mape': {'status': 'success', 'rag_context_key': 'extra-oss-monitoring', 'rag_latency': 0.010506526567041874}
+... Found context 'extra-compound-mape': {'status': 'success', 'rag_context_key': 'extra-compound-mape', 'rag_latency': 0.008170285262167454}
+... Found context 'extra-compound-mape': {'status': 'success', 'rag_context_key': 'extra-compound-mape', 'rag_latency': 0.0077887121587991714}
+... Found context 'extra-compound-mape': {'status': 'success', 'rag_context_key': 'extra-compound-mape', 'rag_latency': 0.007046972401440144}
+... Found context 'extra-compound-mape': {'status': 'success', 'rag_context_key': 'extra-compound-mape', 'rag_latency': 0.011608420871198177}
+... Found context 'extra-compound-mape': {'status': 'success', 'rag_context_key': 'extra-compound-mape', 'rag_latency': 0.009387416765093803}
+... Found context 'ServerlessLLM_summary': {'status': 'success', 'rag_context_key': 'ServerlessLLM_summary', 'rag_latency': 0.008050626143813133}
+... Found context 'ServerlessLLM_summary': {'status': 'success', 'rag_context_key': 'ServerlessLLM_summary', 'rag_latency': 0.006281211972236633}
+... Found context 'ServerlessLLM_summary': {'status': 'success', 'rag_context_key': 'ServerlessLLM_summary', 'rag_latency': 0.00603129155933857}
+... Found context 'ServerlessLLM_summary': {'status': 'success', 'rag_context_key': 'ServerlessLLM_summary', 'rag_latency': 0.005849774926900864}
+... Found context 'ServerlessLLM_summary': {'status': 'success', 'rag_context_key': 'ServerlessLLM_summary', 'rag_latency': 0.0059067727997899055}
+... Found context 'ServerlessLLM_summary': {'status': 'success', 'rag_context_key': 'ServerlessLLM_summary', 'rag_latency': 0.005774764344096184}
+... Found context 'ServerlessLLM_summary': {'status': 'success', 'rag_context_key': 'ServerlessLLM_summary', 'rag_latency': 0.012951523065567017}
+... Found context 'ServerlessLLM_summary': {'status': 'success', 'rag_context_key': 'ServerlessLLM_summary', 'rag_latency': 0.011021137237548828}
+... Found context 'ServerlessLLM_summary': {'status': 'success', 'rag_context_key': 'ServerlessLLM_summary', 'rag_latency': 0.007460694760084152}
+... Found context 'ServerlessLLM_summary': {'status': 'success', 'rag_context_key': 'ServerlessLLM_summary', 'rag_latency': 0.006897297687828541}
+... Found context 'ServerlessLLM_summary': {'status': 'success', 'rag_context_key': 'ServerlessLLM_summary', 'rag_latency': 0.007052979432046413}
+... Found context 'ServerlessLLM_summary': {'status': 'success', 'rag_context_key': 'ServerlessLLM_summary', 'rag_latency': 0.0067009394988417625}
+... Found context 'ServerlessLLM_summary': {'status': 'success', 'rag_context_key': 'ServerlessLLM_summary', 'rag_latency': 0.006444679573178291}
+... Found context 'ServerlessLLM_summary': {'status': 'success', 'rag_context_key': 'ServerlessLLM_summary', 'rag_latency': 0.006378572434186935}
+... Found context 'ServerlessLLM_summary': {'status': 'success', 'rag_context_key': 'osdi24-sun-biao', 'rag_latency': 0.006095176562666893}
+... Found context 'ServerlessLLM_summary': {'status': 'success', 'rag_context_key': 'osdi24-sun-biao', 'rag_latency': 0.0060514528304338455}
+... Found context 'ServerlessLLM_summary': {'status': 'success', 'rag_context_key': 'ServerlessLLM_summary', 'rag_latency': 0.0061571113765239716}
+... Found context 'ServerlessLLM_summary': {'status': 'success', 'rag_context_key': 'ServerlessLLM_summary', 'rag_latency': 0.006016790866851807}
+... Found context 'ServerlessLLM_summary': {'status': 'success', 'rag_context_key': 'ServerlessLLM_summary', 'rag_latency': 0.006049350835382938}
+... Found context 'ServerlessLLM_summary': {'status': 'success', 'rag_context_key': 'ServerlessLLM_summary', 'rag_latency': 0.005881553515791893}
+... Found context 'aplomb-sigcomm12': {'status': 'success', 'rag_context_key': 'extra-music', 'rag_latency': 0.005880117416381836}
+... Found context 'aplomb-sigcomm12': {'status': 'success', 'rag_context_key': 'aplomb-sigcomm12', 'rag_latency': 0.00544718187302351}
+... Found context 'aplomb-sigcomm12': {'status': 'success', 'rag_context_key': 'aplomb-sigcomm12', 'rag_latency': 0.005426247604191303}
+... Found context 'aplomb-sigcomm12': {'status': 'success', 'rag_context_key': 'aplomb-sigcomm12', 'rag_latency': 0.005314033478498459}
+... Found context 'aplomb-sigcomm12': {'status': 'success', 'rag_context_key': 'aplomb-sigcomm12', 'rag_latency': 0.005225298926234245}
+... Found context 'aplomb-sigcomm12': {'status': 'success', 'rag_context_key': 'nsdi22-paper-reda_1', 'rag_latency': 0.007231345400214195}
+... Found context 'aplomb-sigcomm12': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23', 'rag_latency': 0.005483392626047134}
+... Found context 'aplomb-sigcomm12': {'status': 'success', 'rag_context_key': 'click', 'rag_latency': 0.0050574783235788345}
+... Found context 'aplomb-sigcomm12': {'status': 'success', 'rag_context_key': 'click', 'rag_latency': 0.0047929007560014725}
+... Found context 'aplomb-sigcomm12': {'status': 'success', 'rag_context_key': 'click', 'rag_latency': 0.004677050746977329}
+... Found context 'aplomb-sigcomm12': {'status': 'success', 'rag_context_key': 'osdi24-agrawal', 'rag_latency': 0.013030766509473324}
+... Found context 'aplomb-sigcomm12': {'status': 'success', 'rag_context_key': 'aplomb-sigcomm12', 'rag_latency': 0.011057119816541672}
+... Found context 'aplomb-sigcomm12': {'status': 'success', 'rag_context_key': 'extra-estimate-performance', 'rag_latency': 0.007776168175041676}
+... Found context 'aplomb-sigcomm12': {'status': 'success', 'rag_context_key': 'osdi24-sun-biao', 'rag_latency': 0.007267724722623825}
+... Found context 'aplomb-sigcomm12': {'status': 'success', 'rag_context_key': 'aplomb-sigcomm12', 'rag_latency': 0.007397887296974659}
+... Found context 'aplomb-sigcomm12': {'status': 'success', 'rag_context_key': 'extra-biology', 'rag_latency': 0.007285945117473602}
+... Found context 'aplomb-sigcomm12': {'status': 'success', 'rag_context_key': 'extra-music', 'rag_latency': 0.011822977103292942}
+... Found context 'aplomb-sigcomm12': {'status': 'success', 'rag_context_key': 'aplomb-sigcomm12', 'rag_latency': 0.009040608070790768}
+... Found context 'aplomb-sigcomm12': {'status': 'success', 'rag_context_key': 'extra-biology', 'rag_latency': 0.009294625371694565}
+... Found context 'aplomb-sigcomm12': {'status': 'success', 'rag_context_key': 'aplomb-sigcomm12', 'rag_latency': 0.011426849290728569}
+... Found context 'vllm': {'status': 'success', 'rag_context_key': 'vllm', 'rag_latency': 0.00846533291041851}
+... Found context 'vllm': {'status': 'success', 'rag_context_key': 'ServerlessLLM_summary', 'rag_latency': 0.008161569945514202}
+... Found context 'vllm': {'status': 'success', 'rag_context_key': 'sigcomm24-crux', 'rag_latency': 0.007605407387018204}
+... Found context 'vllm': {'status': 'success', 'rag_context_key': 'osdi24-lee', 'rag_latency': 0.011406589299440384}
+... Found context 'vllm': {'status': 'success', 'rag_context_key': 'vllm', 'rag_latency': 0.009689107537269592}
+... Found context 'vllm': {'status': 'success', 'rag_context_key': 'osdi24-agrawal', 'rag_latency': 0.011671660467982292}
+... Found context 'vllm': {'status': 'success', 'rag_context_key': 'osdi24-sun-biao', 'rag_latency': 0.009118258953094482}
+... Found context 'vllm': {'status': 'success', 'rag_context_key': 'sigcomm24-crux', 'rag_latency': 0.012150214053690434}
+... Found context 'vllm': {'status': 'success', 'rag_context_key': 'osdi24-agrawal', 'rag_latency': 0.006673949770629406}
+... Found context 'vllm': {'status': 'success', 'rag_context_key': 'vllm', 'rag_latency': 0.006194771267473698}
+... Found context 'vllm': {'status': 'success', 'rag_context_key': 'vllm', 'rag_latency': 0.006434042006731033}
+... Found context 'vllm': {'status': 'success', 'rag_context_key': 'vllm', 'rag_latency': 0.006394913420081139}
+... Found context 'vllm': {'status': 'success', 'rag_context_key': 'osdi24-agrawal', 'rag_latency': 0.006334428675472736}
+... Found context 'vllm': {'status': 'success', 'rag_context_key': 'osdi24-agrawal', 'rag_latency': 0.006127622909843922}
+... Found context 'vllm': {'status': 'success', 'rag_context_key': 'vllm', 'rag_latency': 0.006217988207936287}
+... Found context 'vllm': {'status': 'success', 'rag_context_key': 'vllm', 'rag_latency': 0.005963983945548534}
+... Found context 'vllm': {'status': 'success', 'rag_context_key': 'osdi24-lee', 'rag_latency': 0.013111252337694168}
+... Found context 'vllm': {'status': 'success', 'rag_context_key': 'vllm', 'rag_latency': 0.010100098326802254}
+... Found context 'vllm': {'status': 'success', 'rag_context_key': 'osdi24-agrawal', 'rag_latency': 0.01093862671405077}
+... Found context 'vllm': {'status': 'success', 'rag_context_key': 'vllm', 'rag_latency': 0.009731661528348923}
+... Found context 'cacheblend': {'status': 'success', 'rag_context_key': 'cacheblend', 'rag_latency': 0.011369992978870869}
+... Found context 'cacheblend': {'status': 'success', 'rag_context_key': 'cacheblend', 'rag_latency': 0.00936264730989933}
+... Found context 'cacheblend': {'status': 'success', 'rag_context_key': 'cacheblend', 'rag_latency': 0.01143108680844307}
+... Found context 'cacheblend': {'status': 'success', 'rag_context_key': 'osdi24-lee', 'rag_latency': 0.00909224059432745}
+... Found context 'cacheblend': {'status': 'success', 'rag_context_key': 'cacheblend', 'rag_latency': 0.008561528287827969}
+... Found context 'cacheblend': {'status': 'success', 'rag_context_key': 'osdi24-lee', 'rag_latency': 0.006736133247613907}
+... Found context 'cacheblend': {'status': 'success', 'rag_context_key': 'cacheblend', 'rag_latency': 0.0064160507172346115}
+... Found context 'cacheblend': {'status': 'success', 'rag_context_key': 'cacheblend', 'rag_latency': 0.006474473513662815}
+... Found context 'cacheblend': {'status': 'success', 'rag_context_key': 'cacheblend', 'rag_latency': 0.0065363189205527306}
+... Found context 'cacheblend': {'status': 'success', 'rag_context_key': 'nsdi20-paper-barbette', 'rag_latency': 0.0064489571377635}
+... Found context 'cacheblend': {'status': 'success', 'rag_context_key': 'cacheblend', 'rag_latency': 0.006587871350347996}
+... Found context 'cacheblend': {'status': 'success', 'rag_context_key': 'cacheblend', 'rag_latency': 0.006564099341630936}
+... Found context 'cacheblend': {'status': 'success', 'rag_context_key': 'nsdi22-paper-reda_1', 'rag_latency': 0.00658328365534544}
+... Found context 'cacheblend': {'status': 'success', 'rag_context_key': 'cacheblend', 'rag_latency': 0.006462357006967068}
+... Found context 'cacheblend': {'status': 'success', 'rag_context_key': 'cacheblend', 'rag_latency': 0.006347406655550003}
+... Found context 'cacheblend': {'status': 'success', 'rag_context_key': 'cacheblend', 'rag_latency': 0.006564914248883724}
+... Found context 'cacheblend': {'status': 'success', 'rag_context_key': 'cacheblend', 'rag_latency': 0.006290970370173454}
+... Found context 'cacheblend': {'status': 'success', 'rag_context_key': 'cacheblend', 'rag_latency': 0.005901194177567959}
+... Found context 'cacheblend': {'status': 'success', 'rag_context_key': 'osdi24-lee', 'rag_latency': 0.005815696902573109}
+... Found context 'cacheblend': {'status': 'success', 'rag_context_key': 'cacheblend', 'rag_latency': 0.006081822328269482}
+... Found context 'extra-leonardo': {'status': 'success', 'rag_context_key': 'extra-leonardo', 'rag_latency': 0.012082904577255249}
+... Found context 'extra-leonardo': {'status': 'success', 'rag_context_key': 'extra-leonardo', 'rag_latency': 0.009206993505358696}
+... Found context 'extra-leonardo': {'status': 'success', 'rag_context_key': 'extra-leonardo', 'rag_latency': 0.00915990024805069}
+... Found context 'extra-leonardo': {'status': 'success', 'rag_context_key': 'extra-leonardo', 'rag_latency': 0.0069426847621798515}
+... Found context 'extra-leonardo': {'status': 'success', 'rag_context_key': 'extra-leonardo', 'rag_latency': 0.006116784177720547}
+... Found context 'extra-leonardo': {'status': 'success', 'rag_context_key': 'extra-leonardo', 'rag_latency': 0.006047656759619713}
+... Found context 'extra-leonardo': {'status': 'success', 'rag_context_key': 'extra-leonardo', 'rag_latency': 0.005871068686246872}
+... Found context 'extra-leonardo': {'status': 'success', 'rag_context_key': 'extra-leonardo', 'rag_latency': 0.005652742460370064}
+... Found context 'extra-leonardo': {'status': 'success', 'rag_context_key': 'extra-leonardo', 'rag_latency': 0.005706030875444412}
+... Found context 'extra-leonardo': {'status': 'success', 'rag_context_key': 'extra-leonardo', 'rag_latency': 0.005591018125414848}
+... Found context 'extra-leonardo': {'status': 'success', 'rag_context_key': 'extra-leonardo', 'rag_latency': 0.005849429406225681}
+... Found context 'extra-leonardo': {'status': 'success', 'rag_context_key': 'extra-leonardo', 'rag_latency': 0.0057269614189863205}
+... Found context 'extra-leonardo': {'status': 'success', 'rag_context_key': 'extra-leonardo', 'rag_latency': 0.0060428110882639885}
+... Found context 'extra-leonardo': {'status': 'success', 'rag_context_key': 'extra-leonardo', 'rag_latency': 0.005900311283767223}
+... Found context 'extra-leonardo': {'status': 'success', 'rag_context_key': 'extra-leonardo', 'rag_latency': 0.013459013774991035}
+... Found context 'extra-leonardo': {'status': 'success', 'rag_context_key': 'extra-leonardo', 'rag_latency': 0.01069545652717352}
+... Found context 'extra-leonardo': {'status': 'success', 'rag_context_key': 'extra-leonardo', 'rag_latency': 0.012256556190550327}
+... Found context 'extra-leonardo': {'status': 'success', 'rag_context_key': 'extra-leonardo', 'rag_latency': 0.011846561916172504}
+... Found context 'extra-leonardo': {'status': 'success', 'rag_context_key': 'extra-leonardo', 'rag_latency': 0.008693628944456577}
+... Found context 'extra-leonardo': {'status': 'success', 'rag_context_key': 'extra-leonardo', 'rag_latency': 0.008089520037174225}
+... Found context 'click': {'status': 'success', 'rag_context_key': 'click', 'rag_latency': 0.01028802152723074}
+... Found context 'click': {'status': 'success', 'rag_context_key': 'click', 'rag_latency': 0.009326010011136532}
+... Found context 'click': {'status': 'success', 'rag_context_key': 'click', 'rag_latency': 0.012094021774828434}
+... Found context 'click': {'status': 'success', 'rag_context_key': 'click', 'rag_latency': 0.00950058177113533}
+... Found context 'click': {'status': 'success', 'rag_context_key': 'click', 'rag_latency': 0.011286638677120209}
+... Found context 'click': {'status': 'success', 'rag_context_key': 'click', 'rag_latency': 0.009552061557769775}
+... Found context 'click': {'status': 'success', 'rag_context_key': 'click', 'rag_latency': 0.01160221267491579}
+... Found context 'click': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23', 'rag_latency': 0.009125012904405594}
+... Found context 'click': {'status': 'success', 'rag_context_key': 'click', 'rag_latency': 0.008321139961481094}
+... Found context 'click': {'status': 'success', 'rag_context_key': 'click', 'rag_latency': 0.0065956516191363335}
+... Found context 'click': {'status': 'success', 'rag_context_key': 'metron-nsdi18', 'rag_latency': 0.006453067995607853}
+... Found context 'click': {'status': 'success', 'rag_context_key': 'click', 'rag_latency': 0.006300115026533604}
+... Found context 'click': {'status': 'success', 'rag_context_key': 'click', 'rag_latency': 0.0060072243213653564}
+... Found context 'click': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23', 'rag_latency': 0.005965066142380238}
+... Found context 'click': {'status': 'success', 'rag_context_key': 'click', 'rag_latency': 0.005584978498518467}
+... Found context 'click': {'status': 'success', 'rag_context_key': 'click', 'rag_latency': 0.005557611584663391}
+... Found context 'click': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23', 'rag_latency': 0.005549105815589428}
+... Found context 'click': {'status': 'success', 'rag_context_key': 'metron-nsdi18', 'rag_latency': 0.005676720291376114}
+... Found context 'click': {'status': 'success', 'rag_context_key': 'click', 'rag_latency': 0.005784007720649242}
+... Found context 'click': {'status': 'success', 'rag_context_key': 'cacheblend', 'rag_latency': 0.005882260389626026}
+... Found context 'osdi24-agrawal': {'status': 'success', 'rag_context_key': 'osdi24-agrawal', 'rag_latency': 0.006004141643643379}
+... Found context 'osdi24-agrawal': {'status': 'success', 'rag_context_key': 'osdi24-agrawal', 'rag_latency': 0.013637155294418335}
+... Found context 'osdi24-agrawal': {'status': 'success', 'rag_context_key': 'osdi24-agrawal', 'rag_latency': 0.010815165936946869}
+... Found context 'osdi24-agrawal': {'status': 'success', 'rag_context_key': 'osdi24-agrawal', 'rag_latency': 0.00809226930141449}
+... Found context 'osdi24-agrawal': {'status': 'success', 'rag_context_key': 'osdi24-agrawal', 'rag_latency': 0.007444269955158234}
+... Found context 'osdi24-agrawal': {'status': 'success', 'rag_context_key': 'osdi24-agrawal', 'rag_latency': 0.0073011573404073715}
+... Found context 'osdi24-agrawal': {'status': 'success', 'rag_context_key': 'osdi24-agrawal', 'rag_latency': 0.006727711297571659}
+... Found context 'osdi24-agrawal': {'status': 'success', 'rag_context_key': 'metron-nsdi18', 'rag_latency': 0.011852629482746124}
+... Found context 'osdi24-agrawal': {'status': 'success', 'rag_context_key': 'extra-estimate-performance', 'rag_latency': 0.009852362796664238}
+... Found context 'osdi24-agrawal': {'status': 'success', 'rag_context_key': 'osdi24-agrawal', 'rag_latency': 0.010983011685311794}
+... Found context 'osdi24-agrawal': {'status': 'success', 'rag_context_key': 'osdi24-agrawal', 'rag_latency': 0.008827365934848785}
+... Found context 'osdi24-agrawal': {'status': 'success', 'rag_context_key': 'osdi24-agrawal', 'rag_latency': 0.00821790099143982}
+... Found context 'osdi24-agrawal': {'status': 'success', 'rag_context_key': 'cacheblend', 'rag_latency': 0.006847369484603405}
+... Found context 'osdi24-agrawal': {'status': 'success', 'rag_context_key': 'osdi24-agrawal', 'rag_latency': 0.006102961488068104}
+... Found context 'osdi24-agrawal': {'status': 'success', 'rag_context_key': 'osdi24-agrawal', 'rag_latency': 0.013433180749416351}
+... Found context 'osdi24-agrawal': {'status': 'success', 'rag_context_key': 'osdi24-agrawal', 'rag_latency': 0.012125957757234573}
+... Found context 'osdi24-agrawal': {'status': 'success', 'rag_context_key': 'osdi24-agrawal', 'rag_latency': 0.009102939628064632}
+... Found context 'osdi24-agrawal': {'status': 'success', 'rag_context_key': 'metron-nsdi18', 'rag_latency': 0.008511225692927837}
+... Found context 'osdi24-agrawal': {'status': 'success', 'rag_context_key': 'metron-nsdi18', 'rag_latency': 0.0065822359174489975}
+... Found context 'osdi24-agrawal': {'status': 'success', 'rag_context_key': 'metron-nsdi18', 'rag_latency': 0.005970277823507786}
+... Found context 'metron-nsdi18': {'status': 'success', 'rag_context_key': 'metron-nsdi18', 'rag_latency': 0.006760855205357075}
+... Found context 'metron-nsdi18': {'status': 'success', 'rag_context_key': 'metron-nsdi18', 'rag_latency': 0.005731608718633652}
+... Found context 'metron-nsdi18': {'status': 'success', 'rag_context_key': 'metron-nsdi18', 'rag_latency': 0.005791135132312775}
+... Found context 'metron-nsdi18': {'status': 'success', 'rag_context_key': 'metron-nsdi18', 'rag_latency': 0.005645257420837879}
+... Found context 'metron-nsdi18': {'status': 'success', 'rag_context_key': 'metron-nsdi18', 'rag_latency': 0.005628153681755066}
+... Found context 'metron-nsdi18': {'status': 'success', 'rag_context_key': 'metron-nsdi18', 'rag_latency': 0.0057451482862234116}
+... Found context 'metron-nsdi18': {'status': 'success', 'rag_context_key': 'metron-nsdi18', 'rag_latency': 0.005811398848891258}
+... Found context 'metron-nsdi18': {'status': 'success', 'rag_context_key': 'metron-nsdi18', 'rag_latency': 0.013248099014163017}
+... Found context 'metron-nsdi18': {'status': 'success', 'rag_context_key': 'metron-nsdi18', 'rag_latency': 0.011073561385273933}
+... Found context 'metron-nsdi18': {'status': 'success', 'rag_context_key': 'metron-nsdi18', 'rag_latency': 0.007704447023570538}
+... Found context 'metron-nsdi18': {'status': 'success', 'rag_context_key': 'metron-nsdi18', 'rag_latency': 0.007313898764550686}
+... Found context 'metron-nsdi18': {'status': 'success', 'rag_context_key': 'metron-nsdi18', 'rag_latency': 0.00720745325088501}
+... Found context 'metron-nsdi18': {'status': 'success', 'rag_context_key': 'metron-nsdi18', 'rag_latency': 0.007030511274933815}
+... Found context 'metron-nsdi18': {'status': 'success', 'rag_context_key': 'metron-nsdi18', 'rag_latency': 0.006407679989933968}
+... Found context 'metron-nsdi18': {'status': 'success', 'rag_context_key': 'metron-nsdi18', 'rag_latency': 0.012414341792464256}
+... Found context 'metron-nsdi18': {'status': 'success', 'rag_context_key': 'metron-nsdi18', 'rag_latency': 0.009656344540417194}
+... Found context 'metron-nsdi18': {'status': 'success', 'rag_context_key': 'metron-nsdi18', 'rag_latency': 0.011414281092584133}
+... Found context 'metron-nsdi18': {'status': 'success', 'rag_context_key': 'metron-nsdi18', 'rag_latency': 0.009628578089177608}
+... Found context 'metron-nsdi18': {'status': 'success', 'rag_context_key': 'metron-nsdi18', 'rag_latency': 0.011626986786723137}
+... Found context 'metron-nsdi18': {'status': 'success', 'rag_context_key': 'extra-music', 'rag_latency': 0.008867572993040085}
+... Found context 'osdi24-lee': {'status': 'success', 'rag_context_key': 'osdi24-lee', 'rag_latency': 0.008553949184715748}
+... Found context 'osdi24-lee': {'status': 'success', 'rag_context_key': 'osdi24-agrawal', 'rag_latency': 0.010928341187536716}
+... Found context 'osdi24-lee': {'status': 'success', 'rag_context_key': 'osdi24-lee', 'rag_latency': 0.00901363231241703}
+... Found context 'osdi24-lee': {'status': 'success', 'rag_context_key': 'osdi24-lee', 'rag_latency': 0.008252042345702648}
+... Found context 'osdi24-lee': {'status': 'success', 'rag_context_key': 'osdi24-lee', 'rag_latency': 0.00660321768373251}
+... Found context 'osdi24-lee': {'status': 'success', 'rag_context_key': 'osdi24-lee', 'rag_latency': 0.006253795698285103}
+... Found context 'osdi24-lee': {'status': 'success', 'rag_context_key': 'osdi24-lee', 'rag_latency': 0.006049617193639278}
+... Found context 'osdi24-lee': {'status': 'success', 'rag_context_key': 'osdi24-lee', 'rag_latency': 0.005773213692009449}
+... Found context 'osdi24-lee': {'status': 'success', 'rag_context_key': 'osdi24-lee', 'rag_latency': 0.005892799235880375}
+... Found context 'osdi24-lee': {'status': 'success', 'rag_context_key': 'osdi24-lee', 'rag_latency': 0.005421904847025871}
+... Found context 'osdi24-lee': {'status': 'success', 'rag_context_key': 'osdi24-lee', 'rag_latency': 0.005610167048871517}
+... Found context 'osdi24-lee': {'status': 'success', 'rag_context_key': 'osdi24-lee', 'rag_latency': 0.013244261033833027}
+... Found context 'osdi24-lee': {'status': 'success', 'rag_context_key': 'osdi24-lee', 'rag_latency': 0.01090420875698328}
+... Found context 'osdi24-lee': {'status': 'success', 'rag_context_key': 'osdi24-agrawal', 'rag_latency': 0.007425454445183277}
+... Found context 'osdi24-lee': {'status': 'success', 'rag_context_key': 'cacheblend', 'rag_latency': 0.006858641281723976}
+... Found context 'osdi24-lee': {'status': 'success', 'rag_context_key': 'osdi24-lee', 'rag_latency': 0.006686693988740444}
+... Found context 'osdi24-lee': {'status': 'success', 'rag_context_key': 'osdi24-agrawal', 'rag_latency': 0.006517838686704636}
+... Found context 'osdi24-lee': {'status': 'success', 'rag_context_key': 'osdi24-lee', 'rag_latency': 0.0064764246344566345}
+... Found context 'osdi24-lee': {'status': 'success', 'rag_context_key': 'osdi24-lee', 'rag_latency': 0.006368997506797314}
+... Found context 'osdi24-lee': {'status': 'success', 'rag_context_key': 'extra-compound-mape', 'rag_latency': 0.006206736899912357}
+... Found context 'sigcomm2023_janus': {'status': 'success', 'rag_context_key': 'sigcomm2023_janus', 'rag_latency': 0.006056954152882099}
+... Found context 'sigcomm2023_janus': {'status': 'success', 'rag_context_key': 'sigcomm2023_janus', 'rag_latency': 0.005963870324194431}
+... Found context 'sigcomm2023_janus': {'status': 'success', 'rag_context_key': 'sigcomm2023_janus', 'rag_latency': 0.00574544258415699}
+... Found context 'sigcomm2023_janus': {'status': 'success', 'rag_context_key': 'sigcomm2023_janus', 'rag_latency': 0.005565764382481575}
+... Found context 'sigcomm2023_janus': {'status': 'success', 'rag_context_key': 'sigcomm2023_janus', 'rag_latency': 0.005507005378603935}
+... Found context 'sigcomm2023_janus': {'status': 'success', 'rag_context_key': 'click', 'rag_latency': 0.005139091983437538}
+... Found context 'sigcomm2023_janus': {'status': 'success', 'rag_context_key': 'osdi24-agrawal', 'rag_latency': 0.005195461213588715}
+... Found context 'sigcomm2023_janus': {'status': 'success', 'rag_context_key': 'osdi24-sun-biao', 'rag_latency': 0.004961706697940826}
+... Found context 'sigcomm2023_janus': {'status': 'success', 'rag_context_key': 'sigcomm2023_janus', 'rag_latency': 0.005063422955572605}
+... Found context 'sigcomm2023_janus': {'status': 'success', 'rag_context_key': 'sigcomm2023_janus', 'rag_latency': 0.018761190585792065}
+... Found context 'sigcomm2023_janus': {'status': 'success', 'rag_context_key': 'metron-nsdi18', 'rag_latency': 0.008224207907915115}
+... Found context 'sigcomm2023_janus': {'status': 'success', 'rag_context_key': 'sigcomm2023_janus', 'rag_latency': 0.00712873600423336}
+... Found context 'sigcomm2023_janus': {'status': 'success', 'rag_context_key': 'osdi24-agrawal', 'rag_latency': 0.00661384966224432}
+... Found context 'sigcomm2023_janus': {'status': 'success', 'rag_context_key': 'osdi24-agrawal', 'rag_latency': 0.006491681560873985}
+... Found context 'sigcomm2023_janus': {'status': 'success', 'rag_context_key': 'sigcomm2023_janus', 'rag_latency': 0.006311669945716858}
+... Found context 'sigcomm2023_janus': {'status': 'success', 'rag_context_key': 'sigcomm2023_janus', 'rag_latency': 0.006255735643208027}
+... Found context 'sigcomm2023_janus': {'status': 'success', 'rag_context_key': 'sigcomm2023_janus', 'rag_latency': 0.006058915518224239}
+... Found context 'sigcomm2023_janus': {'status': 'success', 'rag_context_key': 'sigcomm2023_janus', 'rag_latency': 0.005767309106886387}
+... Found context 'sigcomm2023_janus': {'status': 'success', 'rag_context_key': 'osdi24-sun-biao', 'rag_latency': 0.005537271499633789}
+... Found context 'sigcomm2023_janus': {'status': 'success', 'rag_context_key': 'sigcomm2023_janus', 'rag_latency': 0.005297282710671425}
+... Found context 'extra-distributed-monitoring': {'status': 'success', 'rag_context_key': 'extra-finance', 'rag_latency': 0.005295938812196255}
+... Found context 'extra-distributed-monitoring': {'status': 'success', 'rag_context_key': 'extra-distributed-monitoring', 'rag_latency': 0.005203344859182835}
+... Found context 'extra-distributed-monitoring': {'status': 'success', 'rag_context_key': 'extra-distributed-monitoring', 'rag_latency': 0.00490198377519846}
+... Found context 'extra-distributed-monitoring': {'status': 'success', 'rag_context_key': 'extra-distributed-monitoring', 'rag_latency': 0.004840446636080742}
+... Found context 'extra-distributed-monitoring': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23', 'rag_latency': 0.005313103087246418}
+... Found context 'extra-distributed-monitoring': {'status': 'success', 'rag_context_key': 'aplomb-sigcomm12', 'rag_latency': 0.013309579342603683}
+... Found context 'extra-distributed-monitoring': {'status': 'success', 'rag_context_key': 'ServerlessLLM_summary', 'rag_latency': 0.011341709643602371}
+... Found context 'extra-distributed-monitoring': {'status': 'success', 'rag_context_key': 'extra-distributed-monitoring', 'rag_latency': 0.008080603554844856}
+... Found context 'extra-distributed-monitoring': {'status': 'success', 'rag_context_key': 'extra-oss-monitoring', 'rag_latency': 0.008225408382713795}
+... Found context 'extra-distributed-monitoring': {'status': 'success', 'rag_context_key': 'extra-distributed-monitoring', 'rag_latency': 0.007939782924950123}
+... Found context 'extra-distributed-monitoring': {'status': 'success', 'rag_context_key': 'cacheblend', 'rag_latency': 0.006291445344686508}
+... Found context 'extra-distributed-monitoring': {'status': 'success', 'rag_context_key': 'extra-distributed-monitoring', 'rag_latency': 0.012241169810295105}
+... Found context 'extra-distributed-monitoring': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23', 'rag_latency': 0.010852388106286526}
+... Found context 'extra-distributed-monitoring': {'status': 'success', 'rag_context_key': 'ServerlessLLM_summary', 'rag_latency': 0.007458719424903393}
+... Found context 'extra-distributed-monitoring': {'status': 'success', 'rag_context_key': 'extra-distributed-monitoring', 'rag_latency': 0.006955744698643684}
+... Found context 'extra-distributed-monitoring': {'status': 'success', 'rag_context_key': 'extra-distributed-monitoring', 'rag_latency': 0.0067444611340761185}
+... Found context 'extra-distributed-monitoring': {'status': 'success', 'rag_context_key': 'extra-oss-monitoring', 'rag_latency': 0.006314131431281567}
+... Found context 'extra-distributed-monitoring': {'status': 'success', 'rag_context_key': 'extra-distributed-monitoring', 'rag_latency': 0.006397010758519173}
+... Found context 'extra-distributed-monitoring': {'status': 'success', 'rag_context_key': 'extra-oss-monitoring', 'rag_latency': 0.006528492085635662}
+... Found context 'extra-distributed-monitoring': {'status': 'success', 'rag_context_key': 'extra-distributed-monitoring', 'rag_latency': 0.006526224315166473}
+... Found context 'nsdi20-paper-barbette': {'status': 'success', 'rag_context_key': 'nsdi20-paper-barbette', 'rag_latency': 0.00662661250680685}
+... Found context 'nsdi20-paper-barbette': {'status': 'success', 'rag_context_key': 'nsdi20-paper-barbette', 'rag_latency': 0.00663217157125473}
+... Found context 'nsdi20-paper-barbette': {'status': 'success', 'rag_context_key': 'nsdi20-paper-barbette', 'rag_latency': 0.006392349489033222}
+... Found context 'nsdi20-paper-barbette': {'status': 'success', 'rag_context_key': 'nsdi20-paper-barbette', 'rag_latency': 0.006097046658396721}
+... Found context 'nsdi20-paper-barbette': {'status': 'success', 'rag_context_key': 'metron-nsdi18', 'rag_latency': 0.012172907590866089}
+... Found context 'nsdi20-paper-barbette': {'status': 'success', 'rag_context_key': 'nsdi20-paper-barbette', 'rag_latency': 0.00862483587116003}
+... Found context 'nsdi20-paper-barbette': {'status': 'success', 'rag_context_key': 'nsdi22-paper-reda_1', 'rag_latency': 0.008090087212622166}
+... Found context 'nsdi20-paper-barbette': {'status': 'success', 'rag_context_key': 'nsdi20-paper-barbette', 'rag_latency': 0.010687700472772121}
+... Found context 'nsdi20-paper-barbette': {'status': 'success', 'rag_context_key': 'nsdi20-paper-barbette', 'rag_latency': 0.008454006165266037}
+... Found context 'nsdi20-paper-barbette': {'status': 'success', 'rag_context_key': 'nsdi20-paper-barbette', 'rag_latency': 0.008056108839809895}
+... Found context 'nsdi20-paper-barbette': {'status': 'success', 'rag_context_key': 'metron-nsdi18', 'rag_latency': 0.007364897057414055}
+... Found context 'nsdi20-paper-barbette': {'status': 'success', 'rag_context_key': 'nsdi20-paper-barbette', 'rag_latency': 0.011084256693720818}
+... Found context 'nsdi20-paper-barbette': {'status': 'success', 'rag_context_key': 'nsdi20-paper-barbette', 'rag_latency': 0.0093086464330554}
+... Found context 'nsdi20-paper-barbette': {'status': 'success', 'rag_context_key': 'click', 'rag_latency': 0.011555681005120277}
+... Found context 'nsdi20-paper-barbette': {'status': 'success', 'rag_context_key': 'nsdi20-paper-barbette', 'rag_latency': 0.0089341439306736}
+... Found context 'nsdi20-paper-barbette': {'status': 'success', 'rag_context_key': 'nsdi20-paper-barbette', 'rag_latency': 0.008494634181261063}
+... Found context 'nsdi20-paper-barbette': {'status': 'success', 'rag_context_key': 'nsdi20-paper-barbette', 'rag_latency': 0.010455994866788387}
+... Found context 'nsdi20-paper-barbette': {'status': 'success', 'rag_context_key': 'nsdi20-paper-barbette', 'rag_latency': 0.008943804539740086}
+... Found context 'nsdi20-paper-barbette': {'status': 'success', 'rag_context_key': 'nsdi20-paper-barbette', 'rag_latency': 0.008993315510451794}
+... Found context 'nsdi20-paper-barbette': {'status': 'success', 'rag_context_key': 'nsdi20-paper-barbette', 'rag_latency': 0.006709720939397812}
+... Found context 'extra-estimate-performance': {'status': 'success', 'rag_context_key': 'extra-estimate-performance', 'rag_latency': 0.006433290429413319}
+... Found context 'extra-estimate-performance': {'status': 'success', 'rag_context_key': 'extra-estimate-performance', 'rag_latency': 0.006393035873770714}
+... Found context 'extra-estimate-performance': {'status': 'success', 'rag_context_key': 'extra-estimate-performance', 'rag_latency': 0.006229730322957039}
+... Found context 'extra-estimate-performance': {'status': 'success', 'rag_context_key': 'extra-estimate-performance', 'rag_latency': 0.006055236794054508}
+... Found context 'extra-estimate-performance': {'status': 'success', 'rag_context_key': 'extra-estimate-performance', 'rag_latency': 0.006295615807175636}
+... Found context 'extra-estimate-performance': {'status': 'success', 'rag_context_key': 'extra-estimate-performance', 'rag_latency': 0.0059663159772753716}
+... Found context 'extra-estimate-performance': {'status': 'success', 'rag_context_key': 'extra-estimate-performance', 'rag_latency': 0.005899947136640549}
+... Found context 'extra-estimate-performance': {'status': 'success', 'rag_context_key': 'extra-estimate-performance', 'rag_latency': 0.005648709833621979}
+... Found context 'extra-estimate-performance': {'status': 'success', 'rag_context_key': 'extra-estimate-performance', 'rag_latency': 0.006308648735284805}
+... Found context 'extra-estimate-performance': {'status': 'success', 'rag_context_key': 'extra-estimate-performance', 'rag_latency': 0.007194985635578632}
+... Found context 'extra-estimate-performance': {'status': 'success', 'rag_context_key': 'extra-estimate-performance', 'rag_latency': 0.007331990636885166}
+... Found context 'extra-estimate-performance': {'status': 'success', 'rag_context_key': 'extra-estimate-performance', 'rag_latency': 0.006736147217452526}
+... Found context 'extra-estimate-performance': {'status': 'success', 'rag_context_key': 'extra-estimate-performance', 'rag_latency': 0.011741257272660732}
+... Found context 'extra-estimate-performance': {'status': 'success', 'rag_context_key': 'extra-estimate-performance', 'rag_latency': 0.011738743633031845}
+... Found context 'extra-estimate-performance': {'status': 'success', 'rag_context_key': 'extra-estimate-performance', 'rag_latency': 0.007196292281150818}
+... Found context 'extra-estimate-performance': {'status': 'success', 'rag_context_key': 'extra-estimate-performance', 'rag_latency': 0.006807449273765087}
+... Found context 'extra-estimate-performance': {'status': 'success', 'rag_context_key': 'extra-estimate-performance', 'rag_latency': 0.006929819472134113}
+... Found context 'extra-estimate-performance': {'status': 'success', 'rag_context_key': 'extra-estimate-performance', 'rag_latency': 0.007008157670497894}
+... Found context 'extra-estimate-performance': {'status': 'success', 'rag_context_key': 'extra-estimate-performance', 'rag_latency': 0.007124351337552071}
+... Found context 'extra-estimate-performance': {'status': 'success', 'rag_context_key': 'extra-estimate-performance', 'rag_latency': 0.0069837141782045364}
+... Found context 'SplitRPC-sigmetrics23': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23', 'rag_latency': 0.006572552025318146}
+... Found context 'SplitRPC-sigmetrics23': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23', 'rag_latency': 0.012073831632733345}
+... Found context 'SplitRPC-sigmetrics23': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23', 'rag_latency': 0.009915042668581009}
+... Found context 'SplitRPC-sigmetrics23': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23', 'rag_latency': 0.01115228608250618}
+... Found context 'SplitRPC-sigmetrics23': {'status': 'success', 'rag_context_key': 'extra-music', 'rag_latency': 0.009013956412672997}
+... Found context 'SplitRPC-sigmetrics23': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23', 'rag_latency': 0.0126393623650074}
+... Found context 'SplitRPC-sigmetrics23': {'status': 'success', 'rag_context_key': 'click', 'rag_latency': 0.009164538234472275}
+... Found context 'SplitRPC-sigmetrics23': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23', 'rag_latency': 0.011206881143152714}
+... Found context 'SplitRPC-sigmetrics23': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23', 'rag_latency': 0.009154521860182285}
+... Found context 'SplitRPC-sigmetrics23': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23', 'rag_latency': 0.008543753996491432}
+... Found context 'SplitRPC-sigmetrics23': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23', 'rag_latency': 0.006741856224834919}
+... Found context 'SplitRPC-sigmetrics23': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23', 'rag_latency': 0.006147535517811775}
+... Found context 'SplitRPC-sigmetrics23': {'status': 'success', 'rag_context_key': 'osdi24-agrawal', 'rag_latency': 0.005937638692557812}
+... Found context 'SplitRPC-sigmetrics23': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23', 'rag_latency': 0.005949902348220348}
+... Found context 'SplitRPC-sigmetrics23': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23', 'rag_latency': 0.005779345519840717}
+... Found context 'SplitRPC-sigmetrics23': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23', 'rag_latency': 0.005672045983374119}
+... Found context 'SplitRPC-sigmetrics23': {'status': 'success', 'rag_context_key': 'sigcomm24-crux', 'rag_latency': 0.005793283693492413}
+... Found context 'SplitRPC-sigmetrics23': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23', 'rag_latency': 0.005850867368280888}
+... Found context 'SplitRPC-sigmetrics23': {'status': 'success', 'rag_context_key': 'SplitRPC-sigmetrics23', 'rag_latency': 0.013272340409457684}
+... Found context 'SplitRPC-sigmetrics23': {'status': 'success', 'rag_context_key': 'extra-music', 'rag_latency': 0.011315741576254368}
+... Found context 'extra-finance': {'status': 'success', 'rag_context_key': 'extra-music', 'rag_latency': 0.008153979666531086}
+... Found context 'extra-finance': {'status': 'success', 'rag_context_key': 'extra-finance', 'rag_latency': 0.008052216842770576}
+... Found context 'extra-finance': {'status': 'success', 'rag_context_key': 'extra-finance', 'rag_latency': 0.007855032570660114}
+... Found context 'extra-finance': {'status': 'success', 'rag_context_key': 'extra-finance', 'rag_latency': 0.007130982354283333}
+... Found context 'extra-finance': {'status': 'success', 'rag_context_key': 'extra-finance', 'rag_latency': 0.011363699100911617}
+... Found context 'extra-finance': {'status': 'success', 'rag_context_key': 'extra-finance', 'rag_latency': 0.009409899823367596}
+... Found context 'extra-finance': {'status': 'success', 'rag_context_key': 'extra-finance', 'rag_latency': 0.011866140179336071}
+... Found context 'extra-finance': {'status': 'success', 'rag_context_key': 'extra-finance', 'rag_latency': 0.009589183144271374}
+... Found context 'extra-finance': {'status': 'success', 'rag_context_key': 'extra-finance', 'rag_latency': 0.008467716164886951}
+... Found context 'extra-finance': {'status': 'success', 'rag_context_key': 'extra-finance', 'rag_latency': 0.00653426069766283}
+... Found context 'extra-finance': {'status': 'success', 'rag_context_key': 'extra-finance', 'rag_latency': 0.00638529472053051}
+... Found context 'extra-finance': {'status': 'success', 'rag_context_key': 'extra-finance', 'rag_latency': 0.006595035083591938}
+... Found context 'extra-finance': {'status': 'success', 'rag_context_key': 'extra-finance', 'rag_latency': 0.006686963140964508}
+... Found context 'extra-finance': {'status': 'success', 'rag_context_key': 'extra-finance', 'rag_latency': 0.00641394779086113}
+... Found context 'extra-finance': {'status': 'success', 'rag_context_key': 'extra-finance', 'rag_latency': 0.006399946287274361}
+... Found context 'extra-finance': {'status': 'success', 'rag_context_key': 'extra-finance', 'rag_latency': 0.0063201431185007095}
+... Found context 'extra-finance': {'status': 'success', 'rag_context_key': 'extra-finance', 'rag_latency': 0.0062083108350634575}
+... Found context 'extra-finance': {'status': 'success', 'rag_context_key': 'extra-finance', 'rag_latency': 0.006600328721106052}
+... Found context 'extra-finance': {'status': 'success', 'rag_context_key': 'extra-estimate-performance', 'rag_latency': 0.0062489742413163185}
+... Found context 'extra-finance': {'status': 'success', 'rag_context_key': 'extra-finance', 'rag_latency': 0.006254504434764385}
 # Accuracy: 76.81818181818181%
 Plot saved to reports/rag_benchmark_1_rag_latency_vs_req_id.png

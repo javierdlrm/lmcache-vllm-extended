@@ -11,6 +11,7 @@ from utils import (
     plot_multiple_latency_vs_seq_length,
     plot_latency_vs_req_id,
     plot_rag_latency_vs_req_id,
+    plot_multiple_rag_latency_vs_req_id,
 )
 
 MODEL_NAME = "Qwen/Qwen2.5-1.5B-Instruct"
@@ -134,6 +135,7 @@ def main():
         generator.index_contexts_for_rag()  # index the contexts in vectordb first
         generator.rag_benchmark()
         plot_rag_latency_vs_req_id(task)
+        plot_multiple_rag_latency_vs_req_id(task)
         return
 
     # Generate plots of the results
