@@ -191,7 +191,6 @@ class RequestGenerator:
                 try:
                     response = requests.post(url, json=payload)
                     response.raise_for_status()
-                    response_json = response.json()
                     print(f"... Found context '{context_key}': {response.json()}")
                 except Exception as e:
                     print(f"Failed to find context '{context_key}': {e}")
@@ -199,6 +198,7 @@ class RequestGenerator:
                 end = time.perf_counter()
                 latency = end - start
 
+                response_json = response.json()
                 rag_match = 1 if response_json["rag_context_key"] == context_key else 0
                 accuracy += rag_match
                 total += 1
